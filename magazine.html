@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Название сайта - Главная</title>
+	<meta name="description" content="Краткое описание сайта">
+
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=1">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+
+	<!-- Фон верхней панели браузера -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<!-- подключение CSS -->
+	<link rel="stylesheet" href="libs/bootstrap-select/bootstrap-select.min.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/icomoon/style.css">
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<div class="header__top-line">
+				<div class="row">
+					<div class="col-12 col-lg-5 header__top-line-logo">
+						<!-- HAMBURGER MENU -->
+						<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseMenu" aria-expanded="false">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+						<!-- HAMBURGER MENU END -->
+						<a href="#?" class="header__logo-container">
+							<div class="header__logo-wrap">
+								<img src="img/logo.png" alt="logo">
+							</div>
+							<p>smart poker</p>
+						</a>
+						<!-- SEARCH BUTTON -->
+						<a class="header__search-button" data-toggle="collapse" href="#collapseSearch" aria-expanded="false">
+							<img src="img/search_icon_button.png" alt="icon">
+						</a>
+						<!-- SEARCH BUTTON END -->
+						<!-- BASKET -->
+						<a href="#?" class="header__basket-mob">
+							<img src="img/basket_icon_mobile.png" alt="icon">
+							<span>1</span>
+						</a>
+						<!-- BASKET END -->
+					</div>
+					<div class="d-none d-lg-block col-7">
+						<div class="header__btns-container">
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+							<ul class="enter-links">
+								<li><a href="#?">Вход</a></li>
+								<li><a href="#?">Регистрация</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__menu-wrap">
+				<div class="row">
+					<!-- HEADER MENU -->
+					<div class="col-12 col-lg-8 collapse header__menu-container" id="collapseMenu">
+						<div class="header__mob-top-line --border">
+							<p>Меню</p>
+							<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseMenu" aria-expanded="false">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+						<ul class="header__menu">
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#?" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Обучение покеру
+									<span class="dropdown_icon"></span>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#?">Пример 1</a>
+									<a class="dropdown-item" href="#?">Пример 2</a>
+									<a class="dropdown-item" href="#?">Пример 3</a>
+								</div>
+							</li>
+							<li><a href="#?">Видео</a></li>
+							<li><a href="#?">Vip</a></li>
+							<li><a href="#?">Статьи</a></li>
+							<li><a href="#?">Покер румы</a></li>
+							<li><a href="#?">Магазин</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#?" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Форум
+									<span class="dropdown_icon"></span>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#?">Пример 1</a>
+									<a class="dropdown-item" href="#?">Пример 2</a>
+									<a class="dropdown-item" href="#?">Пример 3</a>
+								</div>
+							</li>
+						</ul>
+						<div class="header__mob-btns --border">
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+						</div>
+						<div class="header__mob-enter-links --border">
+							<ul class="enter-links">
+								<li><a href="#?">Вход</a></li>
+								<li><a href="#?">Регистрация</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- HEADER MENU END -->
+					<!-- HEADER SEARCH -->
+					<div class="col-12 col-lg-4 col-xl-3 ml-auto collapse" id="collapseSearch">
+						<div class="header__mob-top-line --border">
+							<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseSearch" aria-expanded="false">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+						<div class="header__mob-form-wrap">
+							<form action="javascript:void(0);" class="search">
+								<button type="submit" for="search">
+									<img src="img/search_icon.png" alt="icon">
+								</button>
+								<input id="search" type="text" placeholder="поиск">
+							</form>
+						</div>
+					</div>
+					<!-- HEADER SEARCH -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER END -->
+
+	<!-- CONTENT -->
+	<main class="main">
+		<!-- BREADCRUMBS -->
+		<section class="breadcrumbs">
+			<div class="container">
+				<ul>
+					<li><a href="#?">Smart-Poker.ru</a></li>
+					<li><a href="#?">Магазины</a></li>
+				</ul>
+			</div>
+		</section>
+		<!-- BREADCRUMBS END -->
+
+		<!-- BASKET -->
+		<section class="basket">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-auto developer-link-wrap">
+						<a href="#?" class="developer-logo-wrap">
+							<img src="img/developer-logo-wrap.png" alt="logo">
+						</a>
+						<a class="developer-link" href="#?">перейти на сайт разработчика</a>
+					</div>
+					<div class="col-auto d-flex">
+						<a href="#?" class="basket-wrap">
+							<div class="basket-img-wrap">
+								<img src="img/basket_icon.png" alt="icon">
+								<div class="basket-number">1</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- BASKET END -->
+
+		<!-- PROGRAM REVIEW -->
+		<section class="program-review">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-md-7 program-review__main-slider-wrap">
+						<div class="program-review__slider-main custom-dots">
+							<div>
+								<a data-fancybox="gallery" class="img-slider-wrap" href="img/slider_img_1.jpg">
+									<img src="img/slider_img_1.jpg" alt="slider-img">
+								</a>
+							</div>
+							<div>
+								<a data-fancybox="gallery" class="img-slider-wrap" href="img/slider_img_1.jpg">
+									<img src="img/slider_img_1.jpg" alt="slider-img">
+								</a>
+							</div>
+							<div>
+								<a data-fancybox="gallery" class="img-slider-wrap" href="img/slider_img_1.jpg">
+									<img src="img/slider_img_1.jpg" alt="slider-img">
+								</a>
+							</div>
+							<div>
+								<a data-fancybox="gallery" class="img-slider-wrap" href="img/slider_img_1.jpg">
+									<img src="img/slider_img_1.jpg" alt="slider-img">
+								</a>
+							</div>
+						</div>
+						<div class="program-review__slider-dots">
+							<div>
+								<a class="img-slider-wrap" href="#?">
+									<img src="img/slider_img_1.jpg" alt="slider-img">
+								</a>
+							</div>
+							<div>
+								<a class="img-slider-wrap" href="#?">
+									<img src="img/slider_img_1.jpg" alt="slider-img">
+								</a>
+							</div>
+							<div>
+								<a class="img-slider-wrap" href="#?">
+									<img src="img/slider_img_1.jpg" alt="slider-img">
+								</a>
+							</div>
+							<div>
+								<a class="img-slider-wrap" href="#?">
+									<img src="img/slider_img_1.jpg" alt="slider-img">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-5 program-review__main-content">
+						<h1 class="h1--magazine">Holdem Manager 2</h1>
+						<div class="program-review__text">
+							<p>Holdem Manager 2 - самая популярная программа для сбора и анализа статистики на вас и ваших оппонентов, а также необходимый инструмент для работы над игрой вне столов.</p>
+						</div>
+						<div class="program-review__buttons">
+							<!-- CUSTOM SELECT -->
+							<select class="selectpicker --custom-select" title="выберите версию от $60 до $100">
+								<option>$60</option>
+								<option>$70</option>
+								<option>$80</option>
+								<option>$90</option>
+								<option>$100</option>
+							</select>
+							<!-- CUSTOM SELECT END -->
+							<a href="#?" class="btn btn--primary btn--submit"><span>добавить в корзину</span></a>
+						</div>
+						<div class="payment">
+							<p>Вы можете оплатить при помощи:</p>
+							<ul class="payment-list">
+								<li>
+									<a href="#?">
+										<div>
+											<div class="payment-logo-wrap">
+												<img src="img/payment_1.png" alt="logo">
+											</div>
+											<span>Skrill</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#?">
+										<div>
+											<div class="payment-logo-wrap">
+												<img src="img/payment_2.png" alt="logo">
+											</div>
+											<span>Webmoney</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#?">
+										<div>
+											<div class="payment-logo-wrap">
+												<img src="img/payment_3.png" alt="logo">
+											</div>
+											<span>Neteller</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#?">
+										<div>
+											<div class="payment-logo-wrap">
+												<img src="img/payment_4.png" alt="logo">
+											</div>
+											<span>Pokerstars</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a class="developer-link d-sm-none" href="#?">перейти на сайт разработчика</a>
+				<div class="program-review__present">
+					<div class="program-review__present-img-wrap">
+						<img src="img/present_icon.png" alt="icon">
+					</div>
+					<h3 class="h3--main">Получите Smart HUD Pro для Holdem Manager 2 бесплатно!</h3>
+					<div class="program-review__present-text">
+						<p>Купите Holdem Manager 2 у нас и получите HUD и поп-апы Smart HUD Pro бесплатно!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- PROGRAM REVIEW END-->
+
+		<!-- PRICE END-->
+		<section class="price d-none d-sm-block">
+			<div class="container">
+				<h2 class="h2--main accent">Получи Holdem Manager 2 бесплатно</h2>
+				<div class="table-wrap">
+					<div class="row no-gutters table__head">
+						<div class="col-3 d-flex">
+							<div class="table__cell">Lorem</div>
+						</div>
+						<div class="col-3 d-flex"><div class="table__cell">Размер депозита</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">Small stakes</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">Professional</div></div>
+					</div>
+					<div class="row no-gutters table__row">
+						<div class="col-3 d-flex">
+							<div class="table__cell">
+								<div class="table__img-wrap">
+									<img src="img/price_img.png" alt="logo">
+								</div>
+							</div>
+						</div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+					</div>
+					<div class="row no-gutters table__row">
+						<div class="col-3 d-flex">
+							<div class="table__cell">
+								<div class="table__img-wrap">
+									<img src="img/price_img.png" alt="logo">
+								</div>
+							</div>
+						</div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+					</div>
+					<div class="row no-gutters table__row">
+						<div class="col-3 d-flex">
+							<div class="table__cell">
+								<div class="table__img-wrap">
+									<img src="img/price_img.png" alt="logo">
+								</div>
+							</div>
+						</div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+					</div>
+					<div class="row no-gutters table__row">
+						<div class="col-3 d-flex">
+							<div class="table__cell">
+								<div class="table__img-wrap">
+									<img src="img/price_img.png" alt="logo">
+								</div>
+							</div>
+						</div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+					</div>
+					<div class="row no-gutters table__row">
+						<div class="col-3 d-flex">
+							<div class="table__cell">
+								<div class="table__img-wrap">
+									<img src="img/price_img.png" alt="logo">
+								</div>
+							</div>
+						</div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+					</div>
+					<div class="row no-gutters table__row">
+						<div class="col-3 d-flex">
+							<div class="table__cell">
+								<div class="table__img-wrap">
+									<img src="img/price_img.png" alt="logo">
+								</div>
+							</div>
+						</div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+					</div>
+					<div class="row no-gutters table__row">
+						<div class="col-3 d-flex">
+							<div class="table__cell">
+								<div class="table__img-wrap">
+									<img src="img/price_img.png" alt="logo">
+								</div>
+							</div>
+						</div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- PRICE END-->
+
+		<!-- ADVANTAGES LIST 1 -->
+		<section class="advantages-list-1 d-none d-sm-block">
+			<div class="container">
+				<h2 class="h2--main accent">Получи Holdem Manager 2 бесплатно</h2>
+				<ul class="list-with-stars">
+					<li>Отображение результатов в графиках, в USD/EUR/GBP или больших блайндах</li>
+					<li>Отображение статистики на оппонентов за столами по улицам и действиям</li>
+					<li>Запись пометок об игре оппонента, в том числе и автоматизированно</li>
+					<li>Система пометок раздач для дальнейшего анализа</li>
+					<li>Функциональный реплеер для сыгранных раздач</li>
+					<li>Множество отчетов: позиционные, по улицам, по действиям, по типу рук на префлопе и постфлопе</li>
+					<li>Функция "Alias": объедините руки и статистику нескольких ников в один.</li>
+					<li>Удобная функция фильтра оппонентов по базе данных: выставляйте фильтры и анализируйте средние значения статистики по базе</li>
+					<li>Легкий перенос базы данных из HM1/PT3/PT4</li>
+				</ul>
+			</div>
+		</section>
+		<!-- ADVANTAGES LIST 1 END-->
+
+		<!-- ADVANTAGES LIST 2 -->
+		<section class="advantages-list-2 d-none d-sm-block">
+			<div class="container">
+				<h2 class="h2--main accent">Получи Holdem Manager 2 бесплатно</h2>
+				<ul class="list-with-stars">
+					<li>Новый графический интерфейс</li>
+					<li>Существенно переделана структура базы данных программы, из-за чего скорость импорта майнинга увеличена в 2-3 раза</li>
+					<li>Больше статов: подробная статистика позиция против позиции, дополнительные постфлоп статы, статы vs. Hero</li>
+					<li>Кастомизация поп-апов: теперь поп-апы имеют больше настроек</li>
+				</ul>
+			</div>
+		</section>
+		<!-- ADVANTAGES LIST 2 END-->
+
+		<!-- APPLICATIONS -->
+		<section class="applications d-none d-sm-block">
+			<div class="container">
+				<h2 class="h2--main accent">Подключаемые приложения</h2>
+				<div class="applications__description">
+					<p>Холдем Менеджер 2 - это настоящий покерный "комбайн", к которому можно подключать дополнительные приложения, расширяющие его функционал. Хотя эти модули платные, их покупка будет однозначным +EV.</p>
+				</div>
+				<div class="table-wrap">
+					<div class="row no-gutters table__head">
+						<div class="col-3 d-flex"><div class="table__cell">Приложение</div></div>
+						<div class="col-6 d-flex"><div class="table__cell">Возможности</div></div>
+						<div class="col-3 d-flex"><div class="table__cell">Цена</div></div>
+					</div>
+					<div class="row no-gutters table__row">
+						<div class="col-3 d-flex"><div class="table__cell table__cell--accent">Note Caddy</div></div>
+						<div class="col-6 d-flex">
+							<div class="table__cell">
+								<ul>
+									<li>Автоматическое написание нотсов на оппонентов</li>
+									<li>Создание собственные статов</li>
+									<li>Создание графиков по силе рук</li>
+									<li>Отображение префлоп-диапазонов оппонентов</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+					</div>
+					<div class="row no-gutters table__row">
+						<div class="col-3 d-flex"><div class="table__cell">TableScanner 2</div></div>
+						<div class="col-6 d-flex">
+							<div class="table__cell">Аналог TableScan Turbo, поиск наилучших кэш-столов</div>
+						</div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+					</div>
+					<div class="row no-gutters table__row">
+						<div class="col-3 d-flex"><div class="table__cell">TableScanner 2</div></div>
+						<div class="col-6 d-flex">
+							<div class="table__cell">Аналог TableScan Turbo, поиск наилучших кэш-столов</div>
+						</div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+					</div>
+					<div class="row no-gutters table__row">
+						<div class="col-3 d-flex"><div class="table__cell">TableScanner 2</div></div>
+						<div class="col-6 d-flex">
+							<div class="table__cell">Аналог TableScan Turbo, поиск наилучших кэш-столов</div>
+						</div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+					</div>
+					<div class="row no-gutters table__row">
+						<div class="col-3 d-flex"><div class="table__cell">TableScanner 2</div></div>
+						<div class="col-6 d-flex">
+							<div class="table__cell">Аналог TableScan Turbo, поиск наилучших кэш-столов</div>
+						</div>
+						<div class="col-3 d-flex"><div class="table__cell">От 50$</div></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- APPLICATIONS END-->
+
+		<!-- ADVANTAGES LIST 3 -->
+		<section class="advantages-list-3 d-none d-sm-block">
+			<div class="container">
+				<h2 class="h2--main accent">Список поддерживающихся покеррумов</h2>
+				<ul class="list-with-stars">
+					<li>PokerStars и Full Tilt Poker</li>
+					<li>888 Poker</li>
+					<li>Сеть iPoker (Winner Poker и другие)</li>
+					<li>Сеть MicroGaming (RedKings, Red Star Poker и другие)</li>
+					<li>Сеть bwin.party (PartyPoker, bwin и другие)</li>
+					<li>Сеть Winning Poker Network (PokerKing и другие)</li>
+				</ul>
+			</div>
+		</section>
+		<!-- ADVANTAGES LIST 3 END-->
+
+		<!-- FOOTER LINK -->
+		<section class="footer-link-wrap d-none d-sm-block">
+			<div class="container">
+				<a class="footer-link bottom-arrow" data-toggle="collapse" href="#collapseFooter" aria-expanded="false">более подробная информация</a>
+			</div>
+		</section>
+		<!-- FOOTER LINK END-->
+
+	</main>
+	<!-- CONTENT END -->
+
+	<!-- FOOTER -->
+	<footer class="footer collapse" id="collapseFooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-4 col-lg-3 footer__col">
+					<div class="footer__list-wrap">
+						<h3 class="h3--main">Обучение игре в покер</h3>
+						<ul class="footer__list">
+							<li><a href="#?">Индивидуальное обучение</a></li>
+							<li><a href="#?">Групповой курс SMP Bronze</a></li>
+							<li><a href="#?">Групповой курс SMP Silver</a></li>
+							<li><a href="#?">Групповой курс SMP Gold</a></li>
+						</ul>
+					</div>
+					<div class="footer__list-wrap">
+						<h3 class="h3--main">Контент</h3>
+						<ul class="footer__list">
+							<li><a href="#?">Видео уроки покера</a></li>
+							<li><a href="#?">Статьи о покере</a></li>
+							<li><a href="#?">Новости покера</a></li>
+						</ul>
+					</div>
+					<div class="footer__list-wrap">
+						<h3 class="h3--main">Форум</h3>
+						<ul class="footer__list">
+							<li><a href="#?">Разбор раздач</a></li>
+							<li><a href="#?">Блоги</a></li>
+							<li><a href="#?">Обучение</a></li>
+							<li><a href="#?">Курилка</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3 footer__col --border">
+					<div class="footer__list-wrap">
+						<h3 class="h3--main">Покеррумы</h3>
+						<ul class="footer__list">
+							<li><a href="#?">Lotos Poker</a></li>
+							<li><a href="#?">888 Poker</a></li>
+							<li><a href="#?">Planetwin365</a></li>
+							<li><a href="#?">Red Star Poker</a></li>
+							<li><a href="#?">Coral Poker</a></li>
+							<li><a href="#?">PartyPoker</a></li>
+							<li><a href="#?">bwin</a></li>
+							<li><a href="#?">PokerKing</a></li>
+							<li><a href="#?">RedKings</a></li>
+							<li><a href="#?">TigerGaming</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3 footer__col --border">
+					<div class="footer__list-wrap">
+						<h3 class="h3--main">Магазин</h3>
+						<ul class="footer__list">
+							<li><a href="#?">Датамайнинг</a></li>
+							<li><a href="#?">Smart HUD Pro</a></li>
+							<li><a href="#?">Smart HUD</a></li>
+							<li><a href="#?">Holdem Manager 2</a></li>
+							<li><a href="#?">PokerTracker 4</a></li>
+							<li><a href="#?">FlopZilla</a></li>
+							<li><a href="#?">CardRunners EV</a></li>
+							<li><a href="#?">TableScan Turbo</a></li>
+							<li><a href="#?">Note Caddy</a></li>
+							<li><a href="#?">PartyCaption</a></li>
+							<li><a href="#?">888 Caption</a></li>
+							<li><a href="#?">Конвертер рук Chico / Equity</a></li>
+							<li><a href="#?">Конвертер рук Enet / Peoples</a></li>
+							<li><a href="#?">Конвертер рук Enet</a></li>
+							<li><a href="#?">Конвертер рук Suited Aces</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 footer__col --border">
+					<div class="footer__contacts">
+						<h3 class="h3--main">Школа покера Smart Poker</h3>
+						<div class="footer__bottom-wrap">
+							<div class="footer__bottom-wrap-inner">
+								<div class="footer__btns">
+									<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+									<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+								</div>
+								<div class="footer__partners">
+									<h3 class="h3--main">Наши партнеры</h3>
+									<a href="#?">Pokerprodeals</a>
+								</div>
+							</div>
+							<div class="footer__social">
+								<h3 class="h3--main">Соц сети</h3>
+								<ul class="social-list">
+									<li>
+										<a href="#?"><i class="fa fa-vk" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href="#?"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER END -->
+
+	<!-- подключение JavaScript -->
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/bootstrap4/popper.min.js"></script>
+	<script src="libs/bootstrap4/bootstrap.min.js"></script>
+	<script src="libs/bootstrap-select/bootstrap-select.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/jstick/jquery.JStick.min.js"></script>
+	<script src="libs/shuffle.js/shuffle.min.js"></script>
+
+	<script src="js/common.js"></script>
+</body>
+</html>

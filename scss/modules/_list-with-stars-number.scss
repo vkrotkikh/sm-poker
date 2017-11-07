@@ -1,0 +1,43 @@
+.list-with-stars-number {
+	li {
+		min-height: 50px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		display: flex;
+		align-items: center;
+		p {
+			font-size: 16px;
+			line-height: 20px;
+			letter-spacing: 0.8px;
+
+			strong {
+				font-family: "MullerBold";
+			}
+
+			a {
+				color: #5282c1;
+			}
+		}
+	}
+}
+
+.fill-star-wrap {
+	min-width: 50px;
+	max-width: 50px;
+	height: 50px;
+	margin-right: 20px;
+	position: relative;
+	img {
+		@include img-res;
+	}
+	span {
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		font-family: "MullerBold";
+		font-size: 16px;
+		line-height: 20px;
+	}
+}

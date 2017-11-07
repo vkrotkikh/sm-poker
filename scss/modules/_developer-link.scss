@@ -1,0 +1,29 @@
+.developer-link {
+	color: #3672bb;
+	font-size: 14px;
+	text-transform: uppercase;
+	&:after {
+		content: url(../img/developer_icon.png);
+		display: inline-block;
+		padding-left: 10px;
+		@include tr(.5s);
+		position: relative;
+		left: 0;
+	}
+	&:hover {
+		text-decoration: none;
+		&:after {
+			left: 10px;
+			@include tr(.5s);
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.developer-link {
+		font-size: 11px;
+		&:after {
+			top: 2px;
+		}
+	}
+}

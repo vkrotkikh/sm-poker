@@ -1,0 +1,402 @@
+.banner-section {
+	padding: 60px 0px;
+	background-color: #F4F6F9;
+}
+
+.banner-slider {
+	padding-left: 40px;
+	padding-right: 40px;
+	position: relative;
+	.img-wrap {
+		max-width: 335px;
+		display: block;
+		margin: 0 auto;
+		img {
+			@include img-res;
+			margin: 0 auto;
+		}
+	}
+
+	.slick-prev, .slick-next {
+		font-size: 0;
+		background-color: transparent;
+		border: none;
+		width: 15px;
+		height: 30px;
+		position: absolute;
+		top: 50%;
+		margin-top: -15px;
+		padding: 0;
+		z-index: 10;
+		cursor: pointer;
+		text-align: center;
+		&:before {
+			font-family: "FontAwesome";
+			display: inline-block;
+			font-size: 40px;
+			line-height: 30px;
+			color: #C8CBCD;
+			@include tr(0.3s);
+		}
+		&:hover {
+			&:before {
+				color: $accent;
+				@include tr(0.3s);
+			}
+		}
+	}
+	.slick-prev {
+		left: 0;
+		&:before {
+			content: "\f104";
+		}
+	}
+	.slick-next {
+		right: 0;
+		&:before {
+			content: "\f105";
+		}
+	}
+}
+
+// CUSTOM GRID
+
+.col {
+	&-content {
+		padding: 0 15px;
+		max-width: 61.5%;
+		width: 100%;
+
+	}
+	&-sidebar {
+		padding: 0 15px;
+		max-width: 38.5%;
+		width: 100%;
+	}
+}
+
+// CUSTOM GRID END
+
+.main-content-section {
+	padding-top: 75px;
+}
+
+.main-content {
+	padding-left: 35px;
+	border-left: 1px solid #D8E0EA;
+	position: relative;
+}
+
+.shop-window-section {
+	width: 100%;
+	.shop-window-wrap {
+		padding-top: 15px;
+		padding-bottom: 20px;
+		margin-top: 60px;
+		margin-left: 35px;
+		border-top: 2px solid #D8E0EA;
+		border-bottom: 2px solid #D8E0EA;
+	}
+	.shop-window-title {
+		font-size: 16px;
+		color: #747c89;
+		letter-spacing: 0.5px;
+		margin-bottom: 5px;
+	}
+}
+
+.shop-window-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.shop-window-item {
+	padding: 15px 5px 5px 10px;
+	max-width: 355px;
+	background-color: #F4F6F9;
+	border-radius: 5px;
+
+	.top-content {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #FFFFFF;
+	}
+
+	.bottom-content {
+		padding-top: 5px;
+		padding-left: 10px;
+		padding-right: 5px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.stars {
+			line-height: 1;
+		}
+
+		a {
+			color: $accent;
+			font-family: "MullerBold";
+			font-size: 10px;
+			text-transform: uppercase;
+			span {
+				font-size: 11px;
+				margin-left: 3px;
+			}
+			&:hover {
+				text-decoration: none;
+				.text {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.img-wrap {
+		background-color: #fff;
+		display: inline-block;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-basis: 85px;
+		min-width: 85px;
+		height: 65px;
+		border-radius: 5px;
+		box-shadow: 0 7px 16px rgba(0, 0, 0, 0.1);
+		margin-right: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		img {
+			max-height: 30px;
+			max-width: 65px;
+			width: auto;
+		}
+	}
+
+	.top-line {
+		font-size: 16px;
+		letter-spacing: 0.5px;
+		line-height: 18px;
+		margin-bottom: 5px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.main-text {
+		font-size: 12px;
+		letter-spacing: 0.5px;
+		line-height: 15px;
+	}
+}
+
+.pagination-section {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	.pagination-wrap {
+		margin-left: 35px;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.banner-slider .img-wrap {
+		max-width: 250px;
+	}
+
+	.shop-window-container {
+		justify-content: center;
+		> div:last-child {
+			.shop-window-item {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.shop-window-item {
+		margin-bottom: 15px;
+		margin-right: 15px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+
+	// CUSTOM GRID
+
+	.col {
+		&-content {
+			max-width: 58.5%;
+
+		}
+		&-sidebar {
+			max-width: 41.5%;
+		}
+	}
+
+	// CUSTOM GRID END
+
+	.banner-section {
+		padding: 35px 0 20px;
+	}
+
+	.banner-slider {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: -15px;
+		margin-right: -15px;
+		.img-wrap {
+			max-width: 100%;
+			margin-bottom: 30px;
+			padding: 0 15px;
+		}
+	}
+
+	.main-content-section {
+		padding-top: 45px;
+	}
+
+	.main-content {
+		border: none;
+		padding-left: 0;
+	}
+
+	.shop-window-section {
+		.shop-window-wrap {
+			margin-left: 0;
+			margin-top: 75px;
+		}
+	}
+
+	.shop-window-container {
+		margin-left: -10px;
+		margin-right: -10px;
+		.shop-window-item {
+			max-width: 100%;
+			margin: 0;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-bottom: 30px;
+			.bottom-content {
+				padding-top: 5px;
+				.stars i {
+					font-size: 12px;
+				}
+			}
+		}
+
+		& > div:last-child {
+			.shop-window-item {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.pagination-section {
+		padding-top: 70px;
+		padding-bottom: 65px;
+		.pagination-wrap {
+			margin-left: 0;
+		}
+	}
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	// CUSTOM GRID
+
+	.col {
+		&-content {
+			max-width: 100%;
+
+		}
+		&-sidebar {
+			max-width: 100%;
+		}
+	}
+
+	// CUSTOM GRID END
+
+	.main-content-section {
+		padding-top: 35px;
+		padding-bottom: 65px;
+	}
+
+	.shop-window-section {
+		.shop-window-wrap {
+			margin-top: 40px;
+			padding-bottom: 15px;
+		}
+	}
+
+	.shop-window-item {
+		.img-wrap {
+			padding-left: 5px;
+			padding-right: 5px;
+			height: 55px;
+			img {
+				max-width: 55px;
+			}
+		}
+		.top-line {
+			font-size: 13px;
+			color: #747c89;
+		}
+		.main-text {
+			font-size: 10px;
+			line-height: 12px;
+			color: #747c89;
+		}
+	}
+
+	.shop-window-container {
+		.shop-window-item {
+			margin-bottom: 10px;
+		}
+	}
+
+	.pagination-section {
+		padding-top: 30px;
+		padding-bottom: 45px;
+	}
+
+}
+
+@media only screen and (max-width: 575px) {
+	.col-sidebar {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.banner-section {
+		padding-top: 30px;
+		padding-bottom: 25px;
+	}
+
+	.banner-slider {
+		.img-wrap {
+			margin-bottom: 15px;
+		}
+	}
+
+}

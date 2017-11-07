@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Название сайта - Главная</title>
+	<meta name="description" content="Краткое описание сайта">
+
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=1">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+
+	<!-- Фон верхней панели браузера -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<!-- подключение CSS -->
+	<link rel="stylesheet" href="libs/bootstrap-select/bootstrap-select.min.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/icomoon/style.css">
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<div class="header__top-line">
+				<div class="row">
+					<div class="col-12 col-lg-5 header__top-line-logo">
+						<!-- HAMBURGER MENU -->
+						<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseMenu" aria-expanded="false">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+						<!-- HAMBURGER MENU END -->
+						<a href="#?" class="header__logo-container">
+							<div class="header__logo-wrap">
+								<img src="img/logo.png" alt="logo">
+							</div>
+							<p>smart poker</p>
+						</a>
+						<!-- SEARCH BUTTON -->
+						<a class="header__search-button" data-toggle="collapse" href="#collapseSearch" aria-expanded="false">
+							<img src="img/search_icon_button.png" alt="icon">
+						</a>
+						<!-- SEARCH BUTTON END -->
+					</div>
+					<div class="d-none d-lg-block col-7">
+						<div class="header__btns-container">
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+							<ul class="enter-links">
+								<li><a href="#?">Вход</a></li>
+								<li><a href="#?">Регистрация</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__menu-wrap">
+				<div class="row">
+					<!-- HEADER MENU -->
+					<div class="col-12 col-lg-8 collapse header__menu-container" id="collapseMenu">
+						<div class="header__mob-top-line --border">
+							<p>Меню</p>
+							<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseMenu" aria-expanded="false">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+						<ul class="header__menu">
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#?" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Обучение покеру
+									<span class="dropdown_icon"></span>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#?">Пример 1</a>
+									<a class="dropdown-item" href="#?">Пример 2</a>
+									<a class="dropdown-item" href="#?">Пример 3</a>
+								</div>
+							</li>
+							<li><a href="#?">Видео</a></li>
+							<li><a href="#?">Vip</a></li>
+							<li><a href="#?">Статьи</a></li>
+							<li><a href="#?">Покер румы</a></li>
+							<li><a href="#?">Магазин</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#?" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Форум
+									<span class="dropdown_icon"></span>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#?">Пример 1</a>
+									<a class="dropdown-item" href="#?">Пример 2</a>
+									<a class="dropdown-item" href="#?">Пример 3</a>
+								</div>
+							</li>
+						</ul>
+						<div class="header__mob-btns --border">
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+						</div>
+						<div class="header__mob-enter-links --border">
+							<ul class="enter-links">
+								<li><a href="#?">Вход</a></li>
+								<li><a href="#?">Регистрация</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- HEADER MENU END -->
+					<!-- HEADER SEARCH -->
+					<div class="col-12 col-lg-4 col-xl-3 ml-auto collapse" id="collapseSearch">
+						<div class="header__mob-top-line --border">
+							<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseSearch" aria-expanded="false">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+						<div class="header__mob-form-wrap">
+							<form action="javascript:void(0);" class="search">
+								<button type="submit" for="search">
+									<img src="img/search_icon.png" alt="icon">
+								</button>
+								<input id="search" type="text" placeholder="поиск">
+							</form>
+						</div>
+					</div>
+					<!-- HEADER SEARCH -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER END -->
+
+	<!-- CONTENT -->
+	<main class="main">
+
+		<!-- BREADCRUMBS -->
+		<section class="breadcrumbs">
+			<div class="container">
+				<ul>
+					<li><a href="#?">Smart-Poker.ru</a></li>
+					<li><a href="#?">Покеррумы</a></li>
+				</ul>
+			</div>
+		</section>
+		<!-- BREADCRUMBS END -->
+
+		<section class="title-block-section">
+			<div class="container">
+				<h1 class="h1--big">Покер румы</h1>
+				<div class="title-description">
+					<p>Мы высоко оцениваем покер-румы где ГСЧ раздает по понятиям и выплачивают наличку в сроки не кидая своих пацанов. Наш рейтинг покер-румов ничего не значит, впрочем, как и на</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="rooms-nav-section d-none d-sm-block">
+			<div class="container">
+				<ul class="tab-nav-list">
+					<li><a href="#?" class="active" data-group="all">Все румы</a></li>
+					<li><a href="#?" data-group="many-fishes">Много Фишей</a></li>
+					<li><a href="#?" data-group="great-rakeback">Большой Рейкбек</a></li>
+					<li><a href="#?" data-group="free-education">Бесплатное обучение</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="filters-section-link">
+			<div class="container">
+				<a class="filters-link" data-toggle="collapse" href="#collapseFilters" aria-expanded="false">
+					<span class="open-text">открыть <span class="d-none d-sm-inline">дополнительные</span> фильтры</span>
+					<span class="close-text d-none">закрыть <span class="d-none d-sm-inline">дополнительные</span> фильтры</span>
+				</a>
+				<a data-toggle="collapse" href="#collapseFilters" aria-expanded="false" class="plus"></a>
+			</div>
+		</section>
+
+		<section class="filters-section-opened collapse" id="collapseFilters">
+			<div class="rooms-nav-section d-sm-none">
+				<div class="container">
+					<ul class="tab-nav-list">
+						<li><a href="#?" class="active" data-group="all">Все румы</a></li>
+						<li><a href="#?" data-group="many-fishes">Много Фишей</a></li>
+						<li><a href="#?" data-group="great-rakeback">Большой Рейкбек</a></li>
+						<li><a href="#?" data-group="free-education">Бесплатное обучение</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="first-row">
+					<form class="radio-group" action="#">
+						<input type="radio" id="holdem" name="filters-group-1" checked>
+						<label for="holdem">Holdem</label>
+
+						<input type="radio" id="omaha" name="filters-group-1">
+						<label for="omaha">Omaha</label>
+
+						<input type="radio" id="pineapple" name="filters-group-1">
+						<label for="pineapple">Pineapple</label>
+					</form>
+
+					<form class="radio-group" action="#">
+						<input type="radio" id="cash" name="filters-group-2">
+						<label for="cash">cash</label>
+
+						<input type="radio" id="mtt" name="filters-group-2">
+						<label for="mtt">mtt</label>
+
+						<input type="radio" id="sng" name="filters-group-2">
+						<label for="sng">sng</label>
+
+						<input type="radio" id="spins" name="filters-group-2">
+						<label for="spins">spins</label>
+
+						<input type="radio" id="fast" name="filters-group-2">
+						<label for="fast">fast</label>
+					</form>
+
+					<form class="radio-group" action="#">
+						<input type="radio" id="sh" name="filters-group-3">
+						<label for="sh">sh</label>
+
+						<input type="radio" id="hu" name="filters-group-3">
+						<label for="hu">hu</label>
+
+						<input type="radio" id="fr" name="filters-group-3">
+						<label for="fr">fr</label>
+					</form>
+
+					<form class="radio-group" action="#">
+						<input type="radio" id="nl25" name="filters-group-4">
+						<label for="nl25">nl25</label>
+
+						<input type="radio" id="nl50" name="filters-group-4">
+						<label for="nl50">nl50</label>
+
+						<input type="radio" id="nl100" name="filters-group-4">
+						<label for="nl100">nl100</label>
+
+						<input type="radio" id="nl200+" name="filters-group-4">
+						<label for="nl200+">nl200+</label>
+					</form>
+				</div>
+
+				<div class="second-row">
+					<div>
+						<form class="radio-group" action="#">
+							<input type="radio" id="morning" name="filters-group-5">
+							<label for="morning">Утро</label>
+
+							<input type="radio" id="daytime" name="filters-group-5">
+							<label for="daytime">День</label>
+
+							<input type="radio" id="evening" name="filters-group-5">
+							<label for="evening">Вечер</label>
+
+							<input type="radio" id="evening(msk)" name="filters-group-5">
+							<label for="evening(msk)">Ночь (МСК)</label>
+						</form>
+
+						<form class="radio-group" action="#">
+							<input type="radio" id="support-for-trackers" name="filters-group-6">
+							<label for="support-for-trackers">Есть поддержка трекеров</label>
+
+							<input type="radio" id="no-support-for-trackers" name="filters-group-6">
+							<label for="no-support-for-trackers">Нет поддержка трекеров</label>
+						</form>
+					</div>
+					<div class="text-sm-right text-xl-left">
+						<a href="#?" class="clean-text"><img src="img/clean.png" alt="icon">очистить фильтры</a>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="rooms-items-section">
+			<div class="container">
+				<div class="row rooms-items_content shuffle" id="rooms-items_content">
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 rooms-item-wrap" data-groups='["many-fishes"]'>
+						<div class="rooms-main-item">
+							<div class="room-logo-block">
+								<img src="img/room_logo_1.png" alt="logo">
+							</div>
+							<div class="room-item-contant">
+								<div class="star-with-number">
+									<img src="img/svg/star.svg" alt="icon">
+									<span class="star-number">4.5</span>
+								</div>
+								<ul class="rooms-numbers-list">
+									<li class="room-item-numbers">Бонус: <span>до </span><strong>500$</strong></li>
+									<li class="room-item-numbers">Кэшбек: <span>до </span><strong>80%</strong></li>
+								</ul>
+								<ul class="rooms-advantages-list">
+									<li><span class="icon-crown"></span>VIP-условия для наших игроков</li>
+									<li><span class="icon-giftbox"></span>Конвертер, Лейаут, майнинг</li>
+								</ul>
+								<a href="#?" class="btn btn--accent btn--middle">играть</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 rooms-item-wrap" data-groups='["great-rakeback"]'>
+						<div class="rooms-main-item">
+							<div class="room-logo-block">
+								<img src="img/room_logo_2.png" alt="logo">
+							</div>
+							<div class="room-item-contant">
+								<div class="star-with-number">
+									<img src="img/svg/star.svg" alt="icon">
+									<span class="star-number">4.5</span>
+								</div>
+								<ul class="rooms-numbers-list">
+									<li class="room-item-numbers">Бонус: <span>до </span><strong>600$</strong></li>
+									<li class="room-item-numbers">Кэшбек: <span>до </span><strong>10%</strong></li>
+								</ul>
+								<ul class="rooms-advantages-list">
+									<li><span class="icon-crown"></span>VIP-условия для наших игроков</li>
+									<li><span class="icon-giftbox"></span>Конвертер, Лейаут, майнинг</li>
+								</ul>
+								<a href="#?" class="btn btn--accent btn--middle">играть</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 rooms-item-wrap" data-groups='["many-fishes"]'>
+						<div class="rooms-main-item">
+							<div class="room-logo-block">
+								<img src="img/room_logo_3.png" alt="logo">
+							</div>
+							<div class="room-item-contant">
+								<div class="star-with-number">
+									<img src="img/svg/star.svg" alt="icon">
+									<span class="star-number">4.5</span>
+								</div>
+								<ul class="rooms-numbers-list">
+									<li class="room-item-numbers">Бонус: <span>до </span><strong>350$</strong></li>
+									<li class="room-item-numbers">Кэшбек: <span>до </span><strong>15%</strong></li>
+								</ul>
+								<ul class="rooms-advantages-list">
+									<li><span class="icon-crown"></span>VIP-условия для наших игроков</li>
+									<li><span class="icon-giftbox"></span>Конвертер, Лейаут, майнинг</li>
+								</ul>
+								<a href="#?" class="btn btn--accent btn--middle">играть</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 rooms-item-wrap" data-groups='["great-rakeback"]'>
+						<div class="rooms-main-item">
+							<div class="room-logo-block">
+								<img src="img/room_logo_4.png" alt="logo">
+							</div>
+							<div class="room-item-contant">
+								<div class="star-with-number">
+									<img src="img/svg/star.svg" alt="icon">
+									<span class="star-number">4.5</span>
+								</div>
+								<ul class="rooms-numbers-list">
+									<li class="room-item-numbers">Бонус: <span>до </span><strong>200$</strong></li>
+									<li class="room-item-numbers">Кэшбек: <span>до </span><strong>73%</strong></li>
+								</ul>
+								<ul class="rooms-advantages-list">
+									<li><span class="icon-crown"></span>VIP-условия для наших игроков</li>
+									<li><span class="icon-giftbox"></span>Конвертер, Лейаут, майнинг</li>
+								</ul>
+								<a href="#?" class="btn btn--accent btn--middle">играть</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 rooms-item-wrap" data-groups='["free-education"]'>
+						<div class="rooms-main-item">
+							<div class="room-logo-block">
+								<img src="img/room_logo_1.png" alt="logo">
+							</div>
+							<div class="room-item-contant">
+								<div class="star-with-number">
+									<img src="img/svg/star.svg" alt="icon">
+									<span class="star-number">4.5</span>
+								</div>
+								<ul class="rooms-numbers-list">
+									<li class="room-item-numbers">Бонус: <span>до </span><strong>500$</strong></li>
+									<li class="room-item-numbers">Кэшбек: <span>до </span><strong>80%</strong></li>
+								</ul>
+								<ul class="rooms-advantages-list">
+									<li><span class="icon-crown"></span>VIP-условия для наших игроков</li>
+									<li><span class="icon-giftbox"></span>Конвертер, Лейаут, майнинг</li>
+								</ul>
+								<a href="#?" class="btn btn--accent btn--middle">играть</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 rooms-item-wrap" data-groups='["many-fishes"]'>
+						<div class="rooms-main-item">
+							<div class="room-logo-block">
+								<img src="img/room_logo_2.png" alt="logo">
+							</div>
+							<div class="room-item-contant">
+								<div class="star-with-number">
+									<img src="img/svg/star.svg" alt="icon">
+									<span class="star-number">4.5</span>
+								</div>
+								<ul class="rooms-numbers-list">
+									<li class="room-item-numbers">Бонус: <span>до </span><strong>600$</strong></li>
+									<li class="room-item-numbers">Кэшбек: <span>до </span><strong>10%</strong></li>
+								</ul>
+								<ul class="rooms-advantages-list">
+									<li><span class="icon-crown"></span>VIP-условия для наших игроков</li>
+									<li><span class="icon-giftbox"></span>Конвертер, Лейаут, майнинг</li>
+								</ul>
+								<a href="#?" class="btn btn--accent btn--middle">играть</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 rooms-item-wrap" data-groups='["free-education"]'>
+						<div class="rooms-main-item">
+							<div class="room-logo-block">
+								<img src="img/room_logo_3.png" alt="logo">
+							</div>
+							<div class="room-item-contant">
+								<div class="star-with-number">
+									<img src="img/svg/star.svg" alt="icon">
+									<span class="star-number">4.5</span>
+								</div>
+								<ul class="rooms-numbers-list">
+									<li class="room-item-numbers">Бонус: <span>до </span><strong>350$</strong></li>
+									<li class="room-item-numbers">Кэшбек: <span>до </span><strong>15%</strong></li>
+								</ul>
+								<ul class="rooms-advantages-list">
+									<li><span class="icon-crown"></span>VIP-условия для наших игроков</li>
+									<li><span class="icon-giftbox"></span>Конвертер, Лейаут, майнинг</li>
+								</ul>
+								<a href="#?" class="btn btn--accent btn--middle">играть</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 rooms-item-wrap" data-groups='["free-education"]'>
+						<div class="rooms-main-item">
+							<div class="room-logo-block">
+								<img src="img/room_logo_4.png" alt="logo">
+							</div>
+							<div class="room-item-contant">
+								<div class="star-with-number">
+									<img src="img/svg/star.svg" alt="icon">
+									<span class="star-number">4.5</span>
+								</div>
+								<ul class="rooms-numbers-list">
+									<li class="room-item-numbers">Бонус: <span>до </span><strong>200$</strong></li>
+									<li class="room-item-numbers">Кэшбек: <span>до </span><strong>73%</strong></li>
+								</ul>
+								<ul class="rooms-advantages-list">
+									<li><span class="icon-crown"></span>VIP-условия для наших игроков</li>
+									<li><span class="icon-giftbox"></span>Конвертер, Лейаут, майнинг</li>
+								</ul>
+								<a href="#?" class="btn btn--accent btn--middle">играть</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<!-- CONTENT END -->
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-4 col-lg-3 footer__col">
+					<div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Обучение игре в покер</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Индивидуальное обучение</a></li>
+								<li><a href="#?">Групповой курс SMP Bronze</a></li>
+								<li><a href="#?">Групповой курс SMP Silver</a></li>
+								<li><a href="#?">Групповой курс SMP Gold</a></li>
+							</ul>
+						</div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Контент</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Видео уроки покера</a></li>
+								<li><a href="#?">Статьи о покере</a></li>
+								<li><a href="#?">Новости покера</a></li>
+							</ul>
+						</div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Форум</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Разбор раздач</a></li>
+								<li><a href="#?">Блоги</a></li>
+								<li><a href="#?">Обучение</a></li>
+								<li><a href="#?">Курилка</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3 footer__col --border">
+					<div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Покеррумы</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Lotos Poker</a></li>
+								<li><a href="#?">888 Poker</a></li>
+								<li><a href="#?">Planetwin365</a></li>
+								<li><a href="#?">Red Star Poker</a></li>
+								<li><a href="#?">Coral Poker</a></li>
+								<li><a href="#?">PartyPoker</a></li>
+								<li><a href="#?">bwin</a></li>
+								<li><a href="#?">PokerKing</a></li>
+								<li><a href="#?">RedKings</a></li>
+								<li><a href="#?">TigerGaming</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3 footer__col --border">
+					<div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Магазин</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Датамайнинг</a></li>
+								<li><a href="#?">Smart HUD Pro</a></li>
+								<li><a href="#?">Smart HUD</a></li>
+								<li><a href="#?">Holdem Manager 2</a></li>
+								<li><a href="#?">PokerTracker 4</a></li>
+								<li><a href="#?">FlopZilla</a></li>
+								<li><a href="#?">CardRunners EV</a></li>
+								<li><a href="#?">TableScan Turbo</a></li>
+								<li><a href="#?">Note Caddy</a></li>
+								<li><a href="#?">PartyCaption</a></li>
+								<li><a href="#?">888 Caption</a></li>
+								<li><a href="#?">Конвертер рук Chico / Equity</a></li>
+								<li><a href="#?">Конвертер рук Enet / Peoples</a></li>
+								<li><a href="#?">Конвертер рук Enet</a></li>
+								<li><a href="#?">Конвертер рук Suited Aces</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 footer__col --border">
+					<div>
+						<div class="footer__contacts">
+							<h3 class="h3--main">Школа покера Smart Poker</h3>
+							<div class="footer__bottom-wrap">
+								<div class="footer__bottom-wrap-inner">
+									<div class="footer__btns">
+										<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+										<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+									</div>
+									<div class="footer__partners">
+										<h3 class="h3--main">Наши партнеры</h3>
+										<a href="#?">Pokerprodeals</a>
+									</div>
+								</div>
+								<div class="footer__social">
+									<h3 class="h3--main">Соц сети</h3>
+									<ul class="social-list">
+										<li>
+											<a href="#?"><i class="fa fa-vk" aria-hidden="true"></i></a>
+										</li>
+										<li>
+											<a href="#?"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER END -->
+
+	<!-- подключение JavaScript -->
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/bootstrap4/popper.min.js"></script>
+	<script src="libs/bootstrap4/bootstrap.min.js"></script>
+	<script src="libs/bootstrap-select/bootstrap-select.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/jstick/jquery.JStick.min.js"></script>
+	<script src="libs/shuffle.js/shuffle.min.js"></script>
+
+	<script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* TYPOGRAPHY ============================ */
+
+.h1--magazine {
+	font-size: 30px;
+	color: #292f39;
+	letter-spacing: 1px;
+}
+
+.h1--big {
+	font-size: 40px;
+	font-family: "Exo2-SemiBold";
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #FFF;
+	line-height: 1;
+	margin-bottom: 25px;
+}
+
+.h2--main {
+	font-family: "Exo2-SemiBold";
+	font-size: 25px;
+	text-align: center;
+	letter-spacing: 1.25px;
+
+	&--block {
+		padding-top: 17px;
+		padding-bottom: 17px;
+		background-color: #f1f9f4;
+		color: $accent;
+		margin-bottom: 0;
+	}
+}
+
+.h3--main {
+	font-family: "Exo2-Bold";
+	color: #292f39;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.accent {
+	color: $accent;
+}
+
+@media only screen and (max-width: 1199px) {
+	.h1--big {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+
+	.h2--main {
+		font-size: 23px;
+	}
+
+}
+
+@media only screen and (max-width: 575px) {
+	.h1--big {
+		font-size: 23px;
+		margin-bottom: 15px;
+	}
+}

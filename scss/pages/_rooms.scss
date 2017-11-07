@@ -1,0 +1,449 @@
+.title-block-section {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
+	background-image: url(../img/rooms_title_bg.jpg);
+	@include rbg;
+
+	.title-description {
+		font-size: 16px;
+		line-height: 20px;
+		color: #FFF;
+		max-width: 810px;
+		margin: 0 auto;
+		letter-spacing: 0.8px;
+	}
+}
+
+.rooms-items-section {
+	padding-top: 60px;
+	padding-bottom: 45px;
+}
+
+.rooms-main-item {
+	background-color: #F4F6F9;
+	border-radius: 5px;
+	border: 1px solid #eaeef3;
+	margin-bottom: 40px;
+
+	.room-logo-block {
+		background-color: #fff;
+		height: 170px;
+		padding: 15px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			max-width: 200px;
+			max-height: 100px;
+			width: auto;
+			height: auto;
+		}
+	}
+
+	.star-with-number {
+		margin: 0 auto 35px;
+		margin-top: -25px;
+	}
+
+	.room-item-contant {
+		padding: 0 10px 30px;
+		text-align: center;
+	}
+
+	.rooms-advantages-list {
+		font-family: "MullerBold";
+		font-size: 10px;
+		text-transform: uppercase;
+		color: #808ea6;
+		margin-bottom: 20px;
+
+		li {
+			margin-bottom: 10px;
+		}
+
+		span {
+			font-size: 15px;
+			margin-right: 5px;
+			position: relative;
+			top: 1px;
+		}
+		.icon-giftbox {
+			font-size: 12px;
+		}
+	}
+
+	.btn {
+		max-width: 130px;
+		margin: 0 auto;
+	}
+}
+
+.room-item-numbers {
+	font-family: "MullerMedium";
+	font-size: 15px;
+	line-height: 20px;
+	color: #b6bbc3;
+	text-transform: uppercase;
+	letter-spacing: 0.75px;
+	margin-bottom: 17px;
+
+	span {
+		font-family: "MullerRegular";
+		text-transform: none;
+		color: $accent;
+	}
+
+	strong {
+		font-family: "MullerRegular";
+		font-weight: 400;
+		font-size: 25px;
+		color: $accent;
+	}
+}
+
+.star-with-number {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	img {
+		@include img-res;
+	}
+	.star-number {
+		font-family: "MullerBold";
+		font-size: 13px;
+		line-height: 1;
+		letter-spacing: 0.65px;
+		color: #8b98ae;
+		position: absolute;
+		top: 52%;
+		left: 52%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.rooms-nav-section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.filters-link {
+	@include tr(0.3s);
+}
+
+.filters-section-link {
+	background-color: #F0F5FA;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	text-align: center;
+	position: relative;
+	@include tr(.3s);
+	a {
+		font-size: 14px;
+		color: #497dbf;
+		line-height: 20px;
+		letter-spacing: 0.7px;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.plus {
+		position: absolute;
+		bottom: -20px;
+		left: 50%;
+		margin-left: -20px;
+		z-index: 10;
+	}
+}
+
+.plus {
+	width: 40px;
+	height: 40px;
+	background-color: #127EC2;
+	border-radius: 50%;
+	position: relative;
+	@include tr(0.3s);
+	&:before {
+		content: "";
+		display: block;
+		width: 12px;
+		height: 2px;
+		background-color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&:after {
+		content: "";
+		display: block;
+		width: 2px;
+		height: 12px;
+		background-color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		opacity: 1;
+		@include tr(0.3s);
+		transform: translate(-50%, -50%);
+	}
+}
+
+.open-filters {
+	background-color: #7B8FA8;
+	@include tr(0.3s);
+	&:after {
+		opacity: 0;
+		@include tr(0.3s);
+	}
+}
+
+.filters-section-opened {
+	background-color: #F0F5FA;
+	border-top: 1px solid #E3EEF6;
+	& > .container {
+		padding-top: 45px;
+		padding-bottom: 10px;
+	}
+
+	.radio-group {
+		margin-bottom: 30px;
+		margin-right: 40px;
+		label {
+			margin-right: 7px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.first-row, .second-row {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.second-row {
+		justify-content: space-between;
+		.radio-group {
+			display: inline-block;
+			margin-right: 60px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		.clean-text {
+			font-family: "MullerRegularItalic";
+			font-size: 13px;
+			color: #497dbf;
+			line-height: 28px;
+			letter-spacing: 0.65px;
+			img {
+				max-width: 20px;
+				margin-right: 8px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.title-block-section {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		.title-description {
+			max-width: 595px;
+		}
+	}
+
+	.rooms-nav-section {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.filters-section-link {
+		padding-bottom: 45px;
+		.plus {
+			bottom: -33px;
+			margin-left: -33px;
+		}
+	}
+
+	.plus {
+		width: 65px;
+		height: 65px;
+		&:before {
+			width: 21px;
+			height: 3px;
+		}
+		&:after {
+			width: 3px;
+			height: 21px;
+		}
+	}
+
+	.filters-section-opened {
+		& > .container {
+			padding-top: 75px;
+			padding-bottom: 40px;
+		}
+		.second-row {
+			display: block;
+		}
+	}
+
+	.rooms-items-section {
+		padding-top: 50px;
+	}
+
+}
+
+@media only screen and (max-width: 991px) {
+	
+	.filters-section-opened {
+		.second-row {
+			.radio-group {
+				margin-right: 30px;
+			}
+		}
+	}
+
+	.rooms-main-item {
+		.room-logo-block {
+			height: 145px;
+			img {
+				max-width: 170px;
+				max-height: 90px;
+			}
+		}
+		.star-with-number {
+			margin-bottom: 30px;
+		}
+
+		.rooms-advantages-list {
+			font-size: 8px;
+		}
+
+		.btn {
+			max-width: 110px;
+			&--middle {
+				padding-top: 11px;
+				padding-bottom: 9px;
+			}
+		}
+
+	}
+
+	.star-with-number {
+		width: 40px;
+		height: 40px;
+		.star-number {
+			font-size: 11px;
+		}
+	}
+
+}
+
+.room-item-numbers {
+	margin-bottom: 10px;
+	font-size: 13px;
+	strong {
+		font-size: 21px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	.filters-section-link {
+		a {
+			font-size: 16px;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.title-block-section {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.filters-section-link {
+		padding-top: 25px;
+		padding-bottom: 35px;
+	}
+
+	.filters-section-opened {
+		& > .container {
+			padding-top: 25px;
+			padding-bottom: 45px;
+		}
+	}
+
+	.rooms-nav-section {
+		padding-top: 50px;
+		padding-bottom: 25px;
+	}
+
+	.filters-section-opened {
+		.radio-group {
+			margin-bottom: 40px;
+		}
+
+		.second-row {
+			.clean-text {
+				font-size: 16px;
+			}
+		}
+	}
+
+	.rooms-items-section {
+		padding-top: 45px;
+	}
+
+	.rooms-main-item {
+		margin-bottom: 20px;
+		.star-with-number {
+			display: none;
+		}
+		.room-logo-block {
+			height: 60px;
+			img {
+				max-width: 155px;
+				max-height: 50px;
+				width: auto;
+			}
+		}
+
+
+		.rooms-advantages-list {
+			display: none;
+		}
+
+		.room-item-contant {
+			padding: 15px 15px 20px;
+		}
+
+		.btn {
+			max-width: 130px;
+		}
+	}
+
+}
+
+.rooms-numbers-list {
+	margin-bottom: 15px;
+	.room-item-numbers {
+		font-size: 12px;
+		strong {
+			font-size: 20px;
+		}
+	}
+}

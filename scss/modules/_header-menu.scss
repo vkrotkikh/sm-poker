@@ -1,0 +1,216 @@
+.header__menu {
+	list-style-type: none;
+	padding-left: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 0;
+	.dropdown .dropdown-menu {
+		top: 5px !important;
+		padding: 0;
+		border-color: #EFF3F6;
+		.dropdown-item {
+			line-height: 30px;
+			&:hover {
+				background-color: rgba(#7B8FA8, .2);
+			}
+		}
+	}
+	li {
+		font-size: 14px;
+		line-height: 1;
+		a {
+			font-size: 14px;
+			letter-spacing: 0.7px;
+			text-transform: uppercase;
+			@include tr(.3s);
+			color: #292f39;
+			&:hover {
+				color: $accent;
+				text-decoration: none;
+				@include tr(.3s);
+			}
+		}
+		.dropdown-toggle:hover .dropdown_icon:after {
+			@include arr(6, 7, $accent, b);
+		}
+		.dropdown-toggle:after {
+			display: none;
+		}
+		.dropdown_icon {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			background-color: #EFF3F6;
+			border-radius: 50%;
+			position: relative;
+			bottom: 2px;
+			text-align: center;
+			line-height: 15px;
+			margin-left: 3px;
+			&:after {
+				content: "";
+				display: inline-block;
+				@include arr(6, 7, #B6BECA, b);
+			}
+		}
+	}
+
+	.dropdown.show {
+		.dropdown_icon {
+			&:after {
+				content: "";
+				display: inline-block;
+				@include arr(6, 7, #B6BECA, t);
+			}
+		}
+		.dropdown-toggle:hover .dropdown_icon:after {
+			@include arr(6, 7, $accent, t);
+		}
+	}
+}
+
+@media only screen and (min-width: 991px) {
+	#collapseMenu {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+	}
+
+	#collapseMenu {
+		.header__mob-top-line, .header__mob-btns, .header__mob-enter-links {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.header__menu .dropdown .dropdown-menu {
+		position: static !important;
+		float: none;
+		transform: none !important;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	/* MENU MOBILE */
+	#collapseMenu .--border, #collapseSearch .--border {
+		position: relative;
+		&:before {
+			content: '';
+			display: block;
+			border-bottom: 2px solid #D8E0EA;
+			left: -9999px;
+			position: absolute;
+			bottom: 0;
+			height: 1px;
+			right: -999px;
+		}
+	}
+
+	#collapseMenu {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9999999;
+		background-color: #F4F6F9;
+		overflow: hidden;
+		.header__mob-top-line {
+			display: block;
+			max-width: 750px;
+			margin: 0 auto;
+			padding-top: 50px;
+			padding-bottom: 15px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			p {
+				margin-bottom: 0;
+				color: #747c89;
+			}
+			.header__hamburger-menu {
+				position: relative;
+				width: 15px;
+				height: 15px;
+				span {
+					background-color: #ACB3BC;
+				}
+				span:nth-child(2) {
+					display: none;
+				}
+				span:nth-child(1) {
+					transform: rotate(45deg);
+					position: absolute;
+				}
+				span:nth-child(3) {
+					transform: rotate(-45deg);
+					position: absolute;
+				}
+			}
+		}
+		.header__menu {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			display: block;
+			text-align: center;
+			li {
+				display: block;
+				margin-bottom: 30px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.header__mob-btns {
+			padding-bottom: 30px;
+			a {
+				display: block;
+				max-width: 210px;
+				margin: 0 auto 15px;
+				text-align: left;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.header__mob-enter-links {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			text-align: center;
+			.header__enter-links {
+				margin-left: 0;
+			}
+		}
+	}
+	/* MENU MOBILE END */
+}
+
+@media only screen and (max-width: 575px) {
+
+	/* MENU MOBILE */
+	#collapseMenu {
+		.header__mob-top-line {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.header__menu {
+			li {
+				margin-bottom: 25px;
+			}
+		}
+	}
+	/* MENU MOBILE END */
+
+}

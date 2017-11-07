@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Название сайта - Главная</title>
+	<meta name="description" content="Краткое описание сайта">
+
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=1">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+
+	<!-- Фон верхней панели браузера -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<!-- подключение CSS -->
+	<link rel="stylesheet" href="libs/bootstrap-select/bootstrap-select.min.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/icomoon/style.css">
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<div class="header__top-line">
+				<div class="row">
+					<div class="col-12 col-lg-5 header__top-line-logo">
+						<!-- HAMBURGER MENU -->
+						<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseMenu" aria-expanded="false">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+						<!-- HAMBURGER MENU END -->
+						<a href="#?" class="header__logo-container">
+							<div class="header__logo-wrap">
+								<img src="img/logo.png" alt="logo">
+							</div>
+							<p>smart poker</p>
+						</a>
+						<!-- SEARCH BUTTON -->
+						<a class="header__search-button" data-toggle="collapse" href="#collapseSearch" aria-expanded="false">
+							<img src="img/search_icon_button.png" alt="icon">
+						</a>
+						<!-- SEARCH BUTTON END -->
+					</div>
+					<div class="d-none d-lg-block col-7">
+						<div class="header__btns-container">
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+							<ul class="enter-links">
+								<li><a href="#?">Вход</a></li>
+								<li><a href="#?">Регистрация</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__menu-wrap">
+				<div class="row">
+					<!-- HEADER MENU -->
+					<div class="col-12 col-lg-8 collapse header__menu-container" id="collapseMenu">
+						<div class="header__mob-top-line --border">
+							<p>Меню</p>
+							<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseMenu" aria-expanded="false">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+						<ul class="header__menu">
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#?" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Обучение покеру
+									<span class="dropdown_icon"></span>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#?">Пример 1</a>
+									<a class="dropdown-item" href="#?">Пример 2</a>
+									<a class="dropdown-item" href="#?">Пример 3</a>
+								</div>
+							</li>
+							<li><a href="#?">Видео</a></li>
+							<li><a href="#?">Vip</a></li>
+							<li><a href="#?">Статьи</a></li>
+							<li><a href="#?">Покер румы</a></li>
+							<li><a href="#?">Магазин</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#?" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Форум
+									<span class="dropdown_icon"></span>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#?">Пример 1</a>
+									<a class="dropdown-item" href="#?">Пример 2</a>
+									<a class="dropdown-item" href="#?">Пример 3</a>
+								</div>
+							</li>
+						</ul>
+						<div class="header__mob-btns --border">
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+						</div>
+						<div class="header__mob-enter-links --border">
+							<ul class="enter-links">
+								<li><a href="#?">Вход</a></li>
+								<li><a href="#?">Регистрация</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- HEADER MENU END -->
+					<!-- HEADER SEARCH -->
+					<div class="col-12 col-lg-4 col-xl-3 ml-auto collapse" id="collapseSearch">
+						<div class="header__mob-top-line --border">
+							<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseSearch" aria-expanded="false">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+						<div class="header__mob-form-wrap">
+							<form action="javascript:void(0);" class="search">
+								<button type="submit" for="search">
+									<img src="img/search_icon.png" alt="icon">
+								</button>
+								<input id="search" type="text" placeholder="поиск">
+							</form>
+						</div>
+					</div>
+					<!-- HEADER SEARCH -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER END -->
+
+	<!-- CONTENT -->
+	<main class="main">
+
+		<!-- BREADCRUMBS -->
+		<section class="breadcrumbs">
+			<div class="container">
+				<ul>
+					<li><a href="#?">Smart-Poker.ru</a></li>
+					<li><a href="#?">Покеррумы</a></li>
+				</ul>
+			</div>
+		</section>
+		<!-- BREADCRUMBS END -->
+
+		<section class="title-block-room-section">
+			<div class="container">
+				<div class="room-logo">
+					<img src="img/room_logo_2.png" alt="logo">
+
+					<div class="star-with-number">
+						<img src="img/svg/star.svg" alt="icon">
+						<span class="star-number">4.5</span>
+					</div>
+				</div>
+
+				<div class="title-description">
+					<p>Покеррум 888 Poker один из самых известных в мире. Наши игроки получают увеличенный бонус на первый депозит 100% до 600$, бесплатный майнинг, а также бесплатно занимаются индивидуально и в группах с опытным тренером.</p>
+				</div>
+
+			</div>
+			<div class="bottom-line">
+				<div class="container">
+					<ul class="rooms-numbers-list">
+						<li class="room-item-numbers">Бонус: <span>до </span><strong>500$</strong></li>
+						<li class="room-item-numbers">Кэшбек: <span>до </span><strong>70%</strong></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<div class="room-inside-contant">
+			<div class="container">
+				<!-- MAIN CONTANT -->
+				<div class="row">
+					<div class="col-9 room-inside-main-contant">
+						<section class="advantages-section">
+							<h2 class="h2--main h2--main--block">Преимущества игры от Smart Poker</h2>
+							<div class="advantages-items-wrap">
+								<div class="advantages-item">
+									<div class="icon-wrap">
+										<img src="img/advantages_icon_1.png" alt="icon">
+									</div>
+									<div class="text-block">
+										<p>Доступ к <a href="#?">VIP-клубу</a> с эксклюзивными видео и другими бонусами за 500$ рейка в месяц</p>
+									</div>
+								</div>
+								<div class="advantages-item">
+									<div class="icon-wrap">
+										<img src="img/advantages_icon_2.png" alt="icon">
+									</div>
+									<div class="text-block">
+										<p>Наши игроки могут бесплатно пройти <a href="#?">индивидуальное</a> и <a href="#?">групповое</a> бучение за игру на 888 Poker</p>
+									</div>
+								</div>
+								<div class="advantages-item">
+									<div class="icon-wrap">
+										<img src="img/advantages_icon_3.png" alt="icon">
+									</div>
+									<div class="text-block">
+										<p>Лейаут для <a href="#?">888Poker от Prolix</a></p>
+									</div>
+								</div>
+								<div class="advantages-item">
+									<div class="icon-wrap">
+										<img src="img/advantages_icon_4.png" alt="icon">
+									</div>
+									<div class="text-block">
+										<p>Бесплатный майнинг NL10-NL50 SH</p>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="registration-section">
+							<h2 class="h2--main h2--main--block">Регистрация</h2>
+							<div class="list-wrap">
+								<ul class="list-with-stars-number">
+									<li>
+										<div class="fill-star-wrap">
+											<img src="img/svg/fill-star.svg" alt="icon">
+											<span>1</span>
+										</div>
+										<p>Удали cookies в бразуере</p>
+									</li>
+									<li>
+										<div class="fill-star-wrap">
+											<img src="img/svg/fill-star.svg" alt="icon">
+											<span>2</span>
+										</div>
+										<p><strong>Для игроков из Украины и Беларуси</strong>: пройди по <a href="#?">ссылке</a>, скачай и установи клиент покеррума</p>
+									</li>
+									<li>
+										<div class="fill-star-wrap">
+											<img src="img/svg/fill-star.svg" alt="icon">
+											<span>3</span>
+										</div>
+										<p><strong>Для игроков из России и других стран</strong>: пройди по <a href="#?">ссылке</a>, скачай и установи клиент покеррума</p>
+									</li>
+									<li>
+										<div class="fill-star-wrap">
+											<img src="img/svg/fill-star.svg" alt="icon">
+											<span>4</span>
+										</div>
+										<p>Зарегистрируй новую учетную запись. Бонусный код при регистрации указывать не нужно</p>
+									</li>
+									<li>
+										<div class="fill-star-wrap">
+											<img src="img/svg/fill-star.svg" alt="icon">
+											<span>5</span>
+										</div>
+										<p>Сообщи нам никнейм для проверки правильности регистрации</p>
+									</li>
+								</ul>
+							</div>
+						</section>
+
+						<section class="check-registration-section">
+							<h2 class="h2--main">Проверка регистрации</h2>
+							<div class="description">
+								<p>Сообщи нам свои данные, чтобы получать полагающиеся за игру бонусы:</p>
+							</div>
+							<form action="#">
+								<div class="input-wrap">
+									<input type="text" placeholder="Никнейм в руме">
+									<input type="text" placeholder="Email или Skype">
+									<input type="text" placeholder="ID поддержка">
+								</div>
+								<div class="text-right prompt-wrap">
+									<a href="#?" class="prompt">Как узнать ID поддержки?</a>
+								</div>
+								<div class="btn-wrap">
+									<input class="btn btn--middle btn--primary" type="submit">
+								</div>
+							</form>
+						</section>
+
+						<section class="free-education-section">
+							<h2 class="h2--main">Бесплатное обучение за игру на 888 Poker</h2>
+							<div class="description">
+								<p>Вы можете пройти бесплатное обучение у опытного тренера Veles просто зарегистрировавшись и играя в 888 Poker от нашего сайта.</p>
+							</div>
+
+							<div class="table-wrap">
+								<div class="row no-gutters table__head">
+									<div class="col-5 d-flex">
+										<div class="table__cell">обучение</div>
+									</div>
+									<div class="col-7 d-flex"><div class="table__cell">условия</div></div>
+								</div>
+								<div class="row no-gutters table__row">
+									<div class="col-5 d-flex"><div class="table__cell">Групповой курс &nbsp;<a href="#?">SMP Bronze</a></div></div>
+									<div class="col-7 d-flex"><div class="table__cell">$50 депозит и 100 Status Points ($50 рейка)</div></div>
+								</div>
+								<div class="row no-gutters table__row">
+									<div class="col-5 d-flex"><div class="table__cell">Групповой курс  &nbsp;<a href="#?"> SMP Silver</a></div></div>
+									<div class="col-7 d-flex"><div class="table__cell">$50 депозит и 300 Status Points ($150 рейка)</div></div>
+								</div>
+								<div class="row no-gutters table__row">
+									<div class="col-5 d-flex"><div class="table__cell"><a href="#?">Индивидуальная тренировка</a></div></div>
+									<div class="col-7 d-flex"><div class="table__cell">$50 депозит и 100 Status Points ($50 рейка)</div></div>
+								</div>
+							</div>
+
+						</section>
+
+						<section class="compensation-system-section">
+							<h2 class="h2--main">Система вознаграждений в 888 Poker</h2>
+							<div class="description">
+								<p><strong>Бонус на первый депозит 888 Poker</strong> 100% до 600$ дает 20% кэшбека.</p>
+								<p>VIP-система в сети 888 устроена в виде системы миссий. Игроки получают около 10% возврата рейка.</p>
+							</div>
+						</section>
+
+						<section class="game-section">
+							<h2 class="h2--main">Игра в 888 Poker</h2>
+							<div class="top-text">
+								<p>Количество игры в Lotos Poker</p>
+							</div>
+
+							<div class="table-wrap">
+								<div class="row no-gutters table__head">
+									<div class="col-3 d-flex"><div class="table__cell">лимит</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">столы/входы днем</div></div>
+									<div class="col-5 d-flex"><div class="table__cell">столы/входы вечером-ночью</div></div>
+								</div>
+								<div class="row no-gutters table__row">
+									<div class="col-3 d-flex"><div class="table__cell">NL2 Snap</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">~120 входов</div></div>
+									<div class="col-5 d-flex"><div class="table__cell">~160-180 входов</div></div>
+								</div>
+								<div class="row no-gutters table__row">
+									<div class="col-3 d-flex"><div class="table__cell">NL5</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">~20 столов</div></div>
+									<div class="col-5 d-flex"><div class="table__cell">~30 столов</div></div>
+								</div>
+								<div class="row no-gutters table__row">
+									<div class="col-3 d-flex"><div class="table__cell">NL5 Snap</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">~90 входов</div></div>
+									<div class="col-5 d-flex"><div class="table__cell">~130-140 входов</div></div>
+								</div>
+								<div class="row no-gutters table__row">
+									<div class="col-3 d-flex"><div class="table__cell">NL10</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">~15 столов</div></div>
+									<div class="col-5 d-flex"><div class="table__cell">~22-25 столов</div></div>
+								</div>
+								<div class="row no-gutters table__row">
+									<div class="col-3 d-flex"><div class="table__cell">NL10 Snap</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">~80 входов</div></div>
+									<div class="col-5 d-flex"><div class="table__cell">~100-120 входов</div></div>
+								</div>
+							</div>
+
+							<div class="text-block">
+								<p>Даже утром и днем по московскому времени на лимитах NL4-NL10 можно найти достаточно игры. Еще больше её становится вечером и ночью, заодно появляется больше столов на лимитах повыше.</p>
+								<p>На 888 Poker нельзя одновременно играть больше шести столов, поэтому эта комната лучше всего подходит новичкам и тем, кто любит вдумчиво играть с сладкими фишами за небольшим количеством столов.</p>
+								<p>Софт обладает всеми необходимыми для игры функциями, в том числе есть: любимое место, автоматическая активация тайм-банка, а МТТ игрокам могут оказаться полезными функции автоматических ребаев и адд-онов.</p>
+								<p>Для наших игроков мы подготовили бесплатную подборку скинов и лейаутов для 888 Poker, которые делают внешний вид столов более привлекательным. Ну а для тех, кто привык играть с комфортом, предлагаем ознакомиться с программой <a href="#?">888Caption</a>, которая делает игру в покеррумах сети 888 Poker гораздо удобнее.</p>
+							</div>
+
+						</section>
+
+						<section class="rack-structure-section">
+							<h2 class="h2--main">Структура рейка 888 Poker</h2>
+							<div class="description">
+								<p>На CAP и обычных столах безлимитного холдема структура рейка выглядит следующим образом:</p>
+							</div>
+
+							<div class="table-wrap">
+								<div class="row no-gutters table__head">
+									<div class="col-2 d-flex"><div class="table__cell">лимит</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">игроки за столом</div></div>
+									<div class="col-2 d-flex"><div class="table__cell">рейк с банка</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">максимальный рейк</div></div>
+								</div>
+								<div class="row no-gutters table__row">
+									<div class="col-2 d-flex"><div class="table__cell">NL2</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">
+										<p>2</p><p>3+</p>
+									</div></div>
+									<div class="col-2 d-flex"><div class="table__cell">
+										<p>6.25%</p><p>6.25%</p>
+									</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">
+										<p>1$</p><p>4$</p>
+									</div></div>
+								</div>
+								<div class="row no-gutters table__row">
+									<div class="col-2 d-flex"><div class="table__cell">NL2</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">
+										<p>2</p><p>3+</p>
+									</div></div>
+									<div class="col-2 d-flex"><div class="table__cell">
+										<p>6.25%</p><p>6.25%</p>
+									</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">
+										<p>1$</p><p>4$</p>
+									</div></div>
+								</div>
+								<div class="row no-gutters table__row">
+									<div class="col-2 d-flex"><div class="table__cell">NL2</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">
+										<p>2</p><p>3+</p>
+									</div></div>
+									<div class="col-2 d-flex"><div class="table__cell">
+										<p>6.25%</p><p>6.25%</p>
+									</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">
+										<p>1$</p><p>4$</p>
+									</div></div>
+								</div>
+								<div class="row no-gutters table__row">
+									<div class="col-2 d-flex"><div class="table__cell">NL2</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">
+										<p>2</p><p>3+</p>
+									</div></div>
+									<div class="col-2 d-flex"><div class="table__cell">
+										<p>6.25%</p><p>6.25%</p>
+									</div></div>
+									<div class="col-4 d-flex"><div class="table__cell">
+										<p>1$</p><p>4$</p>
+									</div></div>
+								</div>
+							</div>
+
+						</section>
+					</div>
+					<!-- MAIN CONTANT END -->
+
+					<!-- SIDE BAR -->
+					<div class="col-3 room-inside-sidebar">
+						
+						<div class="sidebar-content-wrap">
+							<!-- SCREENSHOT -->
+							<div class="sidebar-item">
+								<div class="title-wrap">
+									<p class="title">Скриншоты</p>
+								</div>
+								<div class="sidebar-content sidebar-slider">
+									<div class="screenshot-slider-wrap">
+										<div>
+											<div class="screenshot-wrap">
+												<img src="img/screenshot_img_1.png" alt="screenshot">
+											</div>
+										</div>
+										<div>
+											<div class="screenshot-wrap">
+												<img src="img/screenshot_img_1.png" alt="screenshot">
+											</div>
+										</div>
+										<div>
+											<div class="screenshot-wrap">
+												<img src="img/screenshot_img_1.png" alt="screenshot">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- SCREENSHOT END -->
+
+							<!-- VIDEO -->
+							<div class="sidebar-item">
+								<div class="title-wrap">
+									<p class="title">Видео</p>
+								</div>
+								<div class="sidebar-content side-video">
+									<div class="side-video-wrap">
+										<div class='embed-container'><iframe src='https://www.youtube.com/embed/Ifj7XREHO2U' frameborder='0' allowfullscreen></iframe></div>
+									</div>
+								</div>
+							</div>
+							<!-- VIDEO END -->
+
+							<!-- TRAFFIC -->
+							<div class="sidebar-item">
+								<div class="title-wrap">
+									<p class="title">Траффик</p>
+								</div>
+								<div class="sidebar-content side-traffic">
+									<div class="description">
+										<p>Лучшее время для игры - после 20:00 МСК</p>
+									</div>
+									<div class="row header-of-table row-of-table">
+										<div class="col-4">
+											<p>Время</p>
+										</div>
+										<div class="col-4">
+											<p>Лимит</p>
+										</div>
+										<div class="col-4">
+											<p>Столы</p>
+										</div>
+									</div>
+									<div class="row no-gutters cells-of-table row-of-table">
+										<div class="col-4">
+											<p>20:00-22:00</p>
+										</div>
+										<div class="col-4">
+											<p>NL5</p>
+										</div>
+										<div class="col-4">
+											<p>25+</p>
+										</div>
+									</div>
+									<div class="row no-gutters cells-of-table row-of-table">
+										<div class="col-4">
+											<p>20:00-22:00</p>
+										</div>
+										<div class="col-4">
+											<p>NL5</p>
+										</div>
+										<div class="col-4">
+											<p>25+</p>
+										</div>
+									</div>
+									<div class="row no-gutters cells-of-table row-of-table">
+										<div class="col-4">
+											<p>20:00-22:00</p>
+										</div>
+										<div class="col-4">
+											<p>NL5</p>
+										</div>
+										<div class="col-4">
+											<p>25+</p>
+										</div>
+									</div>
+									<div class="row no-gutters cells-of-table row-of-table">
+										<div class="col-4">
+											<p>20:00-22:00</p>
+										</div>
+										<div class="col-4">
+											<p>NL5</p>
+										</div>
+										<div class="col-4">
+											<p>25+</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- TRAFFIC END -->
+
+							<!-- INFO -->
+							<div class="sidebar-item">
+								<div class="title-wrap">
+									<p class="title">Доп. информация</p>
+								</div>
+								<div class="sidebar-content side-info">
+									<p>Саппорт: <a href="#?">support@888poker.com</a></p>
+									<p>Верификация аккаунта: может потребоваться перед кешаутом, документы - копия паспорта или водительских прав, а также чек из банка или счет за коммунальные услуги, срок рассмотрения от 3-х дней</p>
+									<p>Скорость кешаутов: от 24 часов до 5 рабочих дней</p>
+								</div>
+							</div>
+							<!-- INFO END -->
+
+							<!-- PAYMENT SYSTEMS -->
+							<div class="sidebar-item">
+								<div class="title-wrap">
+									<p class="title">Платежные системы</p>
+								</div>
+								<div class="sidebar-content side-payment-systems">
+									<div class="row no-gutters payment-row">
+										<div class="col-6 text-center">
+											<a href="#?" class="payment-system">
+												<div class="payment-logo-wrap">
+													<img src="img/payment_1.png" alt="logo">
+												</div>
+												<span>Skrill</span>
+											</a>
+										</div>
+										<div class="col-6 text-center">
+											<a href="#?" class="payment-system">
+												<div class="payment-logo-wrap">
+													<img src="img/payment_2.png" alt="logo">
+												</div>
+												<span>Webmoney</span>
+											</a>
+										</div>
+									</div>
+									<div class="row no-gutters payment-row">
+										<div class="col-6 text-center">
+											<a href="#?" class="payment-system">
+												<div class="payment-logo-wrap">
+													<img src="img/payment_5.png" alt="logo">
+												</div>
+												<span>Visa</span>
+											</a>
+										</div>
+										<div class="col-6 text-center">
+											<a href="#?" class="payment-system">
+												<div class="payment-logo-wrap">
+													<img src="img/payment_6.png" alt="logo">
+												</div>
+												<span>MasterCard</span>
+											</a>
+										</div>
+									</div>
+									<div class="row no-gutters payment-row">
+										<div class="col-6 text-center">
+											<a href="#?" class="payment-system">
+												<div class="payment-logo-wrap">
+													<img src="img/payment_7.png" alt="logo">
+												</div>
+												<span>QIWI</span>
+											</a>
+										</div>
+										<div class="col-6 text-center">
+											<a href="#?" class="payment-system">
+												<div class="payment-logo-wrap">
+													<img src="img/payment_8.png" alt="logo">
+												</div>
+												<span>Яндекс.Деньги</span>
+											</a>
+										</div>
+									</div>
+									<div class="row no-gutters payment-row">
+										<div class="col-6 text-center">
+											<a href="#?" class="payment-system">
+												<div class="payment-logo-wrap">
+													<img src="img/payment_3.png" alt="logo">
+												</div>
+												<span>Neteller</span>
+											</a>
+										</div>
+										<div class="col-6 text-center">
+											<a href="#?" class="payment-system">
+												<div class="payment-logo-wrap">
+													<img src="img/payment_9.png" alt="logo">
+												</div>
+												<span>Ukash</span>
+											</a>
+										</div>
+									</div>
+									<div class="row no-gutters payment-row">
+										<div class="col-6 text-center">
+											<a href="#?" class="payment-system">
+												<div class="payment-logo-wrap">
+													<img src="img/payment_10.png" alt="logo">
+												</div>
+												<span>EntroPay</span>
+											</a>
+										</div>
+										<div class="col-6 text-center">
+											<a href="#?" class="payment-system">
+												<div class="payment-logo-wrap">
+													<img src="img/payment_11.png" alt="logo">
+												</div>
+												<span>Ecopayz</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- PAYMENT SYSTEMS END -->
+
+							<!-- PASSIVE INCOME -->
+							<div class="sidebar-item">
+								<div class="title-wrap">
+									<p class="title">Пассивный доход</p>
+								</div>
+								<div class="sidebar-content side-passive-income">
+									<div class="img-wrap">
+										<img src="img/passive_income_img.png" alt="photo">
+									</div>
+									<div class="main-text">
+										<p>Приводи к нам друзей и зарабатывай, <span>получая 2%</span> от рейка каждого приведенного тобой игрока каждый месяц.</p>
+									</div>
+									<div class="text-center btn-wrap">
+										<a href="#?" class="btn btn--secondary btn--middle">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<!-- PASSIVE INCOME END -->
+
+							<!-- BOTTOM SIDE ITEM -->
+							<div class="sidebar-item">
+								<div class="title-wrap">
+									<p class="title">Заголовок</p>
+								</div>
+								<div class="sidebar-content bottom-side-item-slider">
+									<div class="bottom-side-item-wrap">
+										<div>
+											<p>Лейаут для 888 Poker</p>
+											<div class="img-wrap">
+												<img src="img/bottom-side-item_img.png" alt="img">
+											</div>
+										</div>
+										<div>
+											<p>Лейаут для 888 Poker</p>
+											<div class="img-wrap">
+												<img src="img/bottom-side-item_img.png" alt="img">
+											</div>
+										</div>
+										<div>
+											<p>Лейаут для 888 Poker</p>
+											<div class="img-wrap">
+												<img src="img/bottom-side-item_img.png" alt="img">
+											</div>
+										</div>
+									</div>
+									<div class="text-center btn-wrap">
+										<a href="#?" class="btn btn--secondary btn--middle">подробнее</a>
+									</div>
+								</div>
+							</div>
+							<!-- BOTTOM SIDE ITEM END -->
+
+					</div>
+					<!-- SIDE BAR END -->
+				</div>
+			</div>
+		</div>
+
+	</main>
+	<!-- CONTENT END -->
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-4 col-lg-3 footer__col">
+					<div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Обучение игре в покер</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Индивидуальное обучение</a></li>
+								<li><a href="#?">Групповой курс SMP Bronze</a></li>
+								<li><a href="#?">Групповой курс SMP Silver</a></li>
+								<li><a href="#?">Групповой курс SMP Gold</a></li>
+							</ul>
+						</div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Контент</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Видео уроки покера</a></li>
+								<li><a href="#?">Статьи о покере</a></li>
+								<li><a href="#?">Новости покера</a></li>
+							</ul>
+						</div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Форум</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Разбор раздач</a></li>
+								<li><a href="#?">Блоги</a></li>
+								<li><a href="#?">Обучение</a></li>
+								<li><a href="#?">Курилка</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3 footer__col --border">
+					<div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Покеррумы</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Lotos Poker</a></li>
+								<li><a href="#?">888 Poker</a></li>
+								<li><a href="#?">Planetwin365</a></li>
+								<li><a href="#?">Red Star Poker</a></li>
+								<li><a href="#?">Coral Poker</a></li>
+								<li><a href="#?">PartyPoker</a></li>
+								<li><a href="#?">bwin</a></li>
+								<li><a href="#?">PokerKing</a></li>
+								<li><a href="#?">RedKings</a></li>
+								<li><a href="#?">TigerGaming</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3 footer__col --border">
+					<div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Магазин</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Датамайнинг</a></li>
+								<li><a href="#?">Smart HUD Pro</a></li>
+								<li><a href="#?">Smart HUD</a></li>
+								<li><a href="#?">Holdem Manager 2</a></li>
+								<li><a href="#?">PokerTracker 4</a></li>
+								<li><a href="#?">FlopZilla</a></li>
+								<li><a href="#?">CardRunners EV</a></li>
+								<li><a href="#?">TableScan Turbo</a></li>
+								<li><a href="#?">Note Caddy</a></li>
+								<li><a href="#?">PartyCaption</a></li>
+								<li><a href="#?">888 Caption</a></li>
+								<li><a href="#?">Конвертер рук Chico / Equity</a></li>
+								<li><a href="#?">Конвертер рук Enet / Peoples</a></li>
+								<li><a href="#?">Конвертер рук Enet</a></li>
+								<li><a href="#?">Конвертер рук Suited Aces</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 footer__col --border">
+					<div>
+						<div class="footer__contacts">
+							<h3 class="h3--main">Школа покера Smart Poker</h3>
+							<div class="footer__bottom-wrap">
+								<div class="footer__bottom-wrap-inner">
+									<div class="footer__btns">
+										<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+										<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+									</div>
+									<div class="footer__partners">
+										<h3 class="h3--main">Наши партнеры</h3>
+										<a href="#?">Pokerprodeals</a>
+									</div>
+								</div>
+								<div class="footer__social">
+									<h3 class="h3--main">Соц сети</h3>
+									<ul class="social-list">
+										<li>
+											<a href="#?"><i class="fa fa-vk" aria-hidden="true"></i></a>
+										</li>
+										<li>
+											<a href="#?"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER END -->
+
+	<!-- подключение JavaScript -->
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/bootstrap4/popper.min.js"></script>
+	<script src="libs/bootstrap4/bootstrap.min.js"></script>
+	<script src="libs/bootstrap-select/bootstrap-select.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/jstick/jquery.JStick.min.js"></script>
+	<script src="libs/shuffle.js/shuffle.min.js"></script>
+
+	<script src="js/common.js"></script>
+</body>
+</html>

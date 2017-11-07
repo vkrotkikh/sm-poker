@@ -1,0 +1,115 @@
+.search {
+	position: relative;
+	button {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0px;
+		border-radius: 26px 0 0 26px;
+		padding-left: 20px;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+	}
+	input {
+		border: none;
+		background-color: #F4F6F9;
+		width: 100%;
+		border-radius: 26px;
+		height: 50px;
+		padding-left: 45px;
+		padding-right: 45px;
+		font-family: "MullerRegular";
+		font-size: 14px;
+		color: #888e9b;
+		@include placeholder-color(#888e9b);
+		@include placeholder-opacity(0.5s);
+	}
+}
+
+.header__search-button {
+	display: none;
+	width: 55px;
+	height: 40px;
+	background-color: #F4F6F9;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+}
+
+@media only screen and (min-width: 991px) {
+
+	#collapseSearch {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+
+	/* MENU SEARCH */
+	#collapseSearch {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9999999;
+		background-color: #F4F6F9;
+		overflow: hidden;
+		.header__mob-top-line {
+			display: block;
+			max-width: 750px;
+			margin: 0 auto;
+			padding-top: 50px;
+			padding-bottom: 15px;
+			.header__hamburger-menu {
+				margin-left: auto;
+				width: 15px;
+				height: 15px;
+				span {
+					background-color: #ACB3BC;
+				}
+				span:nth-child(2) {
+					display: none;
+				}
+				span:nth-child(1) {
+					transform: rotate(45deg);
+					position: absolute;
+				}
+				span:nth-child(3) {
+					transform: rotate(-45deg);
+					position: absolute;
+				}
+			}
+		}
+		.header__mob-form-wrap {
+			padding-top: 150px;
+			padding-bottom: 190px;
+			max-width: 750px;
+			margin: 0 auto;
+			.search {
+				input {
+					background-color: #fff;
+				}
+			}
+		}
+	}
+	/* MENU SEARCH END */
+
+}
+
+@media only screen and (max-width: 575px) {
+
+	/* MENU SEARCH */
+	#collapseSearch {
+		.header__mob-top-line {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.header__mob-form-wrap {
+			padding-top: 75px;
+			padding-bottom: 200px;
+		}
+	}
+	/* MENU SEARCH END */
+}

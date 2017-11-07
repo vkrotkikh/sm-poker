@@ -1,0 +1,118 @@
+.header {
+	background-color: #fff;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	border-bottom: 2px solid #D8E0EA;
+	&__top-line {
+		padding-bottom: 30px;
+		.header__logo-container {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			align-items: center;
+			&:hover {
+				text-decoration: none;
+			}
+			p {
+				font-family: "Days";
+				font-size: 25px;
+				color: #292f39;
+				text-transform: uppercase;
+				margin-bottom: 0;
+				letter-spacing: 2px;
+			}
+		}
+		.header__logo-wrap {
+			width: 100px;
+			height: 80px;
+			margin-right: 10px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				@include img-res;
+			}
+		}
+		.header__btns-container {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			height: 100%;
+			.btn {
+				margin-left: 25px;
+			}
+			a:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.header {
+		&__top-line {
+			.header__btns-container {
+				.btn {
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+
+	.header {
+		padding-top: 35px;
+		padding-bottom: 15px;
+		&__top-line {
+			padding-bottom: 0;
+			.header__logo-container {
+				display: inline-block;
+				.header__logo-wrap {
+					margin: 0 auto;
+				}
+				p {
+					font-size: 16px;
+				}
+			}
+			.header__top-line-logo {
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width: 575px) {
+	.header {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		&__top-line .header__logo-wrap {
+			width: 70px;
+			height: auto;
+		}
+		.header__top-line .header__logo-container p {
+			font-size: 12px;
+		}
+		&__search-button {
+			width: 40px;
+		}
+	}
+}

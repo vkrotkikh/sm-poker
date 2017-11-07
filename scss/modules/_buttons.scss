@@ -1,0 +1,109 @@
+/* BUTTONS ============================ */
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+	outline: none;
+	transition: background-color .3s ease;
+
+	&--secondary {
+		background-color: transparent;
+		color: #808ea6;
+		border: 2px solid #d9dfe9;
+		&:hover {
+			color: $accent;
+			@include tr(0.3s);
+		}
+	}
+
+	&--primary {
+		background-color: $accent;
+		color: #fff;
+		&:hover {
+			background-color: lighten($accent, 5%);
+			transition: background-color .3s ease;
+			color: #fff;
+		}
+		&:active {
+			background-color: darken($accent, 5%);
+		}
+	}
+
+	&--accent {
+		background-color: transparent;
+		color: $accent;
+		border: 2px solid $accent;
+		&:hover {
+			color: #808ea6;
+			@include tr(0.3s);
+		}
+	}
+
+	&--middle {
+		font-size: 12px;
+		font-family: "MullerBold";
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		border-radius: 22px;
+		padding-top: 13px;
+		padding-bottom: 11px;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 100%;
+	}
+
+	&--small {
+		font-size: 12px;
+		color: #fff;
+		line-height: 17px;
+		padding: 7px 10px;
+		border-radius: 2px;
+		text-transform: none;
+		letter-spacing: 0.5px;
+		i {
+			font-size: 15px;
+			padding-right: 25px;
+			margin-right: 10px;
+			border-right: 1px solid #FFF;
+			line-height: 19px;
+		}
+	}
+
+	&--submit {
+		font-size: 10px;
+		line-height: 38px;
+		padding: 0px 15px;
+		text-transform: uppercase;
+		border-radius: 0;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.btn {
+		&--secondary {
+			font-size: 8px;
+		}
+
+		&--accent {
+			font-size: 10px;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.btn {
+		&--secondary {
+			font-size: 10px;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.btn {
+		&--accent {
+			font-size: 12px;
+		}
+	}
+}

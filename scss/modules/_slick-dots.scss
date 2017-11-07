@@ -1,0 +1,130 @@
+@media only screen and (max-width: 991px) {
+
+	.custom-dots {
+		.slick-dots {
+			margin-bottom: 0;
+			display: block;
+			width: 100%;
+			padding: 0;
+			list-style: none;
+			text-align: center;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			li {
+				position: relative;
+				width: 20px;
+				height: 20px;
+				padding: 0;
+				cursor: pointer;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				button {
+					font-size: 0;
+					line-height: 0;
+					display: block;
+					width: 12px;
+					height: 12px;
+					padding: 2px;
+					cursor: pointer;
+					color: transparent;
+					border: 2px solid #BDCBDD;
+					border-radius: 50%;
+					outline: none;
+					background: transparent;
+				}
+			}
+			.slick-active {
+				width: 30px;
+				height: 30px;
+				margin-left: 10px;
+				margin-right: 10px;
+				button {
+					background: #BDCBDD;
+					&:after {
+						content: "";
+						display: inline-block;
+						width: 30px;
+						height: 30px;
+						border: 2px solid #BDCBDD;
+						border-radius: 50%;
+						position: absolute;
+						left: 0;
+						top: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.banner-section, .shop-window-section {
+		.custom-dots {
+			.slick-dots {
+				li {
+					button {
+						border-color: #D8E0EA;
+					}
+				}
+				.slick-active {
+					button {
+						background: #D8E0EA;
+						&:after {
+							border-color: #D8E0EA;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width: 575px) {
+
+	.custom-dots {
+		.slick-dots {
+			li {
+				button {
+					width: 8px;
+					height: 8px;
+				}
+			}
+			.slick-active {
+				width: 20px;
+				height: 20px;
+				margin-left: 0;
+				margin-right: 0;
+				button {
+					background: #BDCBDD;
+					&:after {
+						width: 20px;
+						height: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	.with-indent {
+		.slick-dots {
+			li {
+				width: 12px;
+				height: 12px;
+			}
+			.slick-active {
+				margin-left: 8px;
+				margin-right: 8px;
+			}
+		}
+	}
+
+}

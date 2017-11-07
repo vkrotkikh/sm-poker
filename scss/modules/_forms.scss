@@ -1,0 +1,131 @@
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+textarea {
+	height: 55px;
+	padding: 0 10px;
+	font-family: "MullerRegular";
+	font-size: 15px;
+	line-height: 1;
+	color: #b0b4b9;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #B0B5BB;
+	text-align: center;
+	@include placeholder-opacity(0.3s);
+	@include placeholder-color(#b0b4b9);
+	&.form-control {
+		display: block;
+		width: 100%;
+	}
+}
+
+textarea {
+	resize: none;
+	height: auto;
+	min-height: 100px;
+	padding-top: 10px;
+}
+
+label {
+	display: block;
+	margin-bottom: 0;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+}
+
+// CUSTOM RADIO BUTTON
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+	position: absolute;
+	left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+	position: relative;
+	padding-left: 26px;
+	cursor: pointer;
+	display: inline-block;
+	color: #2382C5;
+	font-size: 10px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	line-height: 18px;
+	padding-top: 1px;
+}
+
+[type="radio"]:not(:checked) + label {
+	color: #808ea6;
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 17px;
+	height: 17px;
+	border: 2px solid #7B8FA8;
+	border-radius: 2px;
+	background: transparent;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+	content: "\e905";
+	position: absolute;
+	top: 0;
+	left: 4px;
+	font-family: 'icomoon', sans-serif;
+	font-size: 10px;
+	line-height: 17px;
+	color: #F0F5FA;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+[type="radio"]:checked + label:before {
+	border-color: #2382C5;
+	background-color: #2382C5;
+}
+
+[type="radio"]:not(:checked) + label:after {
+	opacity: 0;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+@media only screen and (max-width: 575px) {
+
+	[type="radio"]:checked + label,
+	[type="radio"]:not(:checked) + label {
+		font-size: 12px;
+		padding-top: 3px;
+		padding-left: 28px;
+		margin-bottom: 15px;
+	}
+
+	[type="radio"]:checked + label:before,
+	[type="radio"]:not(:checked) + label:before {
+		width: 21px;
+		height: 21px;
+	}
+
+	[type="radio"]:checked + label:after,
+	[type="radio"]:not(:checked) + label:after {
+		font-size: 12px;
+		line-height: 21px;
+	}
+}

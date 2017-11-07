@@ -1,0 +1,25 @@
+.list-with-stars {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	position: relative;
+	padding-left: 30px;
+	line-height: 25px;
+	li:before {
+		content: "\f005";
+		display: inline-block;
+		font-family: "FontAwesome";
+		color: $accent;
+		font-size: 15px;
+		margin-right: 15px;
+		position: absolute;
+		left: 0;
+	}
+	li:last-child {
+		margin-bottom: 0;
+	}
+	li {
+		margin-bottom: 23px;
+		letter-spacing: 0.9px;
+	}
+}

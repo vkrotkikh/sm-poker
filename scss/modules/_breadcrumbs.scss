@@ -1,0 +1,37 @@
+.breadcrumbs {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		margin-bottom: 0;
+		li {
+			line-height: 1;
+			a {
+				color: #a0a4ab;
+				font-size: 13px;
+				letter-spacing: 0.65px;
+			}
+		}
+		li:after {
+			content: url(../img/breadcrumbs_icon.png);
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		li:last-child:after {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.breadcrumbs {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+}
