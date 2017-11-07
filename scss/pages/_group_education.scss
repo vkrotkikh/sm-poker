@@ -1,0 +1,194 @@
+// BANNER
+.education-banner {
+	background: url(../img/group-edu/group-edu-banner-bg.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+	color: #fff;
+	padding-top: 85px;
+	font-size: 16px;
+	h1 {
+		text-transform: uppercase;
+		margin-bottom: 25px;
+	}
+	p {
+		padding: 0 30px;
+		letter-spacing: 0.8px;
+		margin-bottom: 55px;
+	}
+}
+
+.education-banner-advantages {
+	background: rgba(#000, .54);
+	padding: 55px 0;
+	h2 {
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+}
+.advantages-card-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.advantages-card {
+	position: relative;
+	min-width: 240px;
+	.img_wrap {
+		min-height: 70px;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+	&:after {
+		display: block;
+		position: absolute;
+		content: '';
+		width: 2px;
+		height: 34px;
+		background: $accent;
+		top: 40%;
+		right: -1px;
+		transform: translateY(-50%);
+	}
+	&:last-child {
+		&:after {
+			display: none;
+		}
+	}
+	p {
+		margin: 0;
+	}
+}
+
+
+// GROUP & INDIVIDUAL COURSES
+.group_courses {
+	padding-top: 90px;
+	min-height: 1000px;
+	h2 {
+		font-family: "Exo2-SemiBold";
+		letter-spacing: 1.75px;
+		margin-bottom: 55px;
+	}
+}
+
+.group_courses_item {
+	&_heading {
+		border-radius: 10px 10px 0 0;
+		margin-bottom: 10px;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "Days";
+		letter-spacing: 1.96px;
+		padding: 30px 0;
+		h3 {
+			margin: 0;
+		}
+	}
+	&_descr {
+		background-color: #f4f6f9;
+		margin-bottom: 4px;
+		padding: 25px;
+		text-align: center;
+		b {
+			font-weight: 700;
+		}
+		span {
+			display: block;
+			font-size: 15px;
+		}
+		.btn--middle {
+			display: block;
+			max-width: 196px;
+			margin: 0 auto;
+			&:first-child {
+				margin-bottom: 12px;
+			}
+		}
+		&:last-child {
+			border-radius: 0 0 10px 10px;
+		}
+	}
+	&.-individual {
+		.group_courses_item_descr {
+			background-color: #fff;
+		}
+	}
+
+}
+
+.group_courses_item_wrap {
+	.row {
+		& > [class*="col-"] {
+			&:nth-child(1) {
+				.group_courses_item_heading {
+					background: rgba(#bb6b30, .2);
+					color: #bb6b30;
+					text-shadow: 2px 2px 0px #DFBFA3;
+				}
+			}
+			&:nth-child(2) {
+				.group_courses_item_heading {
+					background: rgba(#a9a9a9, .2);
+					color: #a9a9a9;
+					text-shadow: 2px 2px 0px #D5D5D5;
+				}
+			}
+			&:nth-child(3) {
+				.group_courses_item_heading {
+					background: rgba(#d4c735, .21);
+					color: #d4c735;
+					text-shadow: 2px 2px 0px #E7E185;
+				}
+			}
+		}
+	}
+}
+
+.individual_courses {
+	padding: 85px 0;
+	background: #F4F6F9;
+	h2 {
+		font-family: "Exo2-SemiBold";
+		margin-bottom: 60px;
+		span {
+			display: block;
+		}
+	}
+}
+
+.individual_courses_wrap {
+	& > [class*="col-"] {
+		&:nth-child(2) {
+			.group_courses_item_heading {
+				background: rgba(#4cbb78, .11);
+				color: $primary;
+				text-shadow: 2px 2px 0px #B3DCBF;
+			}
+		}
+		&:nth-child(3) {
+			.group_courses_item_heading {
+				background: rgba(#3672bb, .11);
+				color: #5387c5;
+				text-shadow: 2px 2px 0px #B0C5E3;
+			}
+		}
+	}
+}
+
+//ENROLL COURSES
+
+
+.enroll_courses {
+	background: url(../img/group-edu/enroll-bg.jpg);
+	background-repeat: no-repeat;
+	min-height: 360px;
+	color: #fff;
+	h2 {
+		text-align: center;
+	}
+	.form {
+
+	}
+}
