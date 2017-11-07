@@ -7414,6 +7414,9 @@ body {
   overflow-x: hidden;
   opacity: 1; }
 
+main {
+  overflow-x: hidden; }
+
 /* TYPOGRAPHY ============================ */
 .h1--magazine {
   font-size: 30px;
@@ -7435,8 +7438,8 @@ body {
   text-align: center;
   letter-spacing: 1.25px; }
   .h2--main--block {
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     background-color: #f1f9f4;
     color: #00BC75;
     margin-bottom: 0; }
@@ -7457,6 +7460,23 @@ body {
 @media only screen and (max-width: 991px) {
   .h2--main {
     font-size: 23px; } }
+
+@media only screen and (max-width: 767px) {
+  .h2--main--block {
+    padding: 10px 15px;
+    min-height: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 @media only screen and (max-width: 575px) {
   .h1--big {
@@ -7550,6 +7570,38 @@ body {
 @media only screen and (max-width: 575px) {
   .btn--accent {
     font-size: 12px; } }
+
+@media only screen and (max-width: 767px) {
+  .sides-15px {
+    position: relative; }
+    .sides-15px.sidebar-item:before {
+      display: none; }
+    .sides-15px.sidebar-item .title-wrap:before {
+      width: inherit;
+      left: -1000px;
+      right: -1000px; }
+    .sides-15px.sidebar-item .sidebar-content {
+      position: relative; }
+      .sides-15px.sidebar-item .sidebar-content:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -1000px;
+        right: -1000px;
+        top: 0;
+        bottom: 0;
+        background: inherit;
+        z-index: -1; }
+    .sides-15px:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -1000px;
+      right: -1000px;
+      top: 0;
+      bottom: 0;
+      background: inherit;
+      z-index: -1; } }
 
 input[type="text"],
 input[type="password"],
@@ -7786,8 +7838,8 @@ input[type="submit"] {
 
 .list-with-stars-number li {
   min-height: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7827,6 +7879,18 @@ input[type="submit"] {
     font-family: "MullerBold";
     font-size: 16px;
     line-height: 20px; }
+
+@media only screen and (max-width: 767px) {
+  .list-with-stars-number li {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .fill-star-wrap {
+    min-width: 38px;
+    max-width: 38px;
+    height: 38px;
+    margin-right: 15px; }
+    .fill-star-wrap span {
+      font-size: 11px; } }
 
 .enter-links {
   list-style-type: none;
@@ -8689,7 +8753,8 @@ input[type="submit"] {
       .pagination li:first-child a:before {
         font-size: 25px;
         color: #BCC1C9;
-        margin: 0; }
+        margin: 0;
+        left: 6px; }
     .pagination li:last-child {
       font-size: 0; }
       .pagination li:last-child .page-link {
@@ -8721,7 +8786,9 @@ input[type="submit"] {
       .pagination li:last-child a:after {
         font-size: 25px;
         color: #717D8B;
-        margin: 0; }
+        margin: 0;
+        left: auto;
+        right: 5px; }
     .pagination a {
       padding: 0 5px; }
     .pagination .active {
@@ -9079,7 +9146,19 @@ input[type="submit"] {
       line-height: 12px;
       color: #fff;
       text-transform: uppercase;
-      padding: 15px; }
+      padding: 15px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
   .table-wrap .table__head > div:last-child .table__cell {
     margin-right: 0; }
   .table-wrap .table__head > div:first-child .table__cell {
@@ -11266,41 +11345,46 @@ input[type="submit"] {
     .title-block-room-section .bottom-line .rooms-numbers-list {
       margin-bottom: 0;
       font-size: 0;
-      text-align: center; }
+      text-align: center;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
     .title-block-room-section .bottom-line .room-item-numbers {
-      line-height: 42px;
+      line-height: 39px;
       font-size: 15px;
       color: #ffffff;
       margin-bottom: 0;
       display: inline-block;
-      padding-left: 35px;
-      padding-right: 35px; }
-      .title-block-room-section .bottom-line .room-item-numbers:first-child {
-        border-right: 1px solid #D8E0EA; }
+      position: relative; }
       .title-block-room-section .bottom-line .room-item-numbers strong {
         font-size: 25px; }
+    .title-block-room-section .bottom-line .middle-border {
+      display: inline-block;
+      width: 1px;
+      background-color: #D8E0EA;
+      margin-left: 35px;
+      margin-right: 35px; }
 
 .room-inside-contant {
-  padding-top: 30px;
+  padding-top: 35px;
   padding-bottom: 105px; }
 
 .room-inside-main-contant {
-  padding-top: 35px; }
+  padding-top: 28px; }
+  .room-inside-main-contant .table-wrap {
+    letter-spacing: 0.8px; }
   .room-inside-main-contant .advantages-section .advantages-items-wrap {
-    padding-top: 30px;
-    padding-bottom: 60px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    padding-top: 35px;
+    padding-bottom: 75px; }
   .room-inside-main-contant .advantages-section .advantages-item {
-    max-width: 196px;
-    padding-left: 10px;
-    padding-right: 10px;
     text-align: center; }
   .room-inside-main-contant .advantages-section .icon-wrap {
     width: 70px;
@@ -11331,16 +11415,17 @@ input[type="submit"] {
       color: #5584c2; }
   .room-inside-main-contant .registration-section .list-wrap {
     padding-top: 10px;
-    padding-left: 25px;
+    padding-left: 35px;
     padding-right: 25px;
     padding-bottom: 15px;
     border-left: 4px solid #EFF9F4;
     border-right: 4px solid #EFF9F4; }
   .room-inside-main-contant .check-registration-section {
     background-color: #EFF9F4;
-    padding: 30px 45px 45px; }
+    padding: 25px 45px 45px; }
     .room-inside-main-contant .check-registration-section .h2--main {
-      color: #00BC75; }
+      color: #00BC75;
+      margin-bottom: 13px; }
     .room-inside-main-contant .check-registration-section .description {
       font-size: 14px;
       color: #8c9296;
@@ -11405,9 +11490,10 @@ input[type="submit"] {
       color: #00BC75;
       margin-bottom: 35px; }
     .room-inside-main-contant .game-section .top-text {
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      letter-spacing: 0.9px; }
     .room-inside-main-contant .game-section .table-wrap {
-      margin-bottom: 20px; }
+      margin-bottom: 30px; }
     .room-inside-main-contant .game-section .table-wrap .table__head > div:first-child .table__cell {
       color: #fff; }
     .room-inside-main-contant .game-section .table-wrap .table__row .table__cell {
@@ -11441,6 +11527,8 @@ input[type="submit"] {
 .room-inside-sidebar .sidebar-item {
   margin-bottom: 40px; }
   .room-inside-sidebar .sidebar-item .title {
+    padding-top: 15px;
+    padding-bottom: 18px;
     font-size: 16px;
     margin: 0 25px; }
 
@@ -11451,23 +11539,20 @@ input[type="submit"] {
 
 .room-inside-sidebar .sidebar-slider {
   padding-bottom: 30px; }
-  .room-inside-sidebar .sidebar-slider .screenshot-wrap {
-    max-width: 230px;
-    max-height: 170px; }
-    .room-inside-sidebar .sidebar-slider .screenshot-wrap img {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;
-      margin: 0 auto; }
+  .room-inside-sidebar .sidebar-slider .screenshot-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin: 0 auto; }
   .room-inside-sidebar .sidebar-slider .slick-prev, .room-inside-sidebar .sidebar-slider .slick-next {
     font-size: 0;
     background-color: transparent;
     border: none;
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     position: absolute;
-    top: -65px;
+    top: -60px;
     padding: 0;
     z-index: 10;
     cursor: pointer;
@@ -11476,7 +11561,7 @@ input[type="submit"] {
       font-family: "icomoon";
       display: inline-block;
       font-size: 16px;
-      line-height: 30px;
+      line-height: 15px;
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
@@ -11511,38 +11596,42 @@ input[type="submit"] {
     width: 100%;
     height: 100%; }
 
-.room-inside-sidebar .side-traffic .description {
-  font-size: 14px;
-  letter-spacing: 0.7px;
-  text-align: center;
-  margin-bottom: 15px; }
-
-.room-inside-sidebar .side-traffic .row-of-table {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-top: 2px solid #fff; }
-
-.room-inside-sidebar .side-traffic .header-of-table {
-  font-family: "MullerBold";
-  font-size: 15px;
-  letter-spacing: 0.75px;
-  text-align: center; }
-
-.room-inside-sidebar .side-traffic .cells-of-table {
-  font-size: 10px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  margin-left: -15px;
-  margin-right: -15px; }
+.room-inside-sidebar .side-traffic {
+  padding-bottom: 0; }
+  .room-inside-sidebar .side-traffic .description {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    text-align: center;
+    margin-bottom: 10px; }
+  .room-inside-sidebar .side-traffic .row-of-table {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 2px solid #fff; }
+  .room-inside-sidebar .side-traffic .header-of-table {
+    font-family: "MullerBold";
+    font-size: 15px;
+    letter-spacing: 0.75px;
+    text-align: center; }
+  .room-inside-sidebar .side-traffic .cells-of-table {
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-left: -15px;
+    margin-right: -15px; }
 
 .room-inside-sidebar .side-info {
+  padding-top: 15px;
   font-size: 14px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  padding-left: 0;
+  padding-right: 0; }
   .room-inside-sidebar .side-info p {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     border-bottom: 2px solid #fff;
-    line-height: 16px; }
+    line-height: 16px;
+    padding-left: 15px;
+    padding-right: 15px; }
     .room-inside-sidebar .side-info p:last-child {
       border-bottom: none;
       padding-bottom: 0; }
@@ -11618,7 +11707,7 @@ input[type="submit"] {
   padding-bottom: 20px; }
   .room-inside-sidebar .side-passive-income .img-wrap {
     text-align: center;
-    margin-bottom: 20px; }
+    margin-bottom: 25px; }
     .room-inside-sidebar .side-passive-income .img-wrap img {
       max-width: 100%;
       max-height: 100%;
@@ -11632,7 +11721,7 @@ input[type="submit"] {
     border-bottom: 2px solid #fff;
     margin-left: -15px;
     margin-right: -15px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     padding-left: 15px;
     padding-right: 15px; }
     .room-inside-sidebar .side-passive-income .main-text span {
@@ -11665,7 +11754,7 @@ input[type="submit"] {
     width: 15px;
     height: 15px;
     position: absolute;
-    top: -65px;
+    top: -60px;
     padding: 0;
     z-index: 10;
     cursor: pointer;
@@ -11674,7 +11763,7 @@ input[type="submit"] {
       font-family: "icomoon";
       display: inline-block;
       font-size: 16px;
-      line-height: 30px;
+      line-height: 15px;
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
@@ -11693,5 +11782,237 @@ input[type="submit"] {
     .room-inside-sidebar .bottom-side-item-slider .slick-next:before {
       content: "\e900";
       color: #ACB1BA; }
+  .room-inside-sidebar .bottom-side-item-slider .btn-wrap {
+    max-width: 140px; }
+
+@media only screen and (max-width: 991px) {
+  .title-block-room-section {
+    padding-top: 60px; }
+    .title-block-room-section .room-logo {
+      max-width: 345px;
+      margin-bottom: 30px; }
+    .title-block-room-section .title-description {
+      max-width: 590px;
+      margin-bottom: 25px; }
+    .title-block-room-section .bottom-line .room-item-numbers {
+      line-height: 39px; }
+  .room-inside-contant {
+    padding-bottom: 50px; }
+  .room-inside-main-contant {
+    padding-top: 21px; }
+    .room-inside-main-contant .advantages-section .advantages-items-wrap {
+      padding-bottom: 30px; }
+    .room-inside-main-contant .advantages-section .advantages-item {
+      margin-bottom: 30px; }
+    .room-inside-main-contant .registration-section .list-wrap {
+      padding-left: 15px; }
+    .room-inside-main-contant .check-registration-section {
+      padding-left: 75px;
+      padding-right: 75px;
+      padding-top: 30px; }
+      .room-inside-main-contant .check-registration-section .h2--main {
+        margin-bottom: 20px; }
+      .room-inside-main-contant .check-registration-section .description {
+        margin-bottom: 35px; }
+      .room-inside-main-contant .check-registration-section .input-wrap {
+        display: block;
+        margin-bottom: 10px; }
+        .room-inside-main-contant .check-registration-section .input-wrap input {
+          width: 100%;
+          margin-bottom: 25px; }
+          .room-inside-main-contant .check-registration-section .input-wrap input:last-child {
+            margin-bottom: 0; }
+      .room-inside-main-contant .check-registration-section .prompt-wrap {
+        margin-bottom: 30px; }
+  .room-inside-sidebar .sidebar-item {
+    margin-bottom: 30px; }
+    .room-inside-sidebar .sidebar-item .title {
+      font-size: 13px;
+      padding-top: 10px;
+      padding-bottom: 13px; }
+  .room-inside-sidebar .sidebar-content {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .room-inside-sidebar .sidebar-slider .slick-prev, .room-inside-sidebar .sidebar-slider .slick-next {
+    top: -38px; }
+    .room-inside-sidebar .sidebar-slider .slick-prev:before, .room-inside-sidebar .sidebar-slider .slick-next:before {
+      font-size: 13px; }
+  .room-inside-sidebar .side-traffic {
+    padding-bottom: 0px; }
+    .room-inside-sidebar .side-traffic .description {
+      font-size: 10px; }
+    .room-inside-sidebar .side-traffic .header-of-table {
+      font-size: 10px; }
+    .room-inside-sidebar .side-traffic .cells-of-table {
+      font-size: 7px;
+      margin-left: -10px;
+      margin-right: -10px; }
+  .room-inside-sidebar .side-info {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 10px;
+    line-height: 12px;
+    padding-bottom: 5px; }
+    .room-inside-sidebar .side-info p {
+      padding-top: 5px;
+      padding-bottom: 5px; }
+  .room-inside-sidebar .side-payment-systems .payment-system span {
+    font-size: 10px; }
+  .room-inside-sidebar .side-payment-systems .payment-system .payment-logo-wrap {
+    width: 60px;
+    height: 25px; }
+  .room-inside-sidebar .side-passive-income .img-wrap {
+    margin-bottom: 10px; }
+  .room-inside-sidebar .side-passive-income .main-text {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 12px; }
+  .room-inside-sidebar .bottom-side-item-slider {
+    padding-top: 20px;
+    padding-bottom: 15px; }
+    .room-inside-sidebar .bottom-side-item-slider p {
+      font-size: 11px;
+      margin-bottom: 10px;
+      line-height: 11px; }
+    .room-inside-sidebar .bottom-side-item-slider .img-wrap {
+      margin-bottom: 15px; }
+    .room-inside-sidebar .bottom-side-item-slider .slick-prev, .room-inside-sidebar .bottom-side-item-slider .slick-next {
+      top: -48px; }
+      .room-inside-sidebar .bottom-side-item-slider .slick-prev:before, .room-inside-sidebar .bottom-side-item-slider .slick-next:before {
+        font-size: 13px; }
+  .room-inside-main-contant .table-wrap .table__head .table__cell {
+    font-size: 10px; }
+  .room-inside-main-contant .table-wrap .table__row .table__cell {
+    font-size: 10px; }
+  .room-inside-main-contant .free-education-section {
+    padding-top: 50px;
+    padding-bottom: 20px; }
+    .room-inside-main-contant .free-education-section .h2--main {
+      margin-bottom: 25px; }
+  .room-inside-main-contant .compensation-system-section .h2--main {
+    margin-bottom: 25px; }
+  .room-inside-main-contant .compensation-system-section .description p {
+    margin-bottom: 20px; }
+  .room-inside-main-contant .game-section {
+    padding-top: 15px;
+    padding-bottom: 20px; }
+    .room-inside-main-contant .game-section .h2--main {
+      margin-bottom: 25px; }
+    .room-inside-main-contant .game-section .text-block p {
+      margin-bottom: 15px; }
+  .room-inside-main-contant .rack-structure-section {
+    padding-top: 20px; }
+    .room-inside-main-contant .rack-structure-section .h2--main {
+      margin-bottom: 25px; } }
+
+@media only screen and (max-width: 767px) {
+  .title-block-room-section {
+    padding-top: 40px; }
+    .title-block-room-section .room-logo {
+      max-width: 250px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 20px; }
+      .title-block-room-section .room-logo img {
+        max-width: 130px;
+        max-height: 40px; }
+      .title-block-room-section .room-logo .star-with-number {
+        width: 35px;
+        height: 35px;
+        top: -18px;
+        right: -18px; }
+        .title-block-room-section .room-logo .star-with-number .star-number {
+          font-size: 9px; }
+    .title-block-room-section .title-description {
+      margin-bottom: 20px; }
+    .title-block-room-section .bottom-line {
+      padding-top: 15px;
+      padding-bottom: 15px; }
+      .title-block-room-section .bottom-line .room-item-numbers {
+        font-size: 11px; }
+        .title-block-room-section .bottom-line .room-item-numbers strong {
+          font-size: 18px; }
+      .title-block-room-section .bottom-line .middle-border {
+        margin-left: 20px;
+        margin-right: 20px; }
+  .room-inside-contant {
+    padding-top: 55px; }
+  .room-inside-main-contant {
+    padding-top: 0; }
+  .room-inside-main-contant .advantages-section .icon-wrap {
+    height: 65px; }
+  .room-inside-main-contant .advantages-section .advantages-items-wrap {
+    padding-top: 25px;
+    padding-bottom: 0; }
+  .room-inside-main-contant .advantages-section .advantages-item {
+    margin-bottom: 40px; }
+  .room-inside-main-contant .registration-section .list-wrap {
+    border: none;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0; }
+  .room-inside-main-contant .check-registration-section {
+    padding-top: 25px;
+    padding-left: 0px;
+    padding-right: 0px; }
+    .room-inside-main-contant .check-registration-section .description {
+      font-size: 15px; }
+  .room-inside-sidebar .sidebar-content-wrap {
+    padding-top: 45px; }
+  .room-inside-sidebar .sidebar-item .title {
+    margin: 0 auto;
+    font-size: 16px; }
+  .room-inside-sidebar .sidebar-content {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .room-inside-sidebar .sidebar-slider .slick-prev, .room-inside-sidebar .sidebar-slider .slick-next {
+    top: -60px; }
+  .room-inside-sidebar .sidebar-slider .slick-prev {
+    left: 30%; }
+  .room-inside-sidebar .sidebar-slider .slick-next {
+    right: 30%; }
+  .room-inside-sidebar .side-info {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0; }
+    .room-inside-sidebar .side-info p {
+      font-size: 14px;
+      line-height: 16px;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+  .room-inside-sidebar .side-payment-systems {
+    padding-bottom: 15px;
+    padding-top: 10px; }
+    .room-inside-sidebar .side-payment-systems .payment-system span {
+      font-size: 14px; }
+    .room-inside-sidebar .side-payment-systems .payment-system .payment-logo-wrap {
+      width: 85px;
+      height: 35px; }
+  .room-inside-sidebar .sidebar-content {
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media only screen and (max-width: 575px) {
+  .sides-15px.sidebar-item .sidebar-content {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .room-inside-main-contant .advantages-section .text-block {
+    max-width: 175px;
+    margin: 0 auto; }
+  .room-inside-main-contant .advantages-section .icon-wrap {
+    margin-bottom: 15px; } }
+
+@media only screen and (max-width: 400px) {
+  .room-inside-sidebar .sidebar-slider .slick-prev {
+    left: 22%; }
+  .room-inside-sidebar .sidebar-slider .slick-next {
+    right: 22%; } }
 
 /*# sourceMappingURL=main.css.map */

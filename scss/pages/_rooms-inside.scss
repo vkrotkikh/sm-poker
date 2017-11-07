@@ -54,46 +54,55 @@
 			margin-bottom: 0;
 			font-size: 0;
 			text-align: center;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
 		}
 
 		.room-item-numbers {
-			line-height: 42px;
+			line-height: 39px;
 			font-size: 15px;
 			color: #ffffff;
 			margin-bottom: 0;
 			display: inline-block;
-			padding-left: 35px;
-			padding-right: 35px;
-			&:first-child {
-				border-right: 1px solid #D8E0EA;
-			}
+			position: relative;
 			strong {
 				font-size: 25px;
 			}
+		}
+
+		.middle-border {
+			display: inline-block;
+			width: 1px;
+			background-color: #D8E0EA;
+			margin-left: 35px;
+			margin-right: 35px;
 		}
 	}
 }
 
 .room-inside-contant {
-	padding-top: 30px;
+	padding-top: 35px;
 	padding-bottom: 105px;
 }
 
 .room-inside-main-contant {
-	padding-top: 35px;
+	padding-top: 28px;
+
+	.table-wrap {
+		letter-spacing: 0.8px;
+	}
 
 	.advantages-section {
 		.advantages-items-wrap {
-			padding-top: 30px;
-			padding-bottom: 60px;
-			display: flex;
-			justify-content: space-between;
+			padding-top: 35px;
+			padding-bottom: 75px;
 		}
 
 		.advantages-item {
-			max-width: 196px;
-			padding-left: 10px;
-			padding-right: 10px;
 			text-align: center;
 		}
 
@@ -123,7 +132,7 @@
 	.registration-section {
 		.list-wrap {
 			padding-top: 10px;
-			padding-left: 25px;
+			padding-left: 35px;
 			padding-right: 25px;
 			padding-bottom: 15px;
 			border-left: 4px solid #EFF9F4;
@@ -133,10 +142,11 @@
 
 	.check-registration-section {
 		background-color: #EFF9F4;
-		padding: 30px 45px 45px;
+		padding: 25px 45px 45px;
 
 		.h2--main {
 			color: $accent;
+			margin-bottom: 13px;
 		}
 
 		.description {
@@ -232,10 +242,11 @@
 
 		.top-text {
 			margin-bottom: 30px;
+			letter-spacing: 0.9px;
 		}
 
 		.table-wrap {
-			margin-bottom: 20px;
+			margin-bottom: 30px;
 		}
 
 		.table-wrap .table__head > div:first-child .table__cell {
@@ -285,9 +296,12 @@
 
 .room-inside-sidebar {
 
+
 	.sidebar-item {
 		margin-bottom: 40px;
 		.title {
+			padding-top: 15px;
+			padding-bottom: 18px;
 			font-size: 16px;
 			margin: 0 25px;
 		}
@@ -303,8 +317,6 @@
 		padding-bottom: 30px;
 
 		.screenshot-wrap {
-			max-width: 230px;
-			max-height: 170px;
 			img {
 				@include img-res;
 				margin: 0 auto;
@@ -315,10 +327,10 @@
 			font-size: 0;
 			background-color: transparent;
 			border: none;
-			width: 15px;
-			height: 15px;
+			width: 16px;
+			height: 16px;
 			position: absolute;
-			top: -65px;
+			top: -60px;
 			padding: 0;
 			z-index: 10;
 			cursor: pointer;
@@ -327,7 +339,7 @@
 				font-family: "icomoon";
 				display: inline-block;
 				font-size: 16px;
-				line-height: 30px;
+				line-height: 15px;
 				@include tr(0.3s);
 			}
 			&:hover {
@@ -360,11 +372,12 @@
 	}
 
 	.side-traffic {
+		padding-bottom: 0;
 		.description {
 			font-size: 14px;
 			letter-spacing: 0.7px;
 			text-align: center;
-			margin-bottom: 15px;
+			margin-bottom: 10px;
 		}
 
 		.row-of-table {
@@ -390,13 +403,18 @@
 	}
 
 	.side-info {
+		padding-top: 15px;
 		font-size: 14px;
 		padding-bottom: 15px;
+		padding-left: 0;
+		padding-right: 0;
 		p {
 			padding-top: 10px;
-			padding-bottom: 10px;
+			padding-bottom: 15px;
 			border-bottom: 2px solid #fff;
 			line-height: 16px;
+			padding-left: 15px;
+			padding-right: 15px;
 			&:last-child {
 				border-bottom: none;
 				padding-bottom: 0;
@@ -471,7 +489,7 @@
 		padding-bottom: 20px;
 		.img-wrap {
 			text-align: center;
-			margin-bottom: 20px;
+			margin-bottom: 25px;
 			img {
 				@include img-res;
 			}
@@ -485,7 +503,7 @@
 			border-bottom: 2px solid #fff;
 			margin-left: -15px;
 			margin-right: -15px;
-			margin-bottom: 20px;
+			margin-bottom: 25px;
 			padding-left: 15px;
 			padding-right: 15px;
 			span {
@@ -525,7 +543,7 @@
 			width: 15px;
 			height: 15px;
 			position: absolute;
-			top: -65px;
+			top: -60px;
 			padding: 0;
 			z-index: 10;
 			cursor: pointer;
@@ -534,7 +552,7 @@
 				font-family: "icomoon";
 				display: inline-block;
 				font-size: 16px;
-				line-height: 30px;
+				line-height: 15px;
 				@include tr(0.3s);
 			}
 			&:hover {
@@ -558,6 +576,420 @@
 				color: #ACB1BA;
 			}
 		}
+
+		.btn-wrap {
+			max-width: 140px;
+		}
 	}
 
+}
+
+@media only screen and (max-width: 991px) {
+	.title-block-room-section {
+		padding-top: 60px;
+		.room-logo {
+			max-width: 345px;
+			margin-bottom: 30px;
+		}
+
+		.title-description {
+			max-width: 590px;
+			margin-bottom: 25px;
+		}
+
+		.bottom-line {
+			.room-item-numbers {
+				line-height: 39px;
+			}
+		}
+	}
+
+	.room-inside-contant {
+		padding-bottom: 50px;
+	}
+
+	.room-inside-main-contant {
+		padding-top: 21px;
+		.advantages-section {
+			.advantages-items-wrap {
+				padding-bottom: 30px;
+			}
+			.advantages-item {
+				margin-bottom: 30px;
+			}
+		}
+
+		.registration-section {
+			.list-wrap {
+				padding-left: 15px;
+			}
+		}
+
+		.check-registration-section {
+			padding-left: 75px;
+			padding-right: 75px;
+			padding-top: 30px;
+			.h2--main {
+				margin-bottom: 20px;
+			}
+			.description {
+				margin-bottom: 35px;
+			}
+			.input-wrap {
+				display: block;
+				margin-bottom: 10px;
+				input {
+					width: 100%;
+					margin-bottom: 25px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+			.prompt-wrap {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.room-inside-sidebar {
+		.sidebar-item {
+			margin-bottom: 30px;
+			.title {
+				font-size: 13px;
+				padding-top: 10px;
+				padding-bottom: 13px;
+			}
+		}
+
+		.sidebar-content {
+			padding-top: 10px;
+			padding-bottom: 15px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.sidebar-slider {
+			.slick-prev, .slick-next {
+				top: -38px;
+				&:before {
+					font-size: 13px;
+				}
+			}
+		}
+
+		.side-traffic {
+			padding-bottom: 0px;
+			.description {
+				font-size: 10px;
+			}
+
+			.header-of-table {
+				font-size: 10px;
+			}
+
+			.cells-of-table {
+				font-size: 7px;
+				margin-left: -10px;
+				margin-right: -10px;
+			}
+		}
+
+		.side-info {
+			padding-left: 0;
+			padding-right: 0;
+			font-size: 10px;
+			line-height: 12px;
+			padding-bottom: 5px;
+			p {
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+		}
+		.side-payment-systems {
+			.payment-system {
+				span {
+					font-size: 10px;
+				}
+				.payment-logo-wrap {
+					width: 60px;
+					height: 25px;
+				}
+			}
+		}
+
+		.side-passive-income {
+			.img-wrap {
+				margin-bottom: 10px;
+			}
+			.main-text {
+				font-size: 10px;
+				line-height: 12px;
+				margin-bottom: 12px;
+			}
+		}
+
+		.bottom-side-item-slider {
+			padding-top: 20px;
+			padding-bottom: 15px;
+			p {
+				font-size: 11px;
+				margin-bottom: 10px;
+				line-height: 11px;
+			}
+			.img-wrap {
+				margin-bottom: 15px;
+			}
+			.slick-prev, .slick-next {
+				top: -48px;
+				&:before {
+					font-size: 13px;
+				}
+			}
+		}
+
+	}
+
+	.room-inside-main-contant {
+		.table-wrap {
+			.table__head {
+				.table__cell {
+					font-size: 10px;
+				}
+			}
+			.table__row {
+				.table__cell {
+					font-size: 10px;
+				}
+			}
+		}
+
+		.free-education-section {
+			padding-top: 50px;
+			padding-bottom: 20px;
+			.h2--main {
+				margin-bottom: 25px;
+			}
+		}
+
+		.compensation-system-section {
+			.h2--main {
+				margin-bottom: 25px;
+			}
+			.description p {
+				margin-bottom: 20px;
+			}
+		}
+
+		.game-section {
+			padding-top: 15px;
+			padding-bottom: 20px;
+			.h2--main {
+				margin-bottom: 25px;
+			}
+
+			.text-block p {
+				margin-bottom: 15px;
+			}
+		}
+
+		.rack-structure-section {
+			padding-top: 20px;
+			.h2--main {
+				margin-bottom: 25px;
+			}
+		}
+
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	.title-block-room-section {
+		padding-top: 40px;
+		.room-logo {
+			max-width: 250px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-bottom: 20px;
+			img {
+				max-width: 130px;
+				max-height: 40px;
+			}
+			.star-with-number {
+				width: 35px;
+				height: 35px;
+				top: -18px;
+				right: -18px;
+				.star-number {
+					font-size: 9px;
+				}
+			}
+		}
+		.title-description {
+			margin-bottom: 20px;
+		}
+		.bottom-line {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			.room-item-numbers {
+				font-size: 11px;
+				strong {
+					font-size: 18px;
+				}
+			}
+
+			.middle-border {
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+		}
+	}
+
+	.room-inside-contant {
+		padding-top: 55px;
+	}
+
+	.room-inside-main-contant {
+		padding-top: 0;
+	}
+
+	.room-inside-main-contant {
+		.advantages-section {
+			.icon-wrap {
+				height: 65px;
+			}
+
+			.advantages-items-wrap {
+				padding-top: 25px;
+				padding-bottom: 0;
+			}
+
+			.advantages-item {
+				margin-bottom: 40px;
+			}
+		}
+
+		.registration-section {
+			.list-wrap {
+				border: none;
+				padding-top: 0;
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+
+		.check-registration-section {
+			padding-top: 25px;
+			padding-left: 0px;
+			padding-right: 0px;
+			.description {
+				font-size: 15px;
+			}
+		}
+	}
+
+	.room-inside-sidebar {
+		.sidebar-content-wrap {
+			padding-top: 45px;
+		}
+
+		.sidebar-item .title {
+			margin: 0 auto;
+			font-size: 16px;
+		}
+
+		.sidebar-content {
+			padding-top: 30px;
+			padding-bottom: 40px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		.sidebar-slider {
+			.slick-prev, .slick-next {
+				top: -60px;
+			}
+			.slick-prev {
+				left: 30%;
+			}
+			.slick-next {
+				right: 30%;
+			}
+		}
+
+		.side-info {
+			padding-top: 20px;
+			padding-bottom: 15px;
+			padding-left: 0;
+			padding-right: 0;
+			p {
+				font-size: 14px;
+				line-height: 16px;
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+		}
+
+		.side-payment-systems {
+			padding-bottom: 15px;
+			padding-top: 10px;
+			.payment-system {
+				span {
+					font-size: 14px;
+				}
+				.payment-logo-wrap {
+					width: 85px;
+					height: 35px;
+				}
+			}
+		}
+	}
+
+	.room-inside-sidebar {
+		.sidebar-content {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+
+	.sides-15px.sidebar-item {
+		.sidebar-content {
+			margin-left: -15px;
+			margin-right: -15px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	.room-inside-main-contant {
+		.advantages-section {
+			.text-block {
+				max-width: 175px;
+				margin: 0 auto;
+			}
+			.icon-wrap {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	.room-inside-sidebar,  {
+		.sidebar-slider {
+			.slick-prev {
+				left: 22%;
+			}
+			.slick-next {
+				right: 22%;
+			}
+		}
+	}
 }

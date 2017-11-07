@@ -23,8 +23,8 @@
 	letter-spacing: 1.25px;
 
 	&--block {
-		padding-top: 17px;
-		padding-bottom: 17px;
+		padding-top: 25px;
+		padding-bottom: 25px;
 		background-color: #f1f9f4;
 		color: $accent;
 		margin-bottom: 0;
@@ -52,6 +52,20 @@
 
 	.h2--main {
 		font-size: 23px;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	.h2--main {
+		&--block {
+			padding: 10px 15px;
+			min-height: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 
 }

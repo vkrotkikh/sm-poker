@@ -1,8 +1,8 @@
 .list-with-stars-number {
 	li {
 		min-height: 50px;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 22px;
+		padding-bottom: 22px;
 		display: flex;
 		align-items: center;
 		p {
@@ -39,5 +39,24 @@
 		font-family: "MullerBold";
 		font-size: 16px;
 		line-height: 20px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.list-with-stars-number {
+		li {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+
+	.fill-star-wrap {
+		min-width: 38px;
+		max-width: 38px;
+		height: 38px;
+		margin-right: 15px;
+		span {
+			font-size: 11px;
+		}
 	}
 }
