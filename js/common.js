@@ -8,13 +8,13 @@ $(document).ready(function() {
 		fade: true,
 		asNavFor: '.program-review__slider-dots',
 		responsive: [
-			{
-				breakpoint: 575,
-				settings: {
-					arrows: false,
-					dots: true
-				}
+		{
+			breakpoint: 575,
+			settings: {
+				arrows: false,
+				dots: true
 			}
+		}
 		]
 	});
 
@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 	$("[data-fancybox]").fancybox({
 		buttons : [
-			'close'
+		'close'
 		],
 		transitionEffect : "circular",
 		transitionDuration : 700,
@@ -100,22 +100,22 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		draggable: false,
 		responsive: [
-			{
-				breakpoint: 991,
-				settings: {
-					arrows: false,
-					dots: true,
-					slidesToShow: 2,
-				}
-			},
-			{
-				breakpoint: 575,
-				settings: {
-					arrows: false,
-					dots: true,
-					slidesToShow: 1,
-				}
+		{
+			breakpoint: 991,
+			settings: {
+				arrows: false,
+				dots: true,
+				slidesToShow: 2,
 			}
+		},
+		{
+			breakpoint: 575,
+			settings: {
+				arrows: false,
+				dots: true,
+				slidesToShow: 1,
+			}
+		}
 		]
 	});
 
@@ -155,14 +155,14 @@ $(document).ready(function() {
 			arrows: false,
 			dots: true,
 			responsive: [
-				{
-					breakpoint: 767,
-					settings: {
-						arrows: false,
-						dots: true,
-						slidesToShow: 1,
-					}
-				},
+			{
+				breakpoint: 767,
+				settings: {
+					arrows: false,
+					dots: true,
+					slidesToShow: 1,
+				}
+			},
 			]
 		});
 	}
@@ -219,6 +219,32 @@ $(document).ready(function() {
 		draggable: false,
 	});
 
+
+	// SLICK SlIDER FOR EDUCATION QUESTIONS
+	if(document.documentElement.clientWidth < 501) {
+		$('.edu_questions_slider_wrap').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			dots: true,
+		});
+	}
+
+	// SLICK SlIDER FOR OUR COACHES 
+	if(document.documentElement.clientWidth < 576) {
+		$('.our_coaches_slider_wrap').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			dots: true,
+		});
+	}
+	// VIDEO SLIDER
+		$('.video_slider_wrap').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		centerMode: true
+	});
 });
 
 // COLLAPSE MENU WHEN RESIZE

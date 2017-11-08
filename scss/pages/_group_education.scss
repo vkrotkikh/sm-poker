@@ -2,13 +2,17 @@
 .education-banner {
 	background: url(../img/group-edu/group-edu-banner-bg.jpg);
 	background-repeat: no-repeat;
+	background-position: center center;
 	position: relative;
 	color: #fff;
 	padding-top: 85px;
 	font-size: 16px;
 	h1 {
+		font-family: "Exo2-SemiBold";
 		text-transform: uppercase;
 		margin-bottom: 25px;
+		letter-spacing: 2px;
+		line-height: 1.3;
 	}
 	p {
 		padding: 0 30px;
@@ -20,9 +24,11 @@
 .education-banner-advantages {
 	background: rgba(#000, .54);
 	padding: 55px 0;
-	h2 {
+	h4 {
+		font-family: "Exo2-SemiBold";
 		text-transform: uppercase;
-		margin-bottom: 10px;
+		margin-bottom: 50px;
+		letter-spacing: 1.25px;
 	}
 }
 .advantages-card-wrap {
@@ -61,14 +67,102 @@
 	}
 }
 
+@media screen and (max-width:1199px) {
+	.education-banner {
+		h1 {
+			font-size: 35px;
+		}
+	}
+}
+
+@media screen and (max-width:991px) {
+	.education-banner {
+		padding-top: 65px;
+		h1 {
+			font-size: 30px;
+			margin-bottom: 10px;
+		}
+		p {
+			padding: 0;
+			margin-bottom: 25px;
+		}
+	}
+	.education-banner-advantages {
+		background: rgba(#000, .54);
+		padding: 35px 0;
+		h4 {
+			font-size: 20px;
+			margin-bottom: 35px;
+		}
+	}
+	.advantages-card {
+		min-width: 155px;
+		.img_wrap {
+			min-height: 0px;
+			max-height: 41px;
+			margin-bottom: 12px;
+			img {
+				max-height: 41px;
+			}
+		}
+		&:after {
+			top: 33%;
+		}
+		p {
+			font-size: 12px;
+			letter-spacing: 0.6px;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width:767px) {
+	.advantages-card {
+		min-width: 33.333%;
+	}
+}
+
+@media screen and (max-width:500px) {
+	.education-banner {
+		padding-top: 40px;
+		h1 {
+			font-size: 25px;
+			letter-spacing: 1.25px;
+			margin-bottom: 15px;
+		}
+	}
+	.education-banner-advantages {
+		padding: 40px 0 35px;
+		h4 {
+			font-size: 17px;
+			letter-spacing: 0.85px;
+			margin-bottom: 30px;
+		}
+	}
+	.advantages-card {
+		.img_wrap {
+			max-height: 36px;
+			margin-bottom: 12px;
+			img {
+				max-height: 36px;
+			}
+		}
+		&:after {
+			height: 24px;
+			top: 33%;
+		}
+		p {
+			font-size: 13px;
+			letter-spacing: 0.65px;
+			margin: 0;
+		}
+	}
+}
 
 // GROUP & INDIVIDUAL COURSES
 .group_courses {
-	padding-top: 90px;
-	min-height: 1000px;
+	padding: 90px 0;
 	h2 {
-		font-family: "Exo2-SemiBold";
-		letter-spacing: 1.75px;
 		margin-bottom: 55px;
 	}
 }
@@ -150,7 +244,6 @@
 	padding: 85px 0;
 	background: #F4F6F9;
 	h2 {
-		font-family: "Exo2-SemiBold";
 		margin-bottom: 60px;
 		span {
 			display: block;
@@ -177,18 +270,691 @@
 	}
 }
 
+@media screen and (max-width:991px) {
+	.group_courses {
+		padding: 50px 0 60px;
+		h2 {
+			margin-bottom: 35px;
+		}
+	}
+	.group_courses_item {
+		&_heading {
+			padding: 38px 0 35px;
+			h3 {
+				font-size: 18px;
+			}
+		}
+		&_descr {
+			padding: 18px;
+			font-size: 14px;
+			min-height: 68px;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: center;
+			.btn--middle {
+				font-size: 10px;
+				max-width: 156px;
+			}
+			&.-btn_wrap {
+				margin-top: 8px;
+			}
+		}
+	}
+	.individual_courses {
+		padding: 55px 0 45px;
+		h2 {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media screen and (max-width:767px) {
+	.group_courses {
+		padding: 45px 0;
+	}
+	.group_courses_item {
+		margin-bottom: 35px;
+		&_descr {
+			&.-btn_wrap {
+				display: block;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:500px) {
+	.group_courses {
+		padding: 45px 0 30px;
+		h2 {
+			margin-bottom: 30px;
+		}
+	}
+	.group_courses_item {
+		&_heading {
+			h3 {
+				font-size: 20px;
+			}
+		}
+		&_descr {
+			font-size: 16px;
+			.btn--middle {
+				font-size: 12px;
+				max-width: 196px;
+			}
+		}
+	}
+	.individual_courses {
+		padding: 70px 0 20px;
+		h2 {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+
 //ENROLL COURSES
-
-
 .enroll_courses {
 	background: url(../img/group-edu/enroll-bg.jpg);
 	background-repeat: no-repeat;
-	min-height: 360px;
+	background-position: center center;
 	color: #fff;
+	padding-top: 70px;
 	h2 {
-		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 20px;
 	}
-	.form {
+	&_top {
+		margin-bottom: 50px;
+	}
+	&_bottom {
+		background: rgba(#000, .54);
+		&_wrap {
+			padding: 50px 30px 45px;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
 
+.enroll_input {
+	min-width: 360px;
+	max-height: 44px;
+	&.btn--submit {
+		min-width: 290px;
+		font-size: 12px;
+		border-radius: 2px;
+	}
+}
+
+.--custom-select.-enroll {
+	max-width: 420px;
+	margin: 0;
+	.dropdown-toggle {
+		border: none;
+		border-radius: 25px;
+		background-color: rgba(#4cbb78, .22);
+		padding: 0;
+		span {
+			color: $primary;
+			font-size: 22px;
+			text-transform: uppercase;
+		}
+		&:after {
+			display: block;
+			position: absolute;
+			content: '';
+			width: 13px;
+			height: 7px;
+			background: url(../img/group-edu/ico-caret_green.png);
+			margin: 0;
+			right: 32px;
+			bottom: 50%;
+			transform: translateY(50%);
+		}
+	}
+	.dropdown-menu.open {
+		background-color: rgba(#4cbb78, .22);
+		top: 5px !important;
+		border-radius: 10px;
+		.dropdown-menu.inner {
+			background: none;
+			border: none;
+			a {
+				color: $primary;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1199px) {
+	.enroll_input {
+		min-width: 300px;
+		&.btn--submit {
+			min-width: 200px;
+		}
+	}
+}
+
+@media screen and (max-width:991px) {
+	.enroll_courses {
+		padding: 40px 0 0;
+		&_top {
+			margin-bottom: 30px;
+		}
+		&_bottom {
+			&_wrap {
+				padding: 30px 0 35px;
+				flex-wrap: wrap;
+				justify-content: center;
+				.enroll_input:first-child {
+					margin-right: 30px;
+				}
+			}
+		}
+	}
+	.enroll_input {
+		min-width: calc(50% - 15px);
+		margin-bottom: 40px;
+		&.btn--submit {
+			min-width: 220px;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width:500px) {
+	.enroll_courses {
+		background-size: cover;
+		h2 {
+			margin-bottom: 25px;
+		}
+		&_top {
+			margin-bottom: 45px;
+		}
+		&_bottom {
+			&_wrap {
+				padding: 28px 0 35px;
+				.enroll_input:first-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.--custom-select.-enroll {
+		max-width: 250px;
+		.dropdown-toggle {
+			span {
+				font-size: 20px;
+			}
+		}
+	}
+	.enroll_input {
+		min-width: 100%;
+		margin-bottom: 35px;
+		&.btn--submit {
+			min-width: 195px;
+			margin: 0;
+		}
+	}
+}
+
+//OUR COACHES
+.our_coaches {
+	padding: 75px 0 85px;
+	h2 {
+		margin-bottom: 65px;
+	}
+}
+
+.coach_item {
+	&_img_wrap {
+		background-color: #f4f6f9;
+		border-radius: 10px 10px 0 0;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		min-height: 245px;
+	}
+	&_descr {
+		padding: 20px 12px 33px;
+		border: 1px solid #eef0f3;
+		border-top: none;
+	}
+	.name {
+		font-family: "MullerMedium";
+		margin-bottom: 10px;
+	}
+	.description {
+		max-height: 115px;
+		overflow: hidden;
+		letter-spacing: 0.75px;
+		font-size: 15px;
+		margin-bottom: 12px;
+	}
+	.results {
+		color: #808ea6;
+		font-family: "MullerMedium";
+		text-align: center;
+		letter-spacing: 0.9px;
+	}
+	.result_img {
+		max-width: 228px;
+		margin: 0 auto 20px;
+		display: block;
+	}
+	.btn--accent {
+		border-radius: 18px;
+		border-width: 1px;
+		font-size: 12px;
+		padding: 7px 33px;
+		letter-spacing: 0.36px;
+	}
+}
+
+@media screen and (max-width:1199px) {
+	.our_coaches {
+		.row > [class*="col-"] {
+			&:last-child {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:991px) {
+	.our_coaches {
+		padding: 55px 0 35px;
+		h2 {
+			margin-bottom: 45px;
+		}
+	}
+	.coach_item {
+		&_img_wrap {
+			min-height: 235px;
+			img {
+				max-width: 90%;
+			}
+		}
+		&_descr {
+			padding: 15px 10px 27px;
+		}
+		.result_img {
+			max-width: 100%;
+		}
+		.btn--accent {
+			padding: 7px 15px;
+		}
+	}
+}
+
+@media screen and (max-width:767px) {
+	.our_coaches {
+		.row > [class*="col-"] {
+			&:last-child {
+				display: block;
+			}
+		}
+	}
+	.coach_item {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width:575px) {
+	.our_coaches {
+		.container {
+			padding: 0;
+		}
+	}
+	.our_coaches_slider_wrap {
+		max-width: 100%;
+		margin: 0;
+	}
+	.coach_item {
+		&_img_wrap {
+			min-height: 245px;
+		}
+		&_descr {
+			padding: 15px 9px 27px;
+		}
+	}
+}
+
+
+//EDUCATION REVIEWS
+.edu_reviews {
+	padding: 65px 0 50px;
+	background-color: #f4f6f9;
+	h2 {
+		margin-bottom: 80px;
+	}
+	.btn-radius {
+		border-radius: 22px;
+		font-size: 14px;
+		font-family: "MullerBold";
+		padding: 13px 80px;
+	}
+}
+
+.edu_review_item {
+	display: flex;
+	margin-bottom: 65px;
+}
+
+.edu_review_item_img_wrap {
+	flex-basis: 35.135%;
+	.responsive_img {
+		height: 0;
+		overflow: hidden;
+		padding-bottom: 70%;
+	}
+	img {
+		border-radius: 6px;
+	}
+}
+
+.edu_review_item_descr {
+	position: relative;
+	flex-basis: 64.865%;
+	padding-left: 15px;
+	&.-mobile {
+		display: none;
+	}
+	h6 {
+		font-family: "MullerMedium";
+		margin: 0;
+	}
+	.course {
+		color: rgba(#5e6269, .49);
+		font-size: 13px;
+		letter-spacing: 0.65px;
+		margin-bottom: 10px;
+	}
+	.review {
+		position: relative;
+		max-height: 55px;
+		font-size: 15px;
+		letter-spacing: 0.75px;
+		overflow: hidden;
+		&:after {
+			display: block;
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 12px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-image: linear-gradient(to top, #f4f6f9, rgba(#f4f6f9, 0));
+		}
+	}
+	.btn-standart {
+		position: absolute;
+		font-size: 9px;
+		text-transform: uppercase;
+		bottom: 0;
+		left: 15px;
+	}
+}
+
+
+
+@media screen and (max-width:1199px) {
+	.edu_review_item_descr {
+		.review {
+			max-height: 75px;
+		}
+	}
+}
+
+@media screen and (max-width:991px) {
+	.edu_reviews {
+		padding: 55px 0;
+		h2 {
+			margin-bottom: 55px;
+		}
+		.btn-radius {
+			margin-top: 15px;
+			padding: 13px 59px;
+		}
+	}
+	.edu_review_item_img_wrap {
+		flex-basis: 27%;
+	}
+	.edu_review_item_descr {
+		flex-basis: 73%;
+		.review {
+			max-height: 55px;
+		}
+	}
+}
+
+@media screen and (max-width:500px) {
+	.edu_review_item {
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+	}
+	.edu_review_item_img_wrap {
+		flex-basis: 44.82%;
+		img {
+			max-width: 100%;
+		}
+	}
+	.edu_review_item_descr {
+		flex-basis: 55.18%;
+		padding-top: 30px;
+		.review {
+			display: none;
+		}
+		.btn-standart {
+			display: none;
+		}
+		&.-mobile {
+			display: block;
+			flex-basis: 100%;
+			padding: 0;
+			font-size: 15px;
+			margin-top: 12px;
+			.review {
+				display: block;
+			}
+			.btn-standart {
+				display: block;
+				position: relative;
+				left: 0;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+
+//EDUCATION QUESTIONS 
+.edu_questions {
+	padding: 75px 0 70px;
+	h2 {
+		margin-bottom: 70px;
+	}
+}
+
+.edu_question_wrap {
+	& > [class*="col-"] {
+		&:nth-child(1),
+		&:nth-child(4) {
+			.edu_question_item {
+				background-color: #f4f6f9;
+			}
+		}
+		&:nth-child(odd) {
+			padding-right: 0;
+		}
+		&:nth-child(even) {
+			padding-left: 0;
+		}
+	}
+}
+
+
+.edu_question_item {
+	h5 {
+		color: $primary;
+		margin-bottom: 15px;
+	}
+	padding: 40px 15px 30px 30px;
+	min-height: 220px;
+	p {
+		font-size: 15px;
+		letter-spacing: 0.75px;
+	}
+}
+
+@media screen and (max-width:992px) {
+	.edu_questions {
+		padding: 55px 0 10px;
+		h2 {
+			margin-bottom: 40px;
+		}
+	}
+	.edu_question_wrap {
+		& > [class*="col-"] {
+			&:nth-child(odd) {
+				padding-right: 15px;
+				padding-left: 15px;
+				.edu_question_item {
+					background-color: #f4f6f9;
+				}
+			}
+			&:nth-child(even) {
+				padding-right: 15px;
+				padding-left: 15px;
+				.edu_question_item {
+					background-color: #fff;
+				}
+			}
+		}
+	}
+	.edu_question_item {
+		min-height: 0;
+		h5 {
+			font-size: 20px;
+		}
+	}
+}
+
+@media screen and (max-width:500px) {
+	.edu_questions {
+		padding: 55px 0 20px;
+		.container {
+			padding: 0;
+		}
+	}
+	.edu_questions_slider_wrap {
+		max-width: 100%;
+		margin: 0;
+	}
+	.edu_question_item {
+		padding: 0 10px 15px 0;
+	}
+}
+
+// MORE QUESTIONS
+.write_us {
+	background: url(../img/group-edu/write_us_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 55px 0 50px;
+	h2 {
+		color: #fff;
+		margin-bottom: 40px;
+	}
+	.btn--small {
+		margin: 0 12px;
+	}
+}
+
+@media screen and (max-width:992px) {
+	.write_us {
+		padding: 45px 0 50px;
+		h2 {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media screen and (max-width:500px) {
+	.write_us {
+		padding: 30px 0 15px;
+		background-size: cover;
+		h2 {
+			margin-bottom: 35px;
+		}
+		.btn--small {
+			margin: 0 0 15px;
+		}
+	}
+}
+
+
+
+// POKER EDUCATION
+.edu_poker {
+	padding: 65px 0 60px;
+	h2 {
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 15px;
+		letter-spacing: 0.75px;
+		padding: 0 5px;
+	}
+}
+
+@media screen and (max-width:992px) {
+	.edu_poker {
+		padding: 45px 0;
+	}
+}
+
+
+
+// MODAL VIDEO 
+
+.modal-video {
+	h2 {
+		color: #fff;
+	}
+	.modal-dialog {
+		max-width: 100%;
+	}
+	.modal-content {
+		background: none;
+		border: none;
+	}
+}
+
+
+
+.video_slider_wrap {
+	.slick-arrow {
+		display: none !important;
+	}
+	.slick-track {
+	.slick-active {
+		background: red;
+		&:first-child {
+			background: blue;
+		}
+	}
+		
+	}
+
+}
+
+
+.video_item {
+	iframe {
+		width: 246px;
+		height: 164px;
 	}
 }
