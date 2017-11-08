@@ -118,6 +118,16 @@
 			margin-right: 15px;
 			box-shadow: none;
 
+			a {
+				display: inline-block;
+				opacity: 1;
+				@include tr(0.3s);
+				&:hover {
+					opacity: 0.8;
+					@include tr(0.3s);
+				}
+			}
+
 			img {
 				max-height: 100%;
 				max-width: 100%;
@@ -138,6 +148,14 @@
 
 		.main-text {
 			margin-bottom: 10px;
+			a {
+				@include tr(0.2s);
+			}
+			a:hover {
+				color: $accent;
+				text-decoration: none;
+				@include tr(0.2s);
+			}
 		}
 
 		.views-and-comments {

@@ -29,6 +29,14 @@
 		color: $accent;
 		margin-bottom: 0;
 	}
+
+	&--border {
+		border-top: 4px solid #EEF9F4;
+		border-bottom: 4px solid #EEF9F4;
+		padding-top: 16px;
+		padding-bottom: 23px;
+		color: #5182c1;
+	}
 }
 
 .h3--acticle {
@@ -45,6 +53,7 @@
 	color: #292f39;
 	font-size: 20px;
 	letter-spacing: 1px;
+	line-height: 23px;
 }
 
 .accent {

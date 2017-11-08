@@ -166,11 +166,31 @@ $(document).ready(function() {
 			]
 		});
 	}
+
 	if($('#rooms-items_content').length){
 		var Shuffle = window.shuffle;
 		var myShuffle = new Shuffle(document.getElementById('rooms-items_content'), {
 			itemSelector: '.rooms-item-wrap',
 			sizer: '.rooms-item-wrap',
+			speed: 400,
+			easing: 'ease',
+		});
+		myShuffle.update();
+		$('.tab-nav-list a').on('click' , function(){
+			$('.tab-nav-list a').removeClass('active');
+			$(this).addClass('active');
+			var catName = $(this).attr('data-group');
+			myShuffle.filter(catName, shuffle);
+
+			myShuffle.update();
+		});
+	}
+
+	if($('#articles-choice-item').length){
+		var Shuffle = window.shuffle;
+		var myShuffle = new Shuffle(document.getElementById('articles-choice-item'), {
+			itemSelector: '.articles-choice-item',
+			sizer: '.articles-choice-item',
 			speed: 400,
 			easing: 'ease',
 		});

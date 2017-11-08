@@ -310,25 +310,27 @@
 			letter-spacing: 0.5px;
 			font-size: 16px;
 		}
-		.last-activity {
-			color: #C0C4C9;
-			font-size: 13px;
-			.icon {
-				font-size: 12px;
-				position: relative;
-				top: 2px;
-			}
-			.time {
-				font-size: 10px;
-				letter-spacing: 0.5px;
-				display: inline-block;
-				padding-left: 3px;
-			}
-		}
+
 	}
 
 	.message-text {
 		font-size: 15px;
+	}
+}
+
+.last-activity {
+	color: #C0C4C9;
+	font-size: 13px;
+	.icon {
+		font-size: 12px;
+		position: relative;
+		top: 2px;
+	}
+	.time {
+		font-size: 10px;
+		letter-spacing: 0.5px;
+		display: inline-block;
+		padding-left: 3px;
 	}
 }
 
@@ -482,18 +484,19 @@
 			.name {
 				font-size: 11px;
 			}
-			.last-activity {
-				.time {
-					font-size: 8px;
-				}
-				.icon {
-					font-size: 10px;
-				}
-			}
 		}
 		.message-text {
 			font-size: 10px;
 			line-height: 13px;
+		}
+	}
+
+	.last-activity {
+		.time {
+			font-size: 8px;
+		}
+		.icon {
+			font-size: 10px;
 		}
 	}
 
@@ -610,15 +613,6 @@
 			.name {
 				font-size: 13px;
 			}
-
-			.last-activity {
-				.icon {
-					font-size: 12px;
-				}
-				.time {
-					font-size: 9px;
-				}
-			}
 		}
 
 		.message-text {
@@ -637,5 +631,13 @@
 		}
 	}
 
-}
+	.last-activity {
+		.icon {
+			font-size: 12px;
+		}
+		.time {
+			font-size: 9px;
+		}
+	}
 
+}

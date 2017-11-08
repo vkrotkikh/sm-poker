@@ -59,60 +59,79 @@
 		text-decoration: none;
 	}
 	.left-side {
-		font-size: 13px;
 		ul {
 			margin-bottom: 0;
 		}
 		li {
-			display: inline-block;
 			line-height: 35px;
 			margin-right: 13px;
 			&:last-child {
 				margin-right: 0;
 			}
 		}
-		.autor {
-			img {
-				width: 30px;
-				border-radius: 50%;
-				margin-bottom: 0;
-			}
-			span {
-				color: #292f39;
-			}
-			a {
-				@include tr(0.3s);
-				display: inline-block;
-			}
-			a:hover {
-				span {
-					color: $accent;
-					@include tr(0.3s);
-				}
-			}
-		}
+	}
+}
 
-		.category {
-			background-color: #F4F6F9;
-			border-radius: 18px;
-			a {
-				color: #b5bac1;
-				letter-spacing: 0.5px;
-				display: inline-block;
-				padding: 0px 15px;
-				@include tr(0.3s);
-				span {
-					color: #B4BBC3;
-					margin-right: 7px;
-					font-size: 15px;
-				}
-				&:hover {
-					color: $accent;
-					@include tr(0.3s);
-				}
-			}
+.autor {
+	display: inline-block;
+	font-size: 13px;
+	img {
+		width: 30px;
+		border-radius: 50%;
+		margin-bottom: 0;
+	}
+	span {
+		color: #292f39;
+	}
+	a {
+		@include tr(0.3s);
+		display: inline-block;
+	}
+	a:hover {
+		span {
+			color: $accent;
+			@include tr(0.3s);
 		}
 	}
+}
+
+.category {
+	display: inline-block;
+	font-size: 13px;
+	background-color: #F4F6F9;
+	border-radius: 18px;
+	a {
+		color: #b5bac1;
+		letter-spacing: 0.5px;
+		display: inline-block;
+		padding: 0px 15px;
+		@include tr(0.3s);
+		span {
+			color: #B4BBC3;
+			margin-right: 7px;
+			font-size: 15px;
+		}
+		&:hover {
+			color: $accent;
+			@include tr(0.3s);
+		}
+	}
+}
+
+.time {
+	display: inline-block;
+	color: #b5bac1;
+	font-size: 13px;
+	span {
+		color: #B4BBC3;
+		font-size: 15px;
+		letter-spacing: 0.5px;
+		margin-right: 5px;
+	}
+}
+
+.time--mob {
+	display: none;
 }
 
 .views-and-comments {
@@ -136,21 +155,6 @@
 		position: relative;
 		top: 2px;
 	}
-}
-
-.time {
-	color: #b5bac1;
-	font-size: 13px;
-	span {
-		color: #B4BBC3;
-		font-size: 15px;
-		letter-spacing: 0.5px;
-		margin-right: 5px;
-	}
-}
-
-.time--mob {
-	display: none;
 }
 
 @media only screen and (max-width: 991px) {

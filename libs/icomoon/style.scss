@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('#{$icomoon-font-path}/icomoon.eot?muovor');
-  src:  url('#{$icomoon-font-path}/icomoon.eot?muovor#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/icomoon.ttf?muovor') format('truetype'),
-    url('#{$icomoon-font-path}/icomoon.woff?muovor') format('woff'),
-    url('#{$icomoon-font-path}/icomoon.svg?muovor#icomoon') format('svg');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?4drshg');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?4drshg#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?4drshg') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?4drshg') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?4drshg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,6 +26,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-heart {
+  &:before {
+    content: $icon-heart;
+  }
+}
+.icon-pencil {
+  &:before {
+    content: $icon-pencil;
+  }
+}
+.icon-dislike {
+  &:before {
+    content: $icon-dislike;
+  }
+}
+.icon-like {
+  &:before {
+    content: $icon-like;
+  }
+}
+.icon-share {
+  &:before {
+    content: $icon-share;
+  }
+}
 .icon-check {
   &:before {
     content: $icon-check;
