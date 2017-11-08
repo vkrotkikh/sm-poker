@@ -51,6 +51,12 @@
 	color: $accent;
 }
 
+.h2-edu {
+	font-family: "Exo2-SemiBold";
+		letter-spacing: 1.75px;
+		text-align: center;
+}
+
 @media only screen and (max-width: 1199px) {
 	.h1--big {
 		font-size: 30px;
@@ -61,6 +67,10 @@
 
 	.h2--main {
 		font-size: 23px;
+	}
+	.h2-edu {
+		font-size: 23px;
+		letter-spacing: 1.15px;
 	}
 
 }
@@ -76,7 +86,10 @@
 			justify-content: center;
 		}
 	}
-
+	.h2-edu {
+		font-size: 25px;
+		letter-spacing: 1px;
+	}
 }
 
 @media only screen and (max-width: 575px) {

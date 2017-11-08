@@ -7306,13 +7306,21 @@ main {
 .accent {
   color: #00BC75; }
 
+.h2-edu {
+  font-family: "Exo2-SemiBold";
+  letter-spacing: 1.75px;
+  text-align: center; }
+
 @media only screen and (max-width: 1199px) {
   .h1--big {
     font-size: 30px; } }
 
 @media only screen and (max-width: 991px) {
   .h2--main {
-    font-size: 23px; } }
+    font-size: 23px; }
+  .h2-edu {
+    font-size: 23px;
+    letter-spacing: 1.15px; } }
 
 @media only screen and (max-width: 767px) {
   .h2--main--block {
@@ -7329,7 +7337,10 @@ main {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center; } }
+    justify-content: center; }
+  .h2-edu {
+    font-size: 25px;
+    letter-spacing: 1px; } }
 
 @media only screen and (max-width: 575px) {
   .h1--big {
@@ -11961,13 +11972,17 @@ input[type="submit"] {
 .education-banner {
   background: url(../img/group-edu/group-edu-banner-bg.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   position: relative;
   color: #fff;
   padding-top: 85px;
   font-size: 16px; }
   .education-banner h1 {
+    font-family: "Exo2-SemiBold";
     text-transform: uppercase;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    line-height: 1.3; }
   .education-banner p {
     padding: 0 30px;
     letter-spacing: 0.8px;
@@ -11977,8 +11992,10 @@ input[type="submit"] {
   background: rgba(0, 0, 0, 0.54);
   padding: 55px 0; }
   .education-banner-advantages h4 {
+    font-family: "Exo2-SemiBold";
     text-transform: uppercase;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    letter-spacing: 1.25px; }
 
 .advantages-card-wrap {
   display: -webkit-box;
@@ -12025,9 +12042,72 @@ input[type="submit"] {
   .advantages-card p {
     margin: 0; }
 
+@media screen and (max-width: 1199px) {
+  .education-banner h1 {
+    font-size: 35px; } }
+
+@media screen and (max-width: 991px) {
+  .education-banner {
+    padding-top: 65px; }
+    .education-banner h1 {
+      font-size: 30px;
+      margin-bottom: 10px; }
+    .education-banner p {
+      padding: 0;
+      margin-bottom: 25px; }
+  .education-banner-advantages {
+    background: rgba(0, 0, 0, 0.54);
+    padding: 35px 0; }
+    .education-banner-advantages h4 {
+      font-size: 20px;
+      margin-bottom: 35px; }
+  .advantages-card {
+    min-width: 155px; }
+    .advantages-card .img_wrap {
+      min-height: 0px;
+      max-height: 41px;
+      margin-bottom: 12px; }
+      .advantages-card .img_wrap img {
+        max-height: 41px; }
+    .advantages-card:after {
+      top: 33%; }
+    .advantages-card p {
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      margin: 0; } }
+
+@media screen and (max-width: 767px) {
+  .advantages-card {
+    min-width: 33.333%; } }
+
+@media screen and (max-width: 500px) {
+  .education-banner {
+    padding-top: 40px; }
+    .education-banner h1 {
+      font-size: 25px;
+      letter-spacing: 1.25px;
+      margin-bottom: 15px; }
+  .education-banner-advantages {
+    padding: 40px 0 35px; }
+    .education-banner-advantages h4 {
+      font-size: 17px;
+      letter-spacing: 0.85px;
+      margin-bottom: 30px; }
+  .advantages-card .img_wrap {
+    max-height: 36px;
+    margin-bottom: 12px; }
+    .advantages-card .img_wrap img {
+      max-height: 36px; }
+  .advantages-card:after {
+    height: 24px;
+    top: 33%; }
+  .advantages-card p {
+    font-size: 13px;
+    letter-spacing: 0.65px;
+    margin: 0; } }
+
 .group_courses {
-  padding-top: 90px;
-  min-height: 1000px; }
+  padding: 90px 0; }
   .group_courses h2 {
     margin-bottom: 55px; }
 
@@ -12083,7 +12163,6 @@ input[type="submit"] {
   padding: 85px 0;
   background: #F4F6F9; }
   .individual_courses h2 {
-    font-family: "Exo2-SemiBold";
     margin-bottom: 60px; }
     .individual_courses h2 span {
       display: block; }
@@ -12098,6 +12177,69 @@ input[type="submit"] {
   color: #5387c5;
   text-shadow: 2px 2px 0px #B0C5E3; }
 
+@media screen and (max-width: 991px) {
+  .group_courses {
+    padding: 50px 0 60px; }
+    .group_courses h2 {
+      margin-bottom: 35px; }
+  .group_courses_item_heading {
+    padding: 38px 0 35px; }
+    .group_courses_item_heading h3 {
+      font-size: 18px; }
+  .group_courses_item_descr {
+    padding: 18px;
+    font-size: 14px;
+    min-height: 68px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .group_courses_item_descr .btn--middle {
+      font-size: 10px;
+      max-width: 156px; }
+    .group_courses_item_descr.-btn_wrap {
+      margin-top: 8px; }
+  .individual_courses {
+    padding: 55px 0 45px; }
+    .individual_courses h2 {
+      margin-bottom: 20px; } }
+
+@media screen and (max-width: 767px) {
+  .group_courses {
+    padding: 45px 0; }
+  .group_courses_item {
+    margin-bottom: 35px; }
+    .group_courses_item_descr.-btn_wrap {
+      display: block; } }
+
+@media screen and (max-width: 500px) {
+  .group_courses {
+    padding: 45px 0 30px; }
+    .group_courses h2 {
+      margin-bottom: 30px; }
+  .group_courses_item_heading h3 {
+    font-size: 20px; }
+  .group_courses_item_descr {
+    font-size: 16px; }
+    .group_courses_item_descr .btn--middle {
+      font-size: 12px;
+      max-width: 196px; }
+  .individual_courses {
+    padding: 70px 0 20px; }
+    .individual_courses h2 {
+      margin-bottom: 30px; } }
+
 .enroll_courses {
   background: url(../img/group-edu/enroll-bg.jpg);
   background-repeat: no-repeat;
@@ -12105,10 +12247,7 @@ input[type="submit"] {
   color: #fff;
   padding-top: 70px; }
   .enroll_courses h2 {
-    text-align: center;
     text-transform: uppercase;
-    font-family: "Exo2-SemiBold";
-    letter-spacing: 1.75px;
     margin-bottom: 20px; }
   .enroll_courses_top {
     margin-bottom: 50px; }
@@ -12168,11 +12307,60 @@ input[type="submit"] {
       .--custom-select.-enroll .dropdown-menu.open .dropdown-menu.inner a {
         color: #00BC75; }
 
+@media screen and (max-width: 1199px) {
+  .enroll_input {
+    min-width: 300px; }
+    .enroll_input.btn--submit {
+      min-width: 200px; } }
+
+@media screen and (max-width: 991px) {
+  .enroll_courses {
+    padding: 40px 0 0; }
+    .enroll_courses_top {
+      margin-bottom: 30px; }
+    .enroll_courses_bottom_wrap {
+      padding: 30px 0 35px;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .enroll_courses_bottom_wrap .enroll_input:first-child {
+        margin-right: 30px; }
+  .enroll_input {
+    min-width: calc(50% - 15px);
+    margin-bottom: 40px; }
+    .enroll_input.btn--submit {
+      min-width: 220px;
+      margin: 0; } }
+
+@media screen and (max-width: 500px) {
+  .enroll_courses {
+    background-size: cover; }
+    .enroll_courses h2 {
+      margin-bottom: 25px; }
+    .enroll_courses_top {
+      margin-bottom: 45px; }
+    .enroll_courses_bottom_wrap {
+      padding: 28px 0 35px; }
+      .enroll_courses_bottom_wrap .enroll_input:first-child {
+        margin-right: 0; }
+  .--custom-select.-enroll {
+    max-width: 250px; }
+    .--custom-select.-enroll .dropdown-toggle span {
+      font-size: 20px; }
+  .enroll_input {
+    min-width: 100%;
+    margin-bottom: 35px; }
+    .enroll_input.btn--submit {
+      min-width: 195px;
+      margin: 0; } }
+
 .our_coaches {
   padding: 75px 0 85px; }
   .our_coaches h2 {
-    font-family: "Exo2-SemiBold";
-    letter-spacing: 1.75px;
     margin-bottom: 65px; }
 
 .coach_item_img_wrap {
@@ -12226,12 +12414,47 @@ input[type="submit"] {
   padding: 7px 33px;
   letter-spacing: 0.36px; }
 
+@media screen and (max-width: 1199px) {
+  .our_coaches .row > [class*="col-"]:last-child {
+    display: none; } }
+
+@media screen and (max-width: 991px) {
+  .our_coaches {
+    padding: 55px 0 35px; }
+    .our_coaches h2 {
+      margin-bottom: 45px; }
+  .coach_item_img_wrap {
+    min-height: 235px; }
+    .coach_item_img_wrap img {
+      max-width: 90%; }
+  .coach_item_descr {
+    padding: 15px 10px 27px; }
+  .coach_item .result_img {
+    max-width: 100%; }
+  .coach_item .btn--accent {
+    padding: 7px 15px; } }
+
+@media screen and (max-width: 767px) {
+  .our_coaches .row > [class*="col-"]:last-child {
+    display: block; }
+  .coach_item {
+    margin-bottom: 30px; } }
+
+@media screen and (max-width: 575px) {
+  .our_coaches .container {
+    padding: 0; }
+  .our_coaches_slider_wrap {
+    max-width: 100%;
+    margin: 0; }
+  .coach_item_img_wrap {
+    min-height: 245px; }
+  .coach_item_descr {
+    padding: 15px 9px 27px; } }
+
 .edu_reviews {
   padding: 65px 0 50px;
   background-color: #f4f6f9; }
   .edu_reviews h2 {
-    font-family: "Exo2-SemiBold";
-    letter-spacing: 1.75px;
     margin-bottom: 80px; }
   .edu_reviews .btn-radius {
     border-radius: 22px;
@@ -12263,6 +12486,8 @@ input[type="submit"] {
   -ms-flex-preferred-size: 64.865%;
   flex-basis: 64.865%;
   padding-left: 15px; }
+  .edu_review_item_descr.-mobile {
+    display: none; }
   .edu_review_item_descr h6 {
     font-family: "MullerMedium";
     margin: 0; }
@@ -12297,11 +12522,69 @@ input[type="submit"] {
     bottom: 0;
     left: 15px; }
 
+@media screen and (max-width: 1199px) {
+  .edu_review_item_descr .review {
+    max-height: 75px; } }
+
+@media screen and (max-width: 991px) {
+  .edu_reviews {
+    padding: 55px 0; }
+    .edu_reviews h2 {
+      margin-bottom: 55px; }
+    .edu_reviews .btn-radius {
+      margin-top: 15px;
+      padding: 13px 59px; }
+  .edu_review_item_img_wrap {
+    -webkit-flex-basis: 27%;
+    -ms-flex-preferred-size: 27%;
+    flex-basis: 27%; }
+  .edu_review_item_descr {
+    -webkit-flex-basis: 73%;
+    -ms-flex-preferred-size: 73%;
+    flex-basis: 73%; }
+    .edu_review_item_descr .review {
+      max-height: 55px; } }
+
+@media screen and (max-width: 500px) {
+  .edu_review_item {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 30px; }
+  .edu_review_item_img_wrap {
+    -webkit-flex-basis: 44.82%;
+    -ms-flex-preferred-size: 44.82%;
+    flex-basis: 44.82%; }
+    .edu_review_item_img_wrap img {
+      max-width: 100%; }
+  .edu_review_item_descr {
+    -webkit-flex-basis: 55.18%;
+    -ms-flex-preferred-size: 55.18%;
+    flex-basis: 55.18%;
+    padding-top: 30px; }
+    .edu_review_item_descr .review {
+      display: none; }
+    .edu_review_item_descr .btn-standart {
+      display: none; }
+    .edu_review_item_descr.-mobile {
+      display: block;
+      -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      padding: 0;
+      font-size: 15px;
+      margin-top: 12px; }
+      .edu_review_item_descr.-mobile .review {
+        display: block; }
+      .edu_review_item_descr.-mobile .btn-standart {
+        display: block;
+        position: relative;
+        left: 0;
+        margin-top: 10px; } }
+
 .edu_questions {
   padding: 75px 0 70px; }
   .edu_questions h2 {
-    font-family: "Exo2-SemiBold";
-    letter-spacing: 1.75px;
     margin-bottom: 70px; }
 
 .edu_question_wrap > [class*="col-"]:nth-child(1) .edu_question_item, .edu_question_wrap > [class*="col-"]:nth-child(4) .edu_question_item {
@@ -12323,6 +12606,37 @@ input[type="submit"] {
     font-size: 15px;
     letter-spacing: 0.75px; }
 
+@media screen and (max-width: 992px) {
+  .edu_questions {
+    padding: 55px 0 10px; }
+    .edu_questions h2 {
+      margin-bottom: 40px; }
+  .edu_question_wrap > [class*="col-"]:nth-child(odd) {
+    padding-right: 15px;
+    padding-left: 15px; }
+    .edu_question_wrap > [class*="col-"]:nth-child(odd) .edu_question_item {
+      background-color: #f4f6f9; }
+  .edu_question_wrap > [class*="col-"]:nth-child(even) {
+    padding-right: 15px;
+    padding-left: 15px; }
+    .edu_question_wrap > [class*="col-"]:nth-child(even) .edu_question_item {
+      background-color: #fff; }
+  .edu_question_item {
+    min-height: 0; }
+    .edu_question_item h5 {
+      font-size: 20px; } }
+
+@media screen and (max-width: 500px) {
+  .edu_questions {
+    padding: 55px 0 20px; }
+    .edu_questions .container {
+      padding: 0; }
+  .edu_questions_slider_wrap {
+    max-width: 100%;
+    margin: 0; }
+  .edu_question_item {
+    padding: 0 10px 15px 0; } }
+
 .write_us {
   background: url(../img/group-edu/write_us_bg.jpg);
   background-repeat: no-repeat;
@@ -12330,11 +12644,24 @@ input[type="submit"] {
   padding: 55px 0 50px; }
   .write_us h2 {
     color: #fff;
-    font-family: "Exo2-SemiBold";
-    letter-spacing: 1.75px;
     margin-bottom: 40px; }
   .write_us .btn--small {
     margin: 0 12px; }
+
+@media screen and (max-width: 992px) {
+  .write_us {
+    padding: 45px 0 50px; }
+    .write_us h2 {
+      margin-bottom: 30px; } }
+
+@media screen and (max-width: 500px) {
+  .write_us {
+    padding: 30px 0 15px;
+    background-size: cover; }
+    .write_us h2 {
+      margin-bottom: 35px; }
+    .write_us .btn--small {
+      margin: 0 0 15px; } }
 
 .edu_poker {
   padding: 65px 0 60px; }
@@ -12345,9 +12672,31 @@ input[type="submit"] {
     letter-spacing: 0.75px;
     padding: 0 5px; }
 
-.h2-edu {
-  font-family: "Exo2-SemiBold";
-  letter-spacing: 1.75px; }
+@media screen and (max-width: 992px) {
+  .edu_poker {
+    padding: 45px 0; } }
+
+.modal-video h2 {
+  color: #fff; }
+
+.modal-video .modal-dialog {
+  max-width: 100%; }
+
+.modal-video .modal-content {
+  background: none;
+  border: none; }
+
+.video_slider_wrap .slick-arrow {
+  display: none !important; }
+
+.video_slider_wrap .slick-track .slick-active {
+  background: red; }
+  .video_slider_wrap .slick-track .slick-active:first-child {
+    background: blue; }
+
+.video_item iframe {
+  width: 246px;
+  height: 164px; }
 
 .col-menu {
   padding: 0 15px;
