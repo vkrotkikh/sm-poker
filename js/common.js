@@ -120,9 +120,16 @@ $(document).ready(function() {
 	});
 
 	// SIDE MENU POSITION STICKY
-	$(".side-menu-wrap").JStick({
+	$("#side-menu-wrap").JStick({
 		parent: $('.main-content'),
 		offsetTop: 100,
+		offsetBottom: 0
+	})
+
+	// SIDE MENU (BLACK) POSITION STICKY
+	$("#side-menu-black").JStick({
+		parent: $('.col-menu'),
+		offsetTop: 20,
 		offsetBottom: 0
 	})
 
