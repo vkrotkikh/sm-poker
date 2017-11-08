@@ -20,9 +20,9 @@
 .education-banner-advantages {
 	background: rgba(#000, .54);
 	padding: 55px 0;
-	h2 {
+	h4 {
 		text-transform: uppercase;
-		margin-bottom: 10px;
+		margin-bottom: 50px;
 	}
 }
 .advantages-card-wrap {
@@ -67,8 +67,7 @@
 	padding-top: 90px;
 	min-height: 1000px;
 	h2 {
-		font-family: "Exo2-SemiBold";
-		letter-spacing: 1.75px;
+
 		margin-bottom: 55px;
 	}
 }
@@ -183,12 +182,280 @@
 .enroll_courses {
 	background: url(../img/group-edu/enroll-bg.jpg);
 	background-repeat: no-repeat;
-	min-height: 360px;
+	background-position: center center;
 	color: #fff;
+	padding-top: 70px;
 	h2 {
 		text-align: center;
+		text-transform: uppercase;
+		font-family: "Exo2-SemiBold";
+		letter-spacing: 1.75px;
+		margin-bottom: 20px;
 	}
-	.form {
+	&_top {
+		margin-bottom: 50px;
+	}
+	&_bottom {
+		background: rgba(#000, .54);
+		&_wrap {
+			padding: 50px 30px 45px;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
 
+.enroll_input {
+	min-width: 360px;
+	max-height: 44px;
+	&.btn--submit {
+		min-width: 290px;
+		font-size: 12px;
+		border-radius: 2px;
 	}
+}
+
+.--custom-select.-enroll {
+	max-width: 420px;
+	margin: 0;
+	.dropdown-toggle {
+		border: none;
+		border-radius: 25px;
+		background-color: rgba(#4cbb78, .22);
+		padding: 0;
+		span {
+			color: $primary;
+			font-size: 22px;
+			text-transform: uppercase;
+		}
+		&:after {
+			display: block;
+			position: absolute;
+			content: '';
+			width: 13px;
+			height: 7px;
+			background: url(../img/group-edu/ico-caret_green.png);
+			margin: 0;
+			right: 32px;
+			bottom: 50%;
+			transform: translateY(50%);
+		}
+	}
+	.dropdown-menu.open {
+		background-color: rgba(#4cbb78, .22);
+		top: 5px !important;
+		border-radius: 10px;
+		.dropdown-menu.inner {
+			background: none;
+			border: none;
+			a {
+				color: $primary;
+			}
+		}
+	}
+}
+
+.our_coaches {
+	padding: 75px 0 85px;
+	h2 {
+		font-family: "Exo2-SemiBold";
+		letter-spacing: 1.75px;
+		margin-bottom: 65px;
+	}
+}
+
+.coach_item {
+	&_img_wrap {
+		background-color: #f4f6f9;
+		border-radius: 10px 10px 0 0;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		min-height: 245px;
+	}
+	&_descr {
+		padding: 20px 12px 33px;
+		border: 1px solid #eef0f3;
+		border-top: none;
+	}
+	.name {
+		font-family: "MullerMedium";
+		margin-bottom: 10px;
+	}
+	.description {
+		max-height: 115px;
+		overflow: hidden;
+		letter-spacing: 0.75px;
+		font-size: 15px;
+		margin-bottom: 12px;
+	}
+	.results {
+		color: #808ea6;
+		font-family: "MullerMedium";
+		text-align: center;
+		letter-spacing: 0.9px;
+	}
+	.result_img {
+		max-width: 228px;
+		margin: 0 auto 20px;
+		display: block;
+	}
+	.btn--accent {
+		border-radius: 18px;
+		border-width: 1px;
+		font-size: 12px;
+		padding: 7px 33px;
+		letter-spacing: 0.36px;
+	}
+}
+
+
+//EDUCATION REVIEWS
+.edu_reviews {
+	padding: 65px 0 50px;
+	background-color: #f4f6f9;
+	h2 {
+		font-family: "Exo2-SemiBold";
+		letter-spacing: 1.75px;
+		margin-bottom: 80px;
+	}
+	.btn-radius {
+		border-radius: 22px;
+		font-size: 14px;
+		font-family: "MullerBold";
+		padding: 13px 80px;
+	}
+}
+
+.edu_review_item {
+	display: flex;
+	margin-bottom: 65px;
+}
+
+.edu_review_item_img_wrap {
+	flex-basis: 35.135%;
+	.responsive_img {
+		height: 0;
+		overflow: hidden;
+		padding-bottom: 70%;
+	}
+	img {
+		border-radius: 6px;
+	}
+}
+
+.edu_review_item_descr {
+	position: relative;
+	flex-basis: 64.865%;
+	padding-left: 15px;
+	h6 {
+		font-family: "MullerMedium";
+		margin: 0;
+	}
+	.course {
+		color: rgba(#5e6269, .49);
+		font-size: 13px;
+		letter-spacing: 0.65px;
+		margin-bottom: 10px;
+	}
+	.review {
+		position: relative;
+		max-height: 55px;
+		font-size: 15px;
+		letter-spacing: 0.75px;
+		overflow: hidden;
+		&:after {
+			display: block;
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 12px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-image: linear-gradient(to top, #f4f6f9, rgba(#f4f6f9, 0));
+		}
+	}
+	.btn-standart {
+		position: absolute;
+		font-size: 9px;
+		text-transform: uppercase;
+		bottom: 0;
+		left: 15px;
+	}
+}
+
+
+//EDUCATION QUESTIONS 
+.edu_questions {
+	padding: 75px 0 70px;
+	h2 {
+		font-family: "Exo2-SemiBold";
+		letter-spacing: 1.75px;
+		margin-bottom: 70px;
+	}
+}
+
+.edu_question_wrap {
+	& > [class*="col-"] {
+		&:nth-child(1),
+		&:nth-child(4) {
+			.edu_question_item {
+				background-color: #f4f6f9;
+			}
+		}
+		&:nth-child(odd) {
+			padding-right: 0;
+		}
+		&:nth-child(even) {
+			padding-left: 0;
+		}
+	}
+}
+
+
+.edu_question_item {
+	h5 {
+		color: $primary;
+		margin-bottom: 15px;
+	}
+	padding: 40px 15px 30px 30px;
+	min-height: 220px;
+	p {
+		font-size: 15px;
+		letter-spacing: 0.75px;
+	}
+}
+
+.write_us {
+	background: url(../img/group-edu/write_us_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 55px 0 50px;
+	h2 {
+		color: #fff;
+		font-family: "Exo2-SemiBold";
+		letter-spacing: 1.75px;
+		margin-bottom: 40px;
+	}
+	.btn--small {
+		margin: 0 12px;
+	}
+}
+
+.edu_poker {
+	padding: 65px 0 60px;
+	h2 {
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 15px;
+		letter-spacing: 0.75px;
+		padding: 0 5px; 
+	}
+}
+
+.h2-edu {
+	font-family: "Exo2-SemiBold";
+		letter-spacing: 1.75px;
 }

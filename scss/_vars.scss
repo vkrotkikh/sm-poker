@@ -244,8 +244,8 @@ $h1-font-size:                2.5rem !default;
 $h2-font-size:                2.1875rem !default;
 $h3-font-size:                1.75rem !default;
 $h4-font-size:                1.5625rem !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h5-font-size:                1.25 !default;
+$h6-font-size:                1.125rem !default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        inherit !default;

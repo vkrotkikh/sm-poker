@@ -340,10 +340,10 @@ h4, .h4 {
   font-size: 1.5625rem; }
 
 h5, .h5 {
-  font-size: 1.25rem; }
+  font-size: 1.25; }
 
 h6, .h6 {
-  font-size: 1rem; }
+  font-size: 1.125rem; }
 
 .lead {
   font-size: 1.25rem;
@@ -7316,12 +7316,12 @@ main {
     display: flex;
     -webkit-box-align: center;
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; } }
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 @media only screen and (max-width: 575px) {
   .h1--big {
@@ -9032,12 +9032,12 @@ input[type="submit"] {
       display: flex;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       -webkit-box-align: center;
       -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      -ms-flex-align: center;
+      align-items: center; }
   .table-wrap .table__head > div:last-child .table__cell {
     margin-right: 0; }
   .table-wrap .table__head > div:first-child .table__cell {
@@ -11270,8 +11270,8 @@ input[type="submit"] {
       display: flex;
       -webkit-box-pack: center;
       -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      -ms-flex-pack: center;
+      justify-content: center; }
     .title-block-room-section .bottom-line .room-item-numbers {
       line-height: 39px;
       font-size: 15px;
@@ -11297,21 +11297,8 @@ input[type="submit"] {
   .room-inside-main-contant .table-wrap {
     letter-spacing: 0.8px; }
   .room-inside-main-contant .advantages-section .advantages-items-wrap {
-<<<<<<< HEAD
     padding-top: 35px;
     padding-bottom: 75px; }
-=======
-    padding-top: 30px;
-    padding-bottom: 60px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
->>>>>>> 18460e56e7de3dc9432cdf0a470dcdd9d17d818b
   .room-inside-main-contant .advantages-section .advantages-item {
     text-align: center; }
   .room-inside-main-contant .advantages-section .icon-wrap {
@@ -11977,9 +11964,9 @@ input[type="submit"] {
 .education-banner-advantages {
   background: rgba(0, 0, 0, 0.54);
   padding: 55px 0; }
-  .education-banner-advantages h2 {
+  .education-banner-advantages h4 {
     text-transform: uppercase;
-    margin-bottom: 10px; }
+    margin-bottom: 50px; }
 
 .advantages-card-wrap {
   display: -webkit-box;
@@ -12030,8 +12017,6 @@ input[type="submit"] {
   padding-top: 90px;
   min-height: 1000px; }
   .group_courses h2 {
-    font-family: "Exo2-SemiBold";
-    letter-spacing: 1.75px;
     margin-bottom: 55px; }
 
 .group_courses_item_heading {
@@ -12104,7 +12089,250 @@ input[type="submit"] {
 .enroll_courses {
   background: url(../img/group-edu/enroll-bg.jpg);
   background-repeat: no-repeat;
-  min-height: 360px;
-  color: #fff; }
+  background-position: center center;
+  color: #fff;
+  padding-top: 70px; }
   .enroll_courses h2 {
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Exo2-SemiBold";
+    letter-spacing: 1.75px;
+    margin-bottom: 20px; }
+  .enroll_courses_top {
+    margin-bottom: 50px; }
+  .enroll_courses_bottom {
+    background: rgba(0, 0, 0, 0.54); }
+    .enroll_courses_bottom_wrap {
+      padding: 50px 30px 45px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.enroll_input {
+  min-width: 360px;
+  max-height: 44px; }
+  .enroll_input.btn--submit {
+    min-width: 290px;
+    font-size: 12px;
+    border-radius: 2px; }
+
+.--custom-select.-enroll {
+  max-width: 420px;
+  margin: 0; }
+  .--custom-select.-enroll .dropdown-toggle {
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(76, 187, 120, 0.22);
+    padding: 0; }
+    .--custom-select.-enroll .dropdown-toggle span {
+      color: #00BC75;
+      font-size: 22px;
+      text-transform: uppercase; }
+    .--custom-select.-enroll .dropdown-toggle:after {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 13px;
+      height: 7px;
+      background: url(../img/group-edu/ico-caret_green.png);
+      margin: 0;
+      right: 32px;
+      bottom: 50%;
+      -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      transform: translateY(50%); }
+  .--custom-select.-enroll .dropdown-menu.open {
+    background-color: rgba(76, 187, 120, 0.22);
+    top: 5px !important;
+    border-radius: 10px; }
+    .--custom-select.-enroll .dropdown-menu.open .dropdown-menu.inner {
+      background: none;
+      border: none; }
+      .--custom-select.-enroll .dropdown-menu.open .dropdown-menu.inner a {
+        color: #00BC75; }
+
+.our_coaches {
+  padding: 75px 0 85px; }
+  .our_coaches h2 {
+    font-family: "Exo2-SemiBold";
+    letter-spacing: 1.75px;
+    margin-bottom: 65px; }
+
+.coach_item_img_wrap {
+  background-color: #f4f6f9;
+  border-radius: 10px 10px 0 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 245px; }
+
+.coach_item_descr {
+  padding: 20px 12px 33px;
+  border: 1px solid #eef0f3;
+  border-top: none; }
+
+.coach_item .name {
+  font-family: "MullerMedium";
+  margin-bottom: 10px; }
+
+.coach_item .description {
+  max-height: 115px;
+  overflow: hidden;
+  letter-spacing: 0.75px;
+  font-size: 15px;
+  margin-bottom: 12px; }
+
+.coach_item .results {
+  color: #808ea6;
+  font-family: "MullerMedium";
+  text-align: center;
+  letter-spacing: 0.9px; }
+
+.coach_item .result_img {
+  max-width: 228px;
+  margin: 0 auto 20px;
+  display: block; }
+
+.coach_item .btn--accent {
+  border-radius: 18px;
+  border-width: 1px;
+  font-size: 12px;
+  padding: 7px 33px;
+  letter-spacing: 0.36px; }
+
+.edu_reviews {
+  padding: 65px 0 50px;
+  background-color: #f4f6f9; }
+  .edu_reviews h2 {
+    font-family: "Exo2-SemiBold";
+    letter-spacing: 1.75px;
+    margin-bottom: 80px; }
+  .edu_reviews .btn-radius {
+    border-radius: 22px;
+    font-size: 14px;
+    font-family: "MullerBold";
+    padding: 13px 80px; }
+
+.edu_review_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 65px; }
+
+.edu_review_item_img_wrap {
+  -webkit-flex-basis: 35.135%;
+  -ms-flex-preferred-size: 35.135%;
+  flex-basis: 35.135%; }
+  .edu_review_item_img_wrap .responsive_img {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 70%; }
+  .edu_review_item_img_wrap img {
+    border-radius: 6px; }
+
+.edu_review_item_descr {
+  position: relative;
+  -webkit-flex-basis: 64.865%;
+  -ms-flex-preferred-size: 64.865%;
+  flex-basis: 64.865%;
+  padding-left: 15px; }
+  .edu_review_item_descr h6 {
+    font-family: "MullerMedium";
+    margin: 0; }
+  .edu_review_item_descr .course {
+    color: rgba(94, 98, 105, 0.49);
+    font-size: 13px;
+    letter-spacing: 0.65px;
+    margin-bottom: 10px; }
+  .edu_review_item_descr .review {
+    position: relative;
+    max-height: 55px;
+    font-size: 15px;
+    letter-spacing: 0.75px;
+    overflow: hidden; }
+    .edu_review_item_descr .review:after {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 12px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#f4f6f9), to(rgba(244, 246, 249, 0)));
+      background-image: -webkit-linear-gradient(bottom, #f4f6f9, rgba(244, 246, 249, 0));
+      background-image: -o-linear-gradient(bottom, #f4f6f9, rgba(244, 246, 249, 0));
+      background-image: linear-gradient(to top, #f4f6f9, rgba(244, 246, 249, 0)); }
+  .edu_review_item_descr .btn-standart {
+    position: absolute;
+    font-size: 9px;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 15px; }
+
+.edu_questions {
+  padding: 75px 0 70px; }
+  .edu_questions h2 {
+    font-family: "Exo2-SemiBold";
+    letter-spacing: 1.75px;
+    margin-bottom: 70px; }
+
+.edu_question_wrap > [class*="col-"]:nth-child(1) .edu_question_item, .edu_question_wrap > [class*="col-"]:nth-child(4) .edu_question_item {
+  background-color: #f4f6f9; }
+
+.edu_question_wrap > [class*="col-"]:nth-child(odd) {
+  padding-right: 0; }
+
+.edu_question_wrap > [class*="col-"]:nth-child(even) {
+  padding-left: 0; }
+
+.edu_question_item {
+  padding: 40px 15px 30px 30px;
+  min-height: 220px; }
+  .edu_question_item h5 {
+    color: #00BC75;
+    margin-bottom: 15px; }
+  .edu_question_item p {
+    font-size: 15px;
+    letter-spacing: 0.75px; }
+
+.write_us {
+  background: url(../img/group-edu/write_us_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 55px 0 50px; }
+  .write_us h2 {
+    color: #fff;
+    font-family: "Exo2-SemiBold";
+    letter-spacing: 1.75px;
+    margin-bottom: 40px; }
+  .write_us .btn--small {
+    margin: 0 12px; }
+
+.edu_poker {
+  padding: 65px 0 60px; }
+  .edu_poker h2 {
+    margin-bottom: 20px; }
+  .edu_poker p {
+    font-size: 15px;
+    letter-spacing: 0.75px;
+    padding: 0 5px; }
+
+.h2-edu {
+  font-family: "Exo2-SemiBold";
+  letter-spacing: 1.75px; }
