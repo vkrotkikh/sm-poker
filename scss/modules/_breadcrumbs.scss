@@ -29,6 +29,10 @@
 	}
 }
 
+.breadcrumbs--bottom-border {
+	border-bottom: 2px solid #D8E0EA;
+}
+
 @media only screen and (max-width: 575px) {
 	.breadcrumbs {
 		padding-top: 8px;

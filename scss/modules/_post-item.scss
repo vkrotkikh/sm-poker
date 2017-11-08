@@ -113,28 +113,28 @@
 			}
 		}
 	}
+}
 
-	.right-side {
-		font-size: 13px;
-		color: #b7b7b7;
-		padding-right: 5px;
-		ul {
-			margin-bottom: 0;
+.views-and-comments {
+	font-size: 13px;
+	color: #b7b7b7;
+	padding-right: 5px;
+	ul {
+		margin-bottom: 0;
+	}
+	li {
+		display: inline-block;
+		margin-right: 10px;
+		line-height: 35px;
+		&:last-child {
+			margin-right: 0;
 		}
-		li {
-			display: inline-block;
-			margin-right: 10px;
-			line-height: 35px;
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-		span {
-			color: #ABAFB5;
-			font-size: 15px;
-			position: relative;
-			top: 2px;
-		}
+	}
+	span {
+		color: #ABAFB5;
+		font-size: 15px;
+		position: relative;
+		top: 2px;
 	}
 }
 
