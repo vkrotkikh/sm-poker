@@ -16,6 +16,15 @@
 	margin-bottom: 25px;
 }
 
+.h2--forum {
+	font-size: 22px;
+	font-family: "MullerMedium";
+	color: $accent;
+	line-height: 27px;
+	letter-spacing: 1.1px;
+
+}
+
 .h2--main {
 	font-family: "Exo2-SemiBold";
 	font-size: 25px;
@@ -62,8 +71,8 @@
 
 .h2-edu {
 	font-family: "Exo2-SemiBold";
-		letter-spacing: 1.75px;
-		text-align: center;
+	letter-spacing: 1.75px;
+	text-align: center;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -80,6 +89,10 @@
 	.h2-edu {
 		font-size: 23px;
 		letter-spacing: 1.15px;
+	}
+
+	.h2--forum {
+		font-size: 20px;
 	}
 
 }
@@ -113,7 +126,10 @@
 			line-height: 30px;
 		}
 	}
+
+	.h2--forum {
+		font-size: 18px;
+		letter-spacing: 0.9px;
+	}
+
 }
-
-
-

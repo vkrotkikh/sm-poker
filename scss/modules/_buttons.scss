@@ -81,6 +81,32 @@
 	&-standart{
 		color: #3672bb;
 	}
+
+	&--save {
+		border: 2px solid $accent;
+		color: $accent;
+		border-radius: 14px;
+		line-height: 1;
+		font-size: 8px;
+		text-transform: uppercase;
+		padding-top: 4px;
+		padding-bottom: 6px;
+		padding-left: 7px;
+		padding-right: 7px;
+		@include tr(0.2s);
+		span {
+			font-size: 12px;
+			margin-left: 5px;
+			position: relative;
+			top: 2px;
+		}
+
+		&:hover {
+			color: $accent;
+			border-color: lighten($accent, 7%);
+			@include tr(0.2s);
+		}
+	}
 }
 
 @media only screen and (max-width: 991px) {

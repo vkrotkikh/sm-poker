@@ -79,8 +79,32 @@
 	}
 }
 
-@media only screen and (max-width: 991px) {
+.pagination-section--forum {
 	.pagination {
+		justify-content: start;
+	}
+	li:first-child {
+		a {
+			&:hover {
+				&:before {
+					right: 0;
+				}
+			}
+		}
+	}
+	li:last-child {
+		a {
+			&:hover {
+				&:after {
+					left: 0;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.pagination--big {
 		font-size: 16px;
 		align-items: center;
 		li:first-child {

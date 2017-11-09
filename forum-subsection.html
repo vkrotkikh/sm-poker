@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Название сайта - Главная</title>
+	<meta name="description" content="Краткое описание сайта">
+
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=1">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+
+	<!-- Фон верхней панели браузера -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<!-- подключение CSS -->
+	<link rel="stylesheet" href="libs/bootstrap-select/bootstrap-select.min.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/icomoon/style.css">
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<div class="header__top-line">
+				<div class="row">
+					<div class="col-12 col-lg-5 header__top-line-logo">
+						<!-- HAMBURGER MENU -->
+						<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseMenu" aria-expanded="false">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+						<!-- HAMBURGER MENU END -->
+						<a href="#?" class="header__logo-container">
+							<div class="header__logo-wrap">
+								<img src="img/logo.png" alt="logo">
+							</div>
+							<p>smart poker</p>
+						</a>
+						<!-- SEARCH BUTTON -->
+						<a class="header__search-button" data-toggle="collapse" href="#collapseSearch" aria-expanded="false">
+							<img src="img/search_icon_button.png" alt="icon">
+						</a>
+						<!-- SEARCH BUTTON END -->
+					</div>
+					<div class="d-none d-lg-block col-7">
+						<div class="header__btns-container">
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+							<ul class="enter-links">
+								<li><a href="#?">Вход</a></li>
+								<li><a href="#?">Регистрация</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__menu-wrap">
+				<div class="row">
+					<!-- HEADER MENU -->
+					<div class="col-12 col-lg-8 collapse header__menu-container" id="collapseMenu">
+						<div class="header__mob-top-line --border">
+							<p>Меню</p>
+							<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseMenu" aria-expanded="false">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+						<ul class="header__menu">
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#?" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Обучение покеру
+									<span class="dropdown_icon"></span>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#?">Пример 1</a>
+									<a class="dropdown-item" href="#?">Пример 2</a>
+									<a class="dropdown-item" href="#?">Пример 3</a>
+								</div>
+							</li>
+							<li><a href="#?">Видео</a></li>
+							<li><a href="#?">Vip</a></li>
+							<li><a href="#?">Статьи</a></li>
+							<li><a href="#?">Покер румы</a></li>
+							<li><a href="#?">Магазин</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#?" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Форум
+									<span class="dropdown_icon"></span>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#?">Пример 1</a>
+									<a class="dropdown-item" href="#?">Пример 2</a>
+									<a class="dropdown-item" href="#?">Пример 3</a>
+								</div>
+							</li>
+						</ul>
+						<div class="header__mob-btns --border">
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+						</div>
+						<div class="header__mob-enter-links --border">
+							<ul class="enter-links">
+								<li><a href="#?">Вход</a></li>
+								<li><a href="#?">Регистрация</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- HEADER MENU END -->
+					<!-- HEADER SEARCH -->
+					<div class="col-12 col-lg-4 col-xl-3 ml-auto collapse" id="collapseSearch">
+						<div class="header__mob-top-line --border">
+							<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseSearch" aria-expanded="false">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+						<div class="header__mob-form-wrap">
+							<form action="javascript:void(0);" class="search">
+								<button type="submit" for="search">
+									<img src="img/search_icon.png" alt="icon">
+								</button>
+								<input id="search" type="text" placeholder="поиск">
+							</form>
+						</div>
+					</div>
+					<!-- HEADER SEARCH -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER END -->
+
+	<!-- CONTENT -->
+	<main class="main">
+
+		<!-- BREADCRUMBS -->
+		<section class="breadcrumbs breadcrumbs--bottom-border">
+			<div class="container">
+				<ul>
+					<li><a href="#?">Smart-Poker.ru</a></li>
+					<li>Видео</li>
+				</ul>
+			</div>
+		</section>
+		<!-- BREADCRUMBS END -->
+
+		<section class="forum-top-title">
+			<div class="container">
+				<h2 class="h2--forum">Покер-румы</h2>
+				<div class="description">
+					<p>В этом подразделе любой желающий может завести свой дневник. Делитесь своими успехами, как в покере так и в жизни.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="forum-sub-items-section">
+			<div class="container">
+				<div class="forum-sub-item-wrap">
+					<!-- SUB-ITEMS -->
+					<div class="forum-sub-item">
+						<div class="left-content">
+							<div class="logo-wrap">
+								<img src="img/forum_subsection_logo_1.png" alt="logo">
+							</div>
+							<div class="side-main-content">
+								<div class="top-line">
+									<span class="title-of-subsection">RedKings</span>
+									<a href="#?" class="btn btn--save">скачать<span class="icon-download"></span></a>
+								</div>
+								<div class="main-subsection-text">
+									<p>Любые вопросы касательно работы данной покер комнаты: акции, софт комнаты, бонусы и так далее. Любые вопросы касательно работы данной покер комнаты: акции, софт</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="middle-content">
+							<ul class="views-and-comments">
+								<li>
+									<span class="icon-eye"></span> 1 021
+								</li>
+								<li>
+									<span class="icon-chat chat-icon"></span> 23 000
+								</li>
+							</ul>
+						</div>
+
+						<div class="right-content">
+							<div class="comment-with-arrow">
+								<p>Попробую не умереть 2</p>
+							</div>
+							<div class="main-info-block">
+								<div class="img-wrap">
+									<img src="img/forum_avatar.png" alt="img">
+								</div>
+								<div class="main-info-side">
+									<p class="avatar-name">rabotayga</p>
+									<div class="last-activity">
+										<span class="icon-clock icon"></span>
+										<span class="time">3 часа назад</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="forum-sub-item">
+						<div class="left-content">
+							<div class="logo-wrap">
+								<img src="img/room_item.png" alt="logo">
+							</div>
+							<div class="side-main-content">
+								<div class="top-line">
+									<span class="title-of-subsection">PokerKing</span>
+									<a href="#?" class="btn btn--save">скачать<span class="icon-download"></span></a>
+								</div>
+								<div class="main-subsection-text">
+									<p>Любые вопросы касательно работы данной покер комнаты: акции, софт комнаты, бонусы и так далее. Любые вопросы касательно работы данной покер комнаты: акции, софт</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="middle-content">
+							<ul class="views-and-comments">
+								<li>
+									<span class="icon-eye"></span> 1 021
+								</li>
+								<li>
+									<span class="icon-chat chat-icon"></span> 23 000
+								</li>
+							</ul>
+						</div>
+
+						<div class="right-content">
+							<div class="comment-with-arrow">
+								<p>Попробую не умереть 2</p>
+							</div>
+							<div class="main-info-block">
+								<div class="img-wrap">
+									<img src="img/forum_avatar.png" alt="img">
+								</div>
+								<div class="main-info-side">
+									<p class="avatar-name">rabotayga</p>
+									<div class="last-activity">
+										<span class="icon-clock icon"></span>
+										<span class="time">3 часа назад</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="forum-sub-item">
+						<div class="left-content">
+							<div class="logo-wrap">
+								<img src="img/forum_subsection_logo_2.png" alt="logo">
+							</div>
+							<div class="side-main-content">
+								<div class="top-line">
+									<span class="title-of-subsection">PartyPoker</span>
+									<a href="#?" class="btn btn--save">скачать<span class="icon-download"></span></a>
+								</div>
+								<div class="main-subsection-text">
+									<p>Любые вопросы касательно работы данной покер комнаты: акции, софт комнаты, бонусы и так далее. Любые вопросы касательно работы данной покер комнаты: акции, софт</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="middle-content">
+							<ul class="views-and-comments">
+								<li>
+									<span class="icon-eye"></span> 1 021
+								</li>
+								<li>
+									<span class="icon-chat chat-icon"></span> 23 000
+								</li>
+							</ul>
+						</div>
+
+						<div class="right-content">
+							<div class="comment-with-arrow">
+								<p>Попробую не умереть 2</p>
+							</div>
+							<div class="main-info-block">
+								<div class="img-wrap">
+									<img src="img/forum_avatar.png" alt="img">
+								</div>
+								<div class="main-info-side">
+									<p class="avatar-name">rabotayga</p>
+									<div class="last-activity">
+										<span class="icon-clock icon"></span>
+										<span class="time">3 часа назад</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="forum-sub-item">
+						<div class="left-content">
+							<div class="logo-wrap">
+								<img src="img/forum_subsection_logo_3.png" alt="logo">
+							</div>
+							<div class="side-main-content">
+								<div class="top-line">
+									<span class="title-of-subsection">RedStar Poker</span>
+									<a href="#?" class="btn btn--save">скачать<span class="icon-download"></span></a>
+								</div>
+								<div class="main-subsection-text">
+									<p>Любые вопросы касательно работы данной покер комнаты: акции, софт комнаты, бонусы и так далее. Любые вопросы касательно работы данной покер комнаты: акции, софт</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="middle-content">
+							<ul class="views-and-comments">
+								<li>
+									<span class="icon-eye"></span> 1 021
+								</li>
+								<li>
+									<span class="icon-chat chat-icon"></span> 23 000
+								</li>
+							</ul>
+						</div>
+
+						<div class="right-content">
+							<div class="comment-with-arrow">
+								<p>Попробую не умереть 2</p>
+							</div>
+							<div class="main-info-block">
+								<div class="img-wrap">
+									<img src="img/forum_avatar.png" alt="img">
+								</div>
+								<div class="main-info-side">
+									<p class="avatar-name">rabotayga</p>
+									<div class="last-activity">
+										<span class="icon-clock icon"></span>
+										<span class="time">3 часа назад</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="forum-sub-item">
+						<div class="left-content">
+							<div class="logo-wrap">
+								<img src="img/forum_subsection_logo_1.png" alt="logo">
+							</div>
+							<div class="side-main-content">
+								<div class="top-line">
+									<span class="title-of-subsection">RedKings</span>
+									<a href="#?" class="btn btn--save">скачать<span class="icon-download"></span></a>
+								</div>
+								<div class="main-subsection-text">
+									<p>Любые вопросы касательно работы данной покер комнаты: акции, софт комнаты, бонусы и так далее. Любые вопросы касательно работы данной покер комнаты: акции, софт</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="middle-content">
+							<ul class="views-and-comments">
+								<li>
+									<span class="icon-eye"></span> 1 021
+								</li>
+								<li>
+									<span class="icon-chat chat-icon"></span> 23 000
+								</li>
+							</ul>
+						</div>
+
+						<div class="right-content">
+							<div class="comment-with-arrow">
+								<p>Попробую не умереть 2</p>
+							</div>
+							<div class="main-info-block">
+								<div class="img-wrap">
+									<img src="img/forum_avatar.png" alt="img">
+								</div>
+								<div class="main-info-side">
+									<p class="avatar-name">rabotayga</p>
+									<div class="last-activity">
+										<span class="icon-clock icon"></span>
+										<span class="time">3 часа назад</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- PAGINATION -->
+		<section class="pagination-section pagination-section--forum">
+			<div class="container">
+				<div class="pagination-wrap">
+					<nav>
+						<ul class="pagination">
+							<li class="page-item"><a class="page-link" href="#?"></a></li>
+							<li class="page-item"><a class="page-link active" href="#?">1</a></li>
+							<li class="page-item"><a class="page-link" href="#?">2</a></li>
+							<li class="page-item"><a class="page-link" href="#?">3</a></li>
+							<li class="page-item"><a class="page-link" href="#?">4</a></li>
+							<li class="page-item"><a class="page-link" href="#?">5</a></li>
+							<li class="page-item"><a class="page-link" href="#?">6</a></li>
+							<li class="page-item"><a class="page-link" href="#?"></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</section>
+		<!-- PAGINATION END -->
+
+	</main>
+	<!-- CONTENT END -->
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-4 col-lg-3 footer__col">
+					<div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Обучение игре в покер</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Индивидуальное обучение</a></li>
+								<li><a href="#?">Групповой курс SMP Bronze</a></li>
+								<li><a href="#?">Групповой курс SMP Silver</a></li>
+								<li><a href="#?">Групповой курс SMP Gold</a></li>
+							</ul>
+						</div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Контент</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Видео уроки покера</a></li>
+								<li><a href="#?">Статьи о покере</a></li>
+								<li><a href="#?">Новости покера</a></li>
+							</ul>
+						</div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Форум</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Разбор раздач</a></li>
+								<li><a href="#?">Блоги</a></li>
+								<li><a href="#?">Обучение</a></li>
+								<li><a href="#?">Курилка</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3 footer__col --border">
+					<div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Покеррумы</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Lotos Poker</a></li>
+								<li><a href="#?">888 Poker</a></li>
+								<li><a href="#?">Planetwin365</a></li>
+								<li><a href="#?">Red Star Poker</a></li>
+								<li><a href="#?">Coral Poker</a></li>
+								<li><a href="#?">PartyPoker</a></li>
+								<li><a href="#?">bwin</a></li>
+								<li><a href="#?">PokerKing</a></li>
+								<li><a href="#?">RedKings</a></li>
+								<li><a href="#?">TigerGaming</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3 footer__col --border">
+					<div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Магазин</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Датамайнинг</a></li>
+								<li><a href="#?">Smart HUD Pro</a></li>
+								<li><a href="#?">Smart HUD</a></li>
+								<li><a href="#?">Holdem Manager 2</a></li>
+								<li><a href="#?">PokerTracker 4</a></li>
+								<li><a href="#?">FlopZilla</a></li>
+								<li><a href="#?">CardRunners EV</a></li>
+								<li><a href="#?">TableScan Turbo</a></li>
+								<li><a href="#?">Note Caddy</a></li>
+								<li><a href="#?">PartyCaption</a></li>
+								<li><a href="#?">888 Caption</a></li>
+								<li><a href="#?">Конвертер рук Chico / Equity</a></li>
+								<li><a href="#?">Конвертер рук Enet / Peoples</a></li>
+								<li><a href="#?">Конвертер рук Enet</a></li>
+								<li><a href="#?">Конвертер рук Suited Aces</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 footer__col --border">
+					<div>
+						<div class="footer__contacts">
+							<h3 class="h3--main">Школа покера Smart Poker</h3>
+							<div class="footer__bottom-wrap">
+								<div class="footer__bottom-wrap-inner">
+									<div class="footer__btns">
+										<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+										<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+									</div>
+									<div class="footer__partners">
+										<h3 class="h3--main">Наши партнеры</h3>
+										<a href="#?">Pokerprodeals</a>
+									</div>
+								</div>
+								<div class="footer__social">
+									<h3 class="h3--main">Соц сети</h3>
+									<ul class="social-list">
+										<li>
+											<a href="#?"><i class="fa fa-vk" aria-hidden="true"></i></a>
+										</li>
+										<li>
+											<a href="#?"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER END -->
+
+	<!-- подключение JavaScript -->
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/bootstrap4/popper.min.js"></script>
+	<script src="libs/bootstrap4/bootstrap.min.js"></script>
+	<script src="libs/bootstrap-select/bootstrap-select.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/jstick/jquery.JStick.min.js"></script>
+	<script src="libs/shuffle.js/shuffle.min.js"></script>
+
+	<script src="js/common.js"></script>
+</body>
+</html>
