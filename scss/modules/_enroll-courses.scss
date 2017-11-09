@@ -1,0 +1,164 @@
+//ENROLL COURSES
+.enroll_courses {
+	background: url(../img/group-edu/enroll-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: #fff;
+	padding-top: 70px;
+	h2 {
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+	&_top {
+		margin-bottom: 50px;
+	}
+	&_bottom {
+		background: rgba(#000, .54);
+		&_wrap {
+			padding: 50px 30px 45px;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
+
+.enroll_courses.-bronze {
+	padding-top: 95px;
+	h2 {
+		margin-bottom: 80px;
+	}
+}
+
+.enroll_input {
+	min-width: 360px;
+	max-height: 44px;
+	&.btn--submit {
+		min-width: 290px;
+		font-size: 12px;
+		border-radius: 2px;
+	}
+}
+
+.--custom-select.-enroll {
+	max-width: 420px;
+	margin: 0;
+	.dropdown-toggle {
+		border: none;
+		border-radius: 25px;
+		background-color: rgba(#4cbb78, .22);
+		padding: 0;
+		span {
+			color: $primary;
+			font-size: 22px;
+			text-transform: uppercase;
+		}
+		&:after {
+			display: block;
+			position: absolute;
+			content: '';
+			width: 13px;
+			height: 7px;
+			background: url(../img/group-edu/ico-caret_green.png);
+			margin: 0;
+			right: 32px;
+			bottom: 50%;
+			transform: translateY(50%);
+		}
+	}
+	.dropdown-menu.open {
+		background-color: rgba(#4cbb78, .22);
+		top: 5px !important;
+		border-radius: 10px;
+		.dropdown-menu.inner {
+			background: none;
+			border: none;
+			a {
+				color: $primary;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1199px) {
+	.enroll_input {
+		min-width: 300px;
+		&.btn--submit {
+			min-width: 200px;
+		}
+	}
+}
+
+@media screen and (max-width:991px) {
+	section.enroll_courses {
+		background: url(../img/group-edu/enroll-bg_pl.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		padding: 40px 0 0;
+		&_top {
+			margin-bottom: 30px;
+		}
+		&_bottom {
+			&_wrap {
+				padding: 30px 0 35px;
+				flex-wrap: wrap;
+				justify-content: center;
+				.enroll_input:first-child {
+					margin-right: 30px;
+				}
+			}
+		}
+	}
+	.enroll_courses.-bronze  {
+		padding-top: 50px;
+		h2 {
+			margin-bottom: 40px;
+		}
+	}
+	.enroll_input {
+		min-width: calc(50% - 15px);
+		margin-bottom: 40px;
+		&.btn--submit {
+			min-width: 220px;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width:500px) {
+	section.enroll_courses {
+		background: url(../img/group-edu/enroll-bg_mb.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		h2 {
+			margin-bottom: 25px;
+		}
+		&_top {
+			margin-bottom: 45px;
+		}
+		&_bottom {
+			&_wrap {
+				padding: 28px 0 35px;
+				.enroll_input:first-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	.--custom-select.-enroll {
+		max-width: 250px;
+		.dropdown-toggle {
+			span {
+				font-size: 20px;
+			}
+		}
+	}
+	.enroll_input {
+		min-width: 100%;
+		margin-bottom: 35px;
+		&.btn--submit {
+			min-width: 195px;
+			margin: 0;
+		}
+	}
+}

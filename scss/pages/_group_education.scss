@@ -194,152 +194,6 @@
 }
 
 
-//ENROLL COURSES
-.enroll_courses {
-	background: url(../img/group-edu/enroll-bg.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	color: #fff;
-	padding-top: 70px;
-	h2 {
-		text-transform: uppercase;
-		margin-bottom: 20px;
-	}
-	&_top {
-		margin-bottom: 50px;
-	}
-	&_bottom {
-		background: rgba(#000, .54);
-		&_wrap {
-			padding: 50px 30px 45px;
-			display: flex;
-			justify-content: space-between;
-		}
-	}
-}
-
-.enroll_input {
-	min-width: 360px;
-	max-height: 44px;
-	&.btn--submit {
-		min-width: 290px;
-		font-size: 12px;
-		border-radius: 2px;
-	}
-}
-
-.--custom-select.-enroll {
-	max-width: 420px;
-	margin: 0;
-	.dropdown-toggle {
-		border: none;
-		border-radius: 25px;
-		background-color: rgba(#4cbb78, .22);
-		padding: 0;
-		span {
-			color: $primary;
-			font-size: 22px;
-			text-transform: uppercase;
-		}
-		&:after {
-			display: block;
-			position: absolute;
-			content: '';
-			width: 13px;
-			height: 7px;
-			background: url(../img/group-edu/ico-caret_green.png);
-			margin: 0;
-			right: 32px;
-			bottom: 50%;
-			transform: translateY(50%);
-		}
-	}
-	.dropdown-menu.open {
-		background-color: rgba(#4cbb78, .22);
-		top: 5px !important;
-		border-radius: 10px;
-		.dropdown-menu.inner {
-			background: none;
-			border: none;
-			a {
-				color: $primary;
-			}
-		}
-	}
-}
-
-@media screen and (max-width:1199px) {
-	.enroll_input {
-		min-width: 300px;
-		&.btn--submit {
-			min-width: 200px;
-		}
-	}
-}
-
-@media screen and (max-width:991px) {
-	.enroll_courses {
-		padding: 40px 0 0;
-		&_top {
-			margin-bottom: 30px;
-		}
-		&_bottom {
-			&_wrap {
-				padding: 30px 0 35px;
-				flex-wrap: wrap;
-				justify-content: center;
-				.enroll_input:first-child {
-					margin-right: 30px;
-				}
-			}
-		}
-	}
-	.enroll_input {
-		min-width: calc(50% - 15px);
-		margin-bottom: 40px;
-		&.btn--submit {
-			min-width: 220px;
-			margin: 0;
-		}
-	}
-}
-
-@media screen and (max-width:500px) {
-	.enroll_courses {
-		background-size: cover;
-		h2 {
-			margin-bottom: 25px;
-		}
-		&_top {
-			margin-bottom: 45px;
-		}
-		&_bottom {
-			&_wrap {
-				padding: 28px 0 35px;
-				.enroll_input:first-child {
-					margin-right: 0;
-				}
-			}
-		}
-	}
-	.--custom-select.-enroll {
-		max-width: 250px;
-		.dropdown-toggle {
-			span {
-				font-size: 20px;
-			}
-		}
-	}
-	.enroll_input {
-		min-width: 100%;
-		margin-bottom: 35px;
-		&.btn--submit {
-			min-width: 195px;
-			margin: 0;
-		}
-	}
-}
-
 //OUR COACHES
 .our_coaches {
 	padding: 75px 0 85px;
@@ -458,154 +312,6 @@
 		}
 		&_descr {
 			padding: 15px 9px 27px;
-		}
-	}
-}
-
-
-//EDUCATION REVIEWS
-.edu_reviews {
-	padding: 65px 0 50px;
-	background-color: #f4f6f9;
-	h2 {
-		margin-bottom: 80px;
-	}
-	.btn-radius {
-		border-radius: 22px;
-		font-size: 14px;
-		font-family: "MullerBold";
-		padding: 13px 80px;
-	}
-}
-
-.edu_review_item {
-	display: flex;
-	margin-bottom: 65px;
-}
-
-.edu_review_item_img_wrap {
-	flex-basis: 35.135%;
-	.responsive_img {
-		height: 0;
-		overflow: hidden;
-		padding-bottom: 70%;
-	}
-	img {
-		border-radius: 6px;
-	}
-}
-
-.edu_review_item_descr {
-	position: relative;
-	flex-basis: 64.865%;
-	padding-left: 15px;
-	&.-mobile {
-		display: none;
-	}
-	h6 {
-		font-family: "MullerMedium";
-		margin: 0;
-	}
-	.course {
-		color: rgba(#5e6269, .49);
-		font-size: 13px;
-		letter-spacing: 0.65px;
-		margin-bottom: 10px;
-	}
-	.review {
-		position: relative;
-		max-height: 55px;
-		font-size: 15px;
-		letter-spacing: 0.75px;
-		overflow: hidden;
-		&:after {
-			display: block;
-			position: absolute;
-			content: '';
-			width: 100%;
-			height: 12px;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background-image: linear-gradient(to top, #f4f6f9, rgba(#f4f6f9, 0));
-		}
-	}
-	.btn-standart {
-		position: absolute;
-		font-size: 9px;
-		text-transform: uppercase;
-		bottom: 0;
-		left: 15px;
-	}
-}
-
-
-
-@media screen and (max-width:1199px) {
-	.edu_review_item_descr {
-		.review {
-			max-height: 75px;
-		}
-	}
-}
-
-@media screen and (max-width:991px) {
-	.edu_reviews {
-		padding: 55px 0;
-		h2 {
-			margin-bottom: 55px;
-		}
-		.btn-radius {
-			margin-top: 15px;
-			padding: 13px 59px;
-		}
-	}
-	.edu_review_item_img_wrap {
-		flex-basis: 27%;
-	}
-	.edu_review_item_descr {
-		flex-basis: 73%;
-		.review {
-			max-height: 55px;
-		}
-	}
-}
-
-@media screen and (max-width:500px) {
-	.edu_review_item {
-		flex-wrap: wrap;
-		margin-bottom: 30px;
-	}
-	.edu_review_item_img_wrap {
-		flex-basis: 44.82%;
-		img {
-			max-width: 100%;
-		}
-	}
-	.edu_review_item_descr {
-		flex-basis: 55.18%;
-		padding-top: 30px;
-		.review {
-			display: none;
-		}
-		.btn-standart {
-			display: none;
-		}
-		&.-mobile {
-			display: block;
-			flex-basis: 100%;
-			padding: 0;
-			font-size: 15px;
-			margin-top: 12px;
-			.review {
-				display: block;
-			}
-			.btn-standart {
-				display: block;
-				position: relative;
-				left: 0;
-				margin-top: 10px;
-			}
 		}
 	}
 }
@@ -751,7 +457,7 @@
 	}
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:991px) {
 	.edu_poker {
 		padding: 45px 0;
 	}
@@ -775,44 +481,45 @@
 }
 
 
+.video_slider {
+	.container {
+		overflow: hidden;
+	}
+}
 
 .video_slider_wrap {
+	margin: 0 -105px;
+	position: relative;
 	.slick-arrow {
-		display: none !important;
+		position: absolute;
+		top: -20px;
+		left: 50%;
 	}
 	.slick-track {
 		.slick-active {
+			max-width: 250px;
+			&:first-child {
+				background: red;
+			}
 		}
 	}
 }
 
 
 .video_item {
-	padding:  50px 16px;
-	// margin: 0 20px;
-	transform: scale(.8);
-	.video_wrap {
-		position: relative;
-		height: 0;
-		padding-bottom: 56.25%;
-		background: #000;
-		border-radius: 4px;
-
+	margin: 0 70px;
+	&.slick-current {
 	}
-	iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		width: 100%;
-		height: 100%;
+	.video_wrap {
+		max-width: 250px;
+		iframe {
+			max-width: 100%;
+			width: 100%;
+			height: auto; 
+		}
 	}
 	
 	&.slick-current {
-		padding: 0;
-		position: relative;
-		transform: scale(1);
-		text-align: center;
+
 	}
 }
