@@ -1,0 +1,199 @@
+.coach_info {
+	padding: 70px 0 40px;
+	h2 {
+		margin-bottom: 50px;
+	}
+}
+
+.coach_wrap {
+	display: flex;
+	margin-bottom: 65px;
+}
+.coach_img_wrap {
+	flex-basis: 23.15%;
+	background-color: #f4f6f9;
+	border-radius: 10px 10px 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	min-height: 245px;
+}
+
+.coach_descr {
+	flex-basis: 76.85%;
+	padding: 55px 90px 15px 15px;
+	font-size: 15px;
+	p {
+		margin-bottom: 23px;
+		letter-spacing: 0.75px;
+	}
+}
+
+.coach_infographic {
+	text-align: center;
+	h5 {
+		font-size: 22px;
+		font-family: "MullerMedium";
+		letter-spacing: 1.1px;
+		color: #808ea6;
+		margin-bottom: 35px;
+	}
+	.infographic_img {
+		img {
+			max-width: 100%;
+		}
+	}
+	.-half {
+		&-left {
+			.infographic_img {
+				padding-right: 15px;
+			}
+		}
+		&-right {
+			.infographic_img {
+				padding-left: 15px;
+			}
+		}
+	}
+	.-center {
+		margin-top: 55px;
+	}
+}
+
+
+@media screen and (max-width:991px) {
+	.coach_info {
+		padding: 50px 0;
+	}
+	.coach_img_wrap {
+		flex-basis: 30.55%;
+		min-height: 255px;
+		img {
+			max-width: 90%;
+		}
+	}
+	.coach_descr {
+		flex-basis: 69.45%;
+		padding: 0 0 0 30px;
+		p {
+			margin-bottom: 20px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:767px) {
+	.coach_img_wrap {
+		flex-basis: 30.55%;
+		max-height: 200px;
+		min-height: 0;
+		img {
+			max-width: 90%;
+		}
+	}
+	.coach_infographic {
+		h5 {
+			margin-bottom: 20px;
+		}
+		.-half {
+			&-left,
+			&-right {
+				margin-bottom: 35px;
+				.infographic_img {
+					padding: 0;
+				}
+			}
+		}
+		.-center {
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width:500px) {
+		.coach_info {
+		padding: 50px 0 40px;
+	}
+	.coach_wrap {
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+	}
+	.coach_img_wrap {
+		margin-bottom: 15px;
+		flex-basis: 100%;
+	}
+	.coach_descr {
+		flex-basis: 100%;
+		padding: 0;
+		p {
+			margin-bottom: 20px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.video_slider {
+	padding: 70px 0;
+	background-color: #f4f6f9;
+	h2 {
+		margin-bottom: 60px;
+	}
+}
