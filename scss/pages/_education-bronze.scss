@@ -1,0 +1,284 @@
+.course_info {
+	position: relative;
+	padding: 150px 0 60px;
+	background-color: #f4f6f9;
+	.container {
+		position: relative;
+		z-index: 1;
+		&:after {
+			display: block;
+			position: absolute;
+			content: '';
+			width: 392px;
+			height: 711px;
+			bottom: -60px;
+			right: 55px;
+			background-image: url(../img/course-bronze/girl-info.png);
+			background-repeat: no-repeat;
+		}
+	}
+	h2 {
+		text-align: left;
+		margin-bottom: 50px;
+	}
+	&:before {
+		display: block;
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 165px;
+		top: 0;
+		left: 0;
+		background: linear-gradient(to top right, #f4f6f9 0%, #f4f6f9 50%, #fff 50%, #fff 100%);
+	}
+}
+
+.course_info_item {
+	margin-bottom: 30px;
+	&_img_wrap {
+		display: flex;
+		align-items: flex-end;
+		min-height: 40px;
+		margin-bottom: 10px;
+		img {
+			max-height: 40px;
+		}
+	}
+	h6 {
+		font-family: "MullerMedium";
+		letter-spacing: 0.9px;
+	}
+	p {
+		font-size: 15px;
+		letter-spacing: 0.75px;
+	}
+}
+
+
+@media screen and (max-width:1199px) {
+	.course_info {
+		.container {
+			&:after {
+				transform: scale(.85);
+				bottom: -113px;
+				right: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:991px) {
+	.course_info {
+		padding: 95px 0 10px;
+		.container {
+			&:after {
+				transform: scale(1);
+				background-image: url(../img/course-bronze/girl_info_pl.png);
+				right: 15px;
+				bottom: -10px;
+				width: 334px;
+				height: 607px;
+			}
+		}
+		&:before {
+			height: 110px;
+		}
+	}
+	.course_info_item {
+		padding-right: 15px;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.course_info {
+		padding: 75px 0 10px;
+		.container {
+			&:after {
+				transform: scale(0.8);
+				background-image: url(../img/course-bronze/girl_info_pl.png);
+				right: -25px;
+				bottom: -70px;
+			}
+		}
+		&:before {
+			height: 80px;
+		}
+	}
+	.course_info_item {
+		padding-right: 100px;
+	}
+}
+
+@media screen and (max-width:500px) {
+	.course_info {
+		padding: 55px 0 20px;
+		.container {
+			&:after {
+				transform: scale(1);
+				background-image: url(../img/course-bronze/girl_info_mb.png);
+				right: 0;
+				bottom: -20px;
+				width: 127px;
+				height: 232px;
+			}
+		}
+		&:before {
+			height: 30px;
+		}
+	}
+	.course_info_item {
+		padding-right: 15px;
+		&:last-child {
+			p {
+				padding-right: 25px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.free_course {
+	padding: 70px 0 80px;
+	h2 {
+		margin-bottom: 30px;
+	}
+	p {
+		font-size: 15px;
+		letter-spacing: 0.75px;
+	}
+}
+
+.table_resp_wrap {
+	margin-top: 25px;
+}
+
+.table_resp_row {
+	display: flex;
+	justify-content: space-between;
+	.table_cell {
+		padding: 15px 5px 13px;
+		background-color: #F2F5FA;
+		margin-bottom: 3px;
+		font-size: 16px;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		&.t-head {
+			padding: 17px 5px 11px;
+			background-color: #96a4b5;
+			color: #fff;
+			font-family: "MullerBold";
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 0.6px;
+			margin-bottom: 8px;
+			min-height: 44px;
+		}
+		&:nth-child(1) {
+			flex-basis: 24.82%;
+		}
+		&:nth-child(2) {
+			flex-basis: 26.93%;
+		}
+		&:nth-child(3) {
+			flex-basis: 47.55%;
+		}
+	}
+}
+
+
+@media screen and (max-width:991px) {
+	.free_course {
+		padding: 60px 0 70px;
+	}
+	.table_resp_wrap {
+		margin-top: 20px;
+	}
+	.table_resp_row {
+		.table_cell {
+			&:nth-child(1) {
+				flex-basis: 24.45%;
+			}
+			&:nth-child(2) {
+				flex-basis: 24.65%;
+			}
+			&:nth-child(3) {
+				flex-basis: 50.3%;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

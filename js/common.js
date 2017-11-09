@@ -243,7 +243,8 @@ $(document).ready(function() {
 		$('.video_slider_wrap').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		centerMode: true
+		centerMode: true,
+		centerPadding: '60px'
 	});
 });
 
