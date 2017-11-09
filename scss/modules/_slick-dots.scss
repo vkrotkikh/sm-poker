@@ -66,7 +66,7 @@
 		}
 	}
 
-	.banner-section, .shop-window-section {
+	.banner-section, .shop-window-section, .comments-section {
 		.custom-dots {
 			.slick-dots {
 				li {
@@ -79,6 +79,26 @@
 						background: #D8E0EA;
 						&:after {
 							border-color: #D8E0EA;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.articles-choice-section {
+		.custom-dots {
+			.slick-dots {
+				li {
+					button {
+						border-color: $accent;
+					}
+				}
+				.slick-active {
+					button {
+						background: $accent;
+						&:after {
+							border-color: $accent;
 						}
 					}
 				}

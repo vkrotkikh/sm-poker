@@ -19,6 +19,7 @@
 		padding-top: 25px;
 		padding-left: 70px;
 		border-left: 1px solid #D8E0EA;
+		margin-bottom: 60px;
 
 		.side-menu-wrap {
 			top: 160px;
@@ -56,7 +57,7 @@
 			@include img-res;
 		}
 
-		.share-circle {
+		.share-circle-wrap {
 			position: absolute;
 			left: -20px;
 			top: 100px;
@@ -137,13 +138,15 @@
 	}
 
 	.bottom-text {
-		padding-left: 70px;
-		padding-bottom: 60px;
 		padding-top: 30px;
 		p {
 			letter-spacing: 0.9px;
+			margin-bottom: 25px;
 			i {
 				font-family: "MullerRegularItalic";
+			}
+			&:last-child {
+				margin-bottom: 0;
 			}
 		}
 	}
@@ -224,7 +227,6 @@
 	padding-top: 15px;
 	padding-bottom: 20px;
 	background-color: #F4F6F9;
-	border-bottom: 3px solid #fff;
 
 	.main-contant {
 		display: -webkit-flex;
@@ -308,10 +310,25 @@
 	display: -o-flex;
 	display: flex;
 	margin-bottom: 65px;
+	position: relative;
+	padding-left: 85px;
+	.avatar-name-block {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+	}
+
 	.avatar-wrap {
 		min-width: 70px;
+		max-width: 70px;
 		flex-basis: 70px;
 		margin-right: 15px;
+		position: absolute;
+		top: 0;
+		left: 0;
 		img {
 			@include img-res;
 		}
@@ -324,30 +341,7 @@
 		display: -o-flex;
 		display: flex;
 		justify-content: space-between;
-	}
-}
-
-.comments-section {
-	padding-top: 100px;
-	padding-bottom: 55px;
-	.h3--main {
-		color: #808ea6;
-		margin-bottom: 75px;
-		display: inline-block;
-		position: relative;
-		padding-right: 10px;
-		&:after {
-			content: "";
-			display: inline-block;
-			height: 1px;
-			width: 10000px;
-			background-color: #D8E0EA;
-			position: absolute;
-			left: 100%;
-			top: 13px;
-		}
-	}
-	.top-line {
+		align-items: center;
 		margin-bottom: 10px;
 		p {
 			font-family: "MullerMedium";
@@ -385,6 +379,28 @@
 					color: $accent;
 				}
 			}
+		}
+	}
+}
+
+.comments-section {
+	padding-top: 100px;
+	padding-bottom: 55px;
+	.h3--main {
+		color: #808ea6;
+		margin-bottom: 75px;
+		display: inline-block;
+		position: relative;
+		padding-right: 10px;
+		&:after {
+			content: "";
+			display: inline-block;
+			height: 1px;
+			width: 10000px;
+			background-color: #D8E0EA;
+			position: absolute;
+			left: 100%;
+			top: 13px;
 		}
 	}
 
@@ -524,6 +540,381 @@
 			color: $accent;
 			text-decoration: none;
 			@include tr(0.3s);
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.news-text-section {
+		.news-text-wrap {
+			padding-left: 0;
+			border-left: none;
+			.bottom-img-block {
+				margin-bottom: 20px;
+			}
+			.share-circle-wrap, .bottom-icons-set {
+				position: relative;
+				left: 0;
+				top: 0;
+				bottom: 0;
+			}
+			.share-circle-wrap {
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 20px;
+				margin-right: 10px;
+			}
+			.bottom-icons-set {
+				display: inline-block;
+				.icons-inner-wrap {
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+				}
+
+				.star-with-number, .like-circle, .dislike-circle {
+					margin-bottom: 0;
+					margin-left: 10px;
+					margin-right: 10px;
+				}
+			}
+
+			.h1--big {
+				font-size: 23px;
+				letter-spacing: 1.15px;
+				margin-bottom: 20px;
+			}
+
+			.autor, .category, .time, .views-and-comments {
+				font-size: 13px;
+			}
+
+			.autor {
+				img {
+					width: 28px;
+				}
+			}
+
+			.time {
+				display: inline-block;
+			}
+
+			.main-text-block {
+				margin-bottom: 50px;
+			}
+		}
+		.post-info {
+			margin-bottom: 20px;
+			.left-side {
+				li {
+					line-height: 36px;
+				}
+			}
+		}
+
+		.category {
+			a {
+				span {
+					font-size: 14px;
+				}
+			}
+		}
+
+		.time {
+			span {
+				font-size: 16px;
+				top: 2px;
+			}
+		}
+
+		.views-and-comments {
+			span {
+				font-size: 15px;
+			}
+		}
+
+		.bottom-text {
+			padding-left: 0;
+		}
+	}
+
+	.want-to-buy-section {
+		.text-block {
+			font-size: 16px;
+			max-width: 265px;
+			letter-spacing: 0.8px;
+		}
+	}
+
+	.big-logo {
+		p {
+			font-size: 20px;
+			letter-spacing: 1.4px;
+		}
+	}
+
+	.comments-item {
+		margin-bottom: 60px;
+		.top-line {
+			p {
+				font-family: "MullerMedium";
+			}
+		}
+
+		.last-activity {
+			.icon {
+				font-size: 12px;
+			}
+			.time {
+				font-size: 10px;
+			}
+		}
+
+		.message-text {
+			margin-bottom: 20px;
+		}
+	}
+
+	.comments-section {
+		padding-top: 75px;
+		padding-bottom: 30px;
+		.h3--main {
+			margin-bottom: 60px;
+		}
+	}
+
+	.reg-comments-section {
+		padding-top: 30px;
+		.registration-text {
+			margin-bottom: 30px;
+		}
+		form {
+			input[type="text"] {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.articles-choice-section {
+		padding-bottom: 45px;
+		margin-bottom: 85px;
+	}
+
+	.articles-choice-item {
+		padding-bottom: 40px;
+		.img-wrap {
+			margin-bottom: 10px;
+		}
+
+		.h3--main {
+			font-size: 19px;
+			line-height: 21px;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+	.want-to-buy-section {
+		padding-top: 20px;
+		padding-bottom: 25px;
+		.main-contant {
+			flex-direction: column;
+		}
+
+		.big-logo {
+			padding-bottom: 25px;
+			position: relative;
+			&:after {
+				content: "";
+				display: inline-block;
+				height: 1px;
+				background-color: #D8E0EA;
+				width: 10000px;
+				position: absolute;
+				bottom: 0;
+				left: -999px;
+			}
+		}
+
+		.text-block {
+			padding-top: 35px;
+			padding-bottom: 35px;
+			max-width: 100%;
+			font-size: 18px;
+		}
+	}
+
+	.big-logo {
+		.big-logo-img {
+			img {
+				-webkit-filter: grayscale(100%);
+				filter: grayscale(100%);
+				opacity: 0.6;
+			}
+		}
+		p {
+			font-size: 25px;
+			letter-spacing: 1.75px;
+			color: #a9a9a9;
+		}
+	}
+
+	.articles-choice-section {
+		.tab-nav-list {
+			li {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.news-img-section {
+		.img-wrap {
+			margin-left: -15px;
+			margin-right: -15px;
+			padding-bottom: 40%;
+		}
+	}
+
+	.news-text-section {
+		.post-info {
+			.left-side {
+				li {
+					margin-right: 10px;
+				}
+			}
+		}
+		.views-and-comments {
+			li {
+				margin-right: 10px;
+			}
+		}
+		.news-text-wrap {
+			padding-top: 10px;
+			margin-bottom: 45px;
+
+			.main-text-block {
+				margin-bottom: 25px;
+			}
+
+			.bottom-img-block {
+				margin-left: -15px;
+				margin-right: -15px;
+				margin-bottom: 45px;
+			}
+
+			.icons-container {
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.star-with-number {
+				width: 50px;
+				height: 50px;
+				.star-number {
+					font-size: 13px;
+					top: 50%;
+				}
+			}
+			.share-circle-wrap {
+				margin-left: 10px;
+			}
+		}
+		.bottom-text {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	.share-circle {
+		width: 50px;
+		height: 50px;
+		font-size: 23px;
+	}
+
+	.like-circle {
+		width: 50px;
+		height: 50px;
+		font-size: 20px;
+	}
+
+	.dislike-circle {
+		width: 50px;
+		height: 50px;
+		font-size: 20px;
+	}
+
+	.double-button {
+		.bottom-side {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+	}
+
+	.comments-section {
+		padding-top: 40px;
+		padding-bottom: 25px;
+		.h3--main {
+			margin-bottom: 20px;
+		}
+		.comments-item:last-child {
+			margin-bottom: 30px;
+		}
+		.comments-wrap {
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+	}
+
+	.comments-item {
+		padding-left: 0;
+		margin-bottom: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+		.top-line {
+			margin-bottom: 15px;
+		}
+		.avatar-wrap {
+			position: relative;
+		}
+		.message-text {
+			margin-bottom: 25px;
+		}
+	}
+
+	.reg-comments-section {
+		padding-top: 25px;
+		padding-bottom: 65px;
+	}
+
+	.articles-choice-section {
+		padding-top: 40px;
+		padding-bottom: 30px;
+		.tab-nav-list {
+			margin-bottom: 5px;
+		}
+
+		.slick-dots {
+			margin-top: 35px;
+		}
+	}
+
+	.articles-choice-item {
+		padding-top: 40px;
+		padding-bottom: 0;
+		.h3--main {
+			font-size: 23px;
+			line-height: 25px;
+			letter-spacing: 1.15px;
 		}
 	}
 }

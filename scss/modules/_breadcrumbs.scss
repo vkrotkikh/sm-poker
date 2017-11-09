@@ -4,19 +4,23 @@
 	ul {
 		list-style-type: none;
 		padding-left: 0;
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
 		margin-bottom: 0;
 		li {
 			line-height: 1;
+			white-space: nowrap;
+			display: inline-block;
+			margin-bottom: 5px;
 			a {
 				color: #a0a4ab;
 				font-size: 13px;
 				letter-spacing: 0.65px;
 			}
+		}
+		li:last-child {
+			white-space: normal;
+			color: #a0a4ab;
+			font-size: 13px;
+			letter-spacing: 0.65px;
 		}
 		li:after {
 			content: url(../img/breadcrumbs_icon.png);
