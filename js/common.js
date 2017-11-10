@@ -291,6 +291,12 @@ $(document).ready(function() {
 		centerPadding: '60px'
 	});
 
+	// BREADCRUMBS-BLOG {
+		$('.breadcrumbs-blog-open').on('click' , function(e){
+			e.preventDefault();
+			$('.breadcrumbs-blog-wrap').toggleClass('breadcrumbs-blog-show');
+		})
+
 });
 
 // COLLAPSE MENU WHEN RESIZE

@@ -41,6 +41,7 @@
 		display: -o-flex;
 		display: flex;
 		max-width: 495px;
+		min-width: 495px;
 	}
 
 	.logo-wrap {
@@ -58,11 +59,22 @@
 		justify-content: center;
 		align-items: center;
 		margin-right: 15px;
+		border: 2px solid transparent;
+		@include tr(0.2s);
+		&:hover {
+			border: 2px solid $accent;
+			@include tr(0.2s);
+			img {
+				transform: scale(0.9);
+				@include tr(0.2s);
+			}
+		}
 		img {
 			max-width: 50px;
 			max-height: 40px;
 			width: auto;
 			height: auto;
+			@include tr(0.2s);
 		}
 	}
 
@@ -110,6 +122,7 @@
 
 	.right-content {
 		max-width: 200px;
+		min-width: 200px;
 		.comment-with-arrow {
 			margin-bottom: 15px;
 		}
@@ -326,5 +339,41 @@
 				z-index: -1;
 			}
 		}
+
+		.logo-wrap {
+			max-width: 55px;
+			min-width: 55px;
+			margin-bottom: 10px;
+			img {
+				max-width: 35px;
+				max-height: 35px;
+			}
+		}
+
+		.side-main-content {
+			.main-subsection-text {
+				font-size: 14px;
+				margin-bottom: 15px;
+			}
+		}
+
+		.middle-content {
+			padding-top: 0;
+			.views-and-comments {
+				font-size: 11px;
+				li {
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	.pagination-section--forum {
+		padding-top: 35px;
+		padding-bottom: 50px;
+		.pagination {
+			justify-content: center;
+		}
 	}
 }
+
