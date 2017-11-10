@@ -109,6 +109,33 @@
 	}
 }
 
+.close-btn {
+	position: relative;
+	padding: 5px;
+	width: 19px;
+	height: 19px;
+	cursor: pointer;
+	&:before,
+	&:after {
+		background: #fff;
+		display: block;
+		position: absolute;
+		content: '';
+		top: -1px;
+		left: 8px;
+		width: 3px;
+		height: 22px;
+		border-radius: 1px;
+	}
+	&:before {
+		transform: rotate(45deg);
+	}
+	&:after {
+		transform: rotate(-45deg);
+	}
+}
+
+
 @media only screen and (max-width: 991px) {
 	.btn {
 		&--secondary {
