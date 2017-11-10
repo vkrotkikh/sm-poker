@@ -253,7 +253,7 @@ $(document).ready(function() {
 
 		function coachFiltering() {
 			var slider = $('#articles-choice-item'),
-				filter = $('#articles-filter a');
+			filter = $('#articles-filter a');
 
 			if (slider.length > 0) {
 				slider.slick({
@@ -284,12 +284,20 @@ $(document).ready(function() {
 	}
 
 	// VIDEO SLIDER
-		$('.video_slider_wrap').slick({
-		slidesToShow: 3,
-		slidesToScroll: 1,
+	$('.video_slider_wrap').slick({
 		centerMode: true,
-		centerPadding: '60px'
+		centerPadding: '60px',
+		slidesToShow: 3,
 	});
+
+
+	// $(".owl-carousel").owlCarousel({
+	// 	center: true,
+	// 	items: 3,
+	// 	nav: true,
+	// 	loop: true
+	// });
+
 
 });
 
