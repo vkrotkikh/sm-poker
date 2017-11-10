@@ -284,10 +284,77 @@ $(document).ready(function() {
 	}
 
 	// VIDEO SLIDER
-	$('.video_slider_wrap').slick({
-		centerMode: true,
-		centerPadding: '60px',
+
+	$('.video_slider_wrap_full').slick({
 		slidesToShow: 3,
+		nextArrow: '<div class="right-arrow"><span class="icon-right-arrow"></div>',
+		prevArrow: '<div class="left-arrow"><span class="icon-left-arrow"></div>',
+		responsive: [
+		{
+			breakpoint: 991,
+			settings: {
+				dots: true,
+				arrows: false
+			}
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 1,
+				dots: true,
+				arrows: false
+			}
+		},
+		]
+	});
+
+	$('.video_slider_wrap_full').on('afterChange', function(event, slick, currentSlide, nextSlide){
+		$('.slick-current').each(function(index, el) {
+			$(this).find('iframe').attr('src', $(this).find('iframe').attr('src'));
+			return false;
+		});
+	});
+
+	$('.video_slider_wrap_modal').on('afterChange', function(event, slick, currentSlide, nextSlide){
+		$('.slick-current').each(function(index, el) {
+			$(this).find('iframe').attr('src', $(this).find('iframe').attr('src'));
+			return false;
+		});
+	});
+
+	if ($('#coachModal').length) {
+		$('#coachModal').on('hidden.bs.modal', function (e) {
+			$("#coachModal").each(function(index, el) {
+				$(this).find('iframe').attr('src', $(this).find('iframe').attr('src'));
+			});
+		})
+		$('.video_slider_wrap_modal').slick({
+			slidesToShow: 3,
+			nextArrow: '<div class="right-arrow"><span class="icon-right-arrow"></div>',
+			prevArrow: '<div class="left-arrow"><span class="icon-left-arrow"></div>',
+			responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+					dots: true,
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					arrows: false
+				}
+			},
+			]
+		});
+	}
+
+	//HIDE MODAL WINDOW
+	$(".close_btn_wrap").click(function() {
+		$('#coachModal').modal('hide')
 	});
 
 	// BREADCRUMBS-BLOG {
@@ -295,9 +362,7 @@ $(document).ready(function() {
 			e.preventDefault();
 			$('.breadcrumbs-blog-wrap').toggleClass('breadcrumbs-blog-show');
 		})
-
-
-});
+	});
 
 // COLLAPSE MENU WHEN RESIZE
 

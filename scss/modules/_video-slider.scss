@@ -1,60 +1,244 @@
 .video_slider {
+	padding: 70px 0 90px;
+	background-color: #f4f6f9;
+	h2 {
+		margin-bottom: 50px;
+	}
 }
 
 .video_slider_wrap {
-	.slick-list {
-		padding: 0px -100px !important;
-	}
+	margin: 0 -80px;
 	.slick-track {
-		padding: 60px 0; 
 		display: flex;
 		align-items: center;
+		min-height: 350px;
+	}
+	.slick-slide { // all slides
+		transition: all .2s;
+		.wrap {
+			position: relative;
+			transition: all .2s;
+			padding: 0 85px;
+		}
+	}
+	.slick-current + .slick-active {  // center slide
+		transform: scale(1.3);
+		.wrap {
+			padding: 0;
+		}
+		.video_wrap {
+			&:before {
+				transition: all .2s;
+				display: none;
+			}
+		}
+	}
+	.slick-active + .slick-active + .slick-active {  //third slide
+		.wrap {
+			padding: 0 85px;
+		}
+	}
+	.video_wrap {
+		height: 0;
+		position: relative;
+		padding-bottom: 56.25%;
+		iframe {
+			transition: all .2s;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+		}
+		&:before {
+			transition: all .2s;
+			display: block;
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			border-radius: 5px;
+			background: rgba(#fff, .5);
+			z-index: 1;
+		}
+	}
+	.slick-arrow {
+		position: absolute;
+		top: -80px;
+		cursor: pointer;
+		span {
+			font-size: 30px;
+		}
+	}
+	.left-arrow {
+		left: 25%;
+	}
+	.right-arrow {
+		right: 25%;
+	}
+	&.-modal {
+		.video_wrap {
+			&:before {
+				background: rgba(#000, .23);
+			}
+		}
+		.slick-arrow {
+			top: -110px;
+			span {
+				color: #fff;
+			}
+		}
+		.left-arrow {
+			left: 33%;
+		}
+		.right-arrow {
+			right: 33%;
+		}
 	}
 }
 
-.video_item {
-	height: 100%;
-	transform: scale(.55);
-	iframe {
-		border-radius: 4px;
-		width: 100%;
-		height: 300px;
-		transition: all .25s;
-	}
-	&.slick-active {
-		width: 33.333%;
-		transition: all .25s;
-		iframe {
-			transition: all .25s;
+// MODAL VIDEO 
 
+.modal_video {
+	background: rgba(#000, .8);
+	.container {
+		position: relative;
+	}
+	.modal-dialog {
+		max-width: 100%;
+		margin: 0;
+	}
+	.modal-content {
+		h2 {
+			color: #fff;
+			margin-bottom: 80px;
+		}
+		background: none;
+		border: none;
+		padding-top: 165px;
+	}
+	.close_btn_wrap {
+		position: absolute;
+		top: -120px;
+		right: 15px;
+		padding: 23px;
+		background: rgba(#fff, .4);
+		border-radius: 50%;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width:1199px) {
+	.video_slider_wrap {
+		.left-arrow {
+			left: 22%;
+		}
+		.right-arrow {
+			right: 22%;
+		}
+		&.-modal {
+			.slick-arrow {
+				top: -90px;
+			}
+			.left-arrow {
+				left: 30%;
+			}
+			.right-arrow {
+				right: 30%;
+			}
 		}
 	}
-	&.slick-center {
-		transition: all .25s;
-		transform: scale(1);
-		iframe {
-			height: 300px;
-			transition: all .25s;
+	.modal_video {
+		.modal-content {
+			h2 {
+				margin-bottom: 60px;
+			}
+			padding-top: 115px;
+		}
+		.close_btn_wrap {
+			top: -60px;
 		}
 	}
 }
 
+@media screen and (max-width:991px) {
+	.video_slider {
+		padding: 50px 0 40px;
+		h2 {
+			margin-bottom: 40px;
+		}
+	}
+	.video_slider_wrap {
+		.slick-track {
+			min-height: 220px;
+		}
+		.slick-slide {
+			.wrap {
+				padding: 0 70px;
+			}
+		}
+		.slick-active + .slick-active + .slick-active {
+			.wrap {
+				padding: 0 70px;
+			}
+		}
+		.slick-dots {
+			margin-top: 45px;
+		}
+	}
+	.modal_video {
+		.modal-content {
+			h2 {
+				margin-bottom: 40px;
+			}
+		}
+		.close_btn_wrap {
+			padding: 17px;
+		}
+	}
+}
 
-// .owl-item {
-// 	max-width: 260px !important;
-// 	div {
-// 		width: 100%;
-// 		padding: 0 20px;
-// 		text-align: center;
-// 		iframe {
-// 			max-width: 260px;
-// 			width: 100%;
-// 			height: auto;
-// 		}
-// 	}
-// 	&.center {
-// 		width: 600px !important;
-// 		max-width: auto !important;
-// 	}
-// }
-
+@media screen and (max-width:757px) {
+	.video_slider {
+		padding: 40px 0;
+		h2 {
+			margin-bottom: 25px;
+		}
+	}
+	.video_slider_wrap {
+		margin: 0;
+		.slick-track {
+			min-height: 0;
+		}
+		.slick-slide {
+			transform: scale(1) !important;
+			.wrap {
+				padding: 0 !important;
+			}
+		}
+		.video_wrap {
+			&:before {
+				display: none;
+			}
+		}
+		.slick-dots {
+			margin-top: 20px;
+		}
+	}
+	.modal_video {
+		.modal-content {
+			h2 {
+				margin-bottom: 25px;
+			}
+		}
+		.close_btn_wrap {
+			padding: 17px;
+		}
+		.close_btn_wrap {
+			right: 0;
+		}
+	}
+}
