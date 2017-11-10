@@ -185,19 +185,6 @@
 		width: auto;
 		padding-left: 40px;
 		padding-right: 40px;
-		&:after {
-			content: "";
-			display: inline-block;
-			@include arr(10, 8, #91A6B7, b);
-			margin-left: 8px;
-			@include tr(0.3s);
-		}
-		&:hover {
-			&:after {
-				@include arr(10, 8, $accent, b);
-				@include tr(0.3s);
-			}
-		}
 	}
 }
 

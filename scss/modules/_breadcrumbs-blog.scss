@@ -4,7 +4,7 @@
 	line-height: 1;
 	letter-spacing: 0.55px;
 	color: $accent;
-	height: 26px;
+	height: 16px;
 	overflow: hidden;
 	li {
 		display: inline-block;
@@ -36,10 +36,10 @@
 	letter-spacing: 0.4px;
 	color: #808ea6;
 	line-height: 1;
-	padding-top: 10px;
 	position: relative;
 	top: 2px;
 	white-space: nowrap;
+	margin-bottom: 5px;
 	&:after {
 		content: "";
 		display: inline-block;
@@ -54,7 +54,6 @@
 
 .breadcrumbs-blog-show {
 	.breadcrumbs-blog {
-		overflow: auto;
 		height: auto;
 	}
 
@@ -62,5 +61,33 @@
 		&:after {
 			@include arr(6, 5, #808ea6, t);
 		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.breadcrumbs-blog {
+		font-size: 10px;
+		height: 15px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.breadcrumbs-blog {
+		font-size: 13px;
+		height: 18px;
+	}
+
+	.breadcrumbs-blog-open {
+		font-size: 10px;
+		&:after {
+			position: relative;
+			bottom: 1px;
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.breadcrumbs-blog {
+		height: 36px;
 	}
 }
