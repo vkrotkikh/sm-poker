@@ -1,0 +1,37 @@
+.goods--section {
+	.goods-item:nth-child(2n+1) {
+		background-color: #F0F5FA;
+	}
+
+	.goods-item-wrap {
+		
+	}
+}
+
+.goods-item {
+	background-color: #fff;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	.logo-name-block {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+	}
+	.developer-logo-wrap {
+		margin-right: 15px;
+	}
+	.goods-name {
+		font-size: 25px;
+		letter-spacing: 1.25px;
+		color: #292f39;
+		@include tr(0.2s);
+		&:hover {
+			text-decoration: none;
+			color: $accent;
+			@include tr(0.2s);
+		}
+	}
+}
