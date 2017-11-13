@@ -1,6 +1,6 @@
 // VIDEO BANNER
 .video-banner {
-	background: url(../../img/video-page/video-banner-bg.jpg);
+	background: url(../img/video-page/video-banner-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
@@ -41,7 +41,7 @@
 
 @media screen and (max-width:500px) {
 	.video-banner {
-		background: url(../../img/video-page/video-banner-bg_mb.jpg);
+		background: url(../img/video-page/video-banner-bg_mb.jpg);
 		background-repeat: no-repeat;
 		background-position: top center;
 		background-size: cover;
