@@ -6,6 +6,11 @@
 	color: $accent;
 	height: 16px;
 	overflow: hidden;
+	flex-basis: 0;
+	-ms-flex-positive: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
 	li {
 		display: inline-block;
 		margin-right: 9px;

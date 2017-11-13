@@ -8654,7 +8654,14 @@ input[type="submit"] {
   letter-spacing: 0.55px;
   color: #00BC75;
   height: 16px;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1; }
   .breadcrumbs-blog li {
     display: inline-block;
     margin-right: 9px;
@@ -9495,7 +9502,6 @@ input[type="submit"] {
       transition: 0.3s; }
   .post-item .img-wrap {
     margin-bottom: 18px;
-    border-radius: 5px;
     height: 0;
     overflow: hidden;
     padding-bottom: 46%;
@@ -9506,7 +9512,8 @@ input[type="submit"] {
     .post-item .img-wrap img {
       height: 100%;
       position: absolute;
-      width: 100%; }
+      width: 100%;
+      border-radius: 5px; }
   .post-item .post-text {
     padding-left: 5px;
     padding-right: 5px;
@@ -9526,7 +9533,11 @@ input[type="submit"] {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .post-info a:hover {
     text-decoration: none; }
   .post-info .left-side ul {
@@ -9543,7 +9554,8 @@ input[type="submit"] {
   .autor img {
     width: 30px;
     border-radius: 50%;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-right: 5px; }
   .autor span {
     color: #292f39; }
   .autor a {
@@ -13576,16 +13588,8 @@ input[type="submit"] {
   .articles-block .btn-wrap {
     padding-bottom: 60px; } }
 
-.news-img-section .img-wrap {
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 36%;
-  position: relative;
-  display: block; }
-  .news-img-section .img-wrap img {
-    height: 100%;
-    position: absolute;
-    width: 100%; }
+.news-img-section img {
+  width: 100%; }
 
 .news-text-section .news-text-wrap {
   position: relative;
@@ -13886,6 +13890,8 @@ input[type="submit"] {
   margin-bottom: 65px;
   position: relative;
   padding-left: 85px; }
+  .comments-item .main-comment-contant {
+    padding-top: 5px; }
   .comments-item .avatar-name-block {
     display: -webkit-flex;
     display: -moz-flex;

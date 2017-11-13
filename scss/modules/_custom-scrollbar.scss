@@ -1,0 +1,17 @@
+.mCSB_scrollTools .mCSB_draggerRail {
+	background-color: #fff;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background-color: #D8E2EC;
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover {
+	.mCSB_dragger_bar {
+		background-color: darken(#D8E2EC, 5%);
+	}
+}
+
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+	background-color: #D8E2EC;
+}
