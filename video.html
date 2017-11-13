@@ -77,7 +77,7 @@
 				<div class="row">
 					<!-- HEADER MENU -->
 					<div class="col-12 col-lg-8 collapse header__menu-container" id="collapseMenu">
-						<div class="header__mob-top-line --border">
+						<div class="header__mob-top-line border-class">
 							<p>Меню</p>
 							<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseMenu" aria-expanded="false">
 								<span></span>
@@ -114,11 +114,11 @@
 								</div>
 							</li>
 						</ul>
-						<div class="header__mob-btns --border">
+						<div class="header__mob-btns border-class">
 							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
 							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
 						</div>
-						<div class="header__mob-enter-links --border">
+						<div class="header__mob-enter-links border-class">
 							<ul class="enter-links">
 								<li><a href="#?">Вход</a></li>
 								<li><a href="#?">Регистрация</a></li>
@@ -128,7 +128,7 @@
 					<!-- HEADER MENU END -->
 					<!-- HEADER SEARCH -->
 					<div class="col-12 col-lg-4 col-xl-3 ml-auto collapse" id="collapseSearch">
-						<div class="header__mob-top-line --border">
+						<div class="header__mob-top-line border-class">
 							<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseSearch" aria-expanded="false">
 								<span></span>
 								<span></span>
@@ -165,6 +165,7 @@
 		</section>
 		<!-- BREADCRUMBS END -->
 
+		<!-- VIDEO BANNER -->
 		<section class="video-banner">
 			<div class="container">
 				<div class="row justify-content-center">
@@ -175,6 +176,9 @@
 				</div>
 			</div>
 		</section>
+		<!-- VIDEO BANNER END -->
+
+		<!-- FILTER SECTION -->
 		<section class="filters-section-link -video d-md-none">
 			<div class="container">
 				<a class="filters-link" data-toggle="collapse" href="#collapseFilters" aria-expanded="false">
@@ -184,6 +188,9 @@
 				<a data-toggle="collapse" href="#collapseFilters" aria-expanded="false" class="plus"></a>
 			</div>
 		</section>
+		<!-- FILTER SECTION END -->
+
+		<!-- SHUFFLE NAV LIST -->
 		<section class="shuffle-nav-list" id="collapseFilters">
 			<div class="container">
 				<ul class="shuffle-buttons-list">
@@ -198,7 +205,12 @@
 				</ul>
 			</div>
 		</section>
+		<!-- SHUFFLE NAV LIST END -->
+
+		<!-- SHUFFLE ITEMS -->
 		<div id="shuffle-grid" class="shuffle-grid">
+
+			<!-- SHUFFLE ITEM -->
 			<section class="forum-banners-section -vip -video shuffle-item" data-groups='["vip"]'>
 				<div class="container">
 					<h3 class="h3-video">VIP клуб</h3>
@@ -314,7 +326,9 @@
 					</div>
 				</div>
 			</section>
+			<!-- SHUFFLE ITEM END-->
 
+			<!-- SHUFFLE ITEM -->
 			<section class="forum-banners-section -video forum-banners-section--border shuffle-item" data-groups='["theory"]'>
 				<div class="container">
 					<h3 class="h3-video">Видео по теории</h3>
@@ -430,7 +444,9 @@
 					</div>
 				</div>
 			</section>
+			<!-- SHUFFLE ITEM END-->
 
+			<!-- SHUFFLE ITEM -->
 			<section class="forum-banners-section -video forum-banners-section--border shuffle-item" data-groups='["forum"]'>
 				<div class="container">
 					<h3 class="h3-video">Разбор задач с форума</h3>
@@ -546,7 +562,9 @@
 					</div>
 				</div>
 			</section>
+			<!-- SHUFFLE ITEM END-->
 
+			<!-- SHUFFLE ITEM -->
 			<section class="forum-banners-section -video forum-banners-section--border shuffle-item" data-groups='["sessions"]'>
 				<div class="container">
 					<h3 class="h3-video">Живые сессии</h3>
@@ -662,113 +680,109 @@
 					</div>
 				</div>
 			</section>
+			<!-- SHUFFLE ITEM END-->
+
 		</div>
+		<!-- SHUFFLE ITEMS END-->
+
 	</main>
 	<!-- CONTENT END -->
 
 	<!-- FOOTER -->
-	<footer class="footer">
+	<footer class="footer collapse" id="collapseFooter">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-4 col-lg-3 footer__col">
-					<div>
-						<div class="footer__list-wrap">
-							<h3 class="h3--main">Обучение игре в покер</h3>
-							<ul class="footer__list">
-								<li><a href="#?">Индивидуальное обучение</a></li>
-								<li><a href="#?">Групповой курс SMP Bronze</a></li>
-								<li><a href="#?">Групповой курс SMP Silver</a></li>
-								<li><a href="#?">Групповой курс SMP Gold</a></li>
-							</ul>
-						</div>
-						<div class="footer__list-wrap">
-							<h3 class="h3--main">Контент</h3>
-							<ul class="footer__list">
-								<li><a href="#?">Видео уроки покера</a></li>
-								<li><a href="#?">Статьи о покере</a></li>
-								<li><a href="#?">Новости покера</a></li>
-							</ul>
-						</div>
-						<div class="footer__list-wrap">
-							<h3 class="h3--main">Форум</h3>
-							<ul class="footer__list">
-								<li><a href="#?">Разбор раздач</a></li>
-								<li><a href="#?">Блоги</a></li>
-								<li><a href="#?">Обучение</a></li>
-								<li><a href="#?">Курилка</a></li>
-							</ul>
-						</div>
+					<div class="footer__list-wrap">
+						<h3 class="h3--main">Обучение игре в покер</h3>
+						<ul class="footer__list">
+							<li><a href="#?">Индивидуальное обучение</a></li>
+							<li><a href="#?">Групповой курс SMP Bronze</a></li>
+							<li><a href="#?">Групповой курс SMP Silver</a></li>
+							<li><a href="#?">Групповой курс SMP Gold</a></li>
+						</ul>
+					</div>
+					<div class="footer__list-wrap">
+						<h3 class="h3--main">Контент</h3>
+						<ul class="footer__list">
+							<li><a href="#?">Видео уроки покера</a></li>
+							<li><a href="#?">Статьи о покере</a></li>
+							<li><a href="#?">Новости покера</a></li>
+						</ul>
+					</div>
+					<div class="footer__list-wrap">
+						<h3 class="h3--main">Форум</h3>
+						<ul class="footer__list">
+							<li><a href="#?">Разбор раздач</a></li>
+							<li><a href="#?">Блоги</a></li>
+							<li><a href="#?">Обучение</a></li>
+							<li><a href="#?">Курилка</a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="col-12 col-sm-4 col-lg-3 footer__col --border">
-					<div>
-						<div class="footer__list-wrap">
-							<h3 class="h3--main">Покеррумы</h3>
-							<ul class="footer__list">
-								<li><a href="#?">Lotos Poker</a></li>
-								<li><a href="#?">888 Poker</a></li>
-								<li><a href="#?">Planetwin365</a></li>
-								<li><a href="#?">Red Star Poker</a></li>
-								<li><a href="#?">Coral Poker</a></li>
-								<li><a href="#?">PartyPoker</a></li>
-								<li><a href="#?">bwin</a></li>
-								<li><a href="#?">PokerKing</a></li>
-								<li><a href="#?">RedKings</a></li>
-								<li><a href="#?">TigerGaming</a></li>
-							</ul>
-						</div>
+				<div class="col-12 col-sm-4 col-lg-3 footer__col border-class">
+					<div class="footer__list-wrap">
+						<h3 class="h3--main">Покеррумы</h3>
+						<ul class="footer__list">
+							<li><a href="#?">Lotos Poker</a></li>
+							<li><a href="#?">888 Poker</a></li>
+							<li><a href="#?">Planetwin365</a></li>
+							<li><a href="#?">Red Star Poker</a></li>
+							<li><a href="#?">Coral Poker</a></li>
+							<li><a href="#?">PartyPoker</a></li>
+							<li><a href="#?">bwin</a></li>
+							<li><a href="#?">PokerKing</a></li>
+							<li><a href="#?">RedKings</a></li>
+							<li><a href="#?">TigerGaming</a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="col-12 col-sm-4 col-lg-3 footer__col --border">
-					<div>
-						<div class="footer__list-wrap">
-							<h3 class="h3--main">Магазин</h3>
-							<ul class="footer__list">
-								<li><a href="#?">Датамайнинг</a></li>
-								<li><a href="#?">Smart HUD Pro</a></li>
-								<li><a href="#?">Smart HUD</a></li>
-								<li><a href="#?">Holdem Manager 2</a></li>
-								<li><a href="#?">PokerTracker 4</a></li>
-								<li><a href="#?">FlopZilla</a></li>
-								<li><a href="#?">CardRunners EV</a></li>
-								<li><a href="#?">TableScan Turbo</a></li>
-								<li><a href="#?">Note Caddy</a></li>
-								<li><a href="#?">PartyCaption</a></li>
-								<li><a href="#?">888 Caption</a></li>
-								<li><a href="#?">Конвертер рук Chico / Equity</a></li>
-								<li><a href="#?">Конвертер рук Enet / Peoples</a></li>
-								<li><a href="#?">Конвертер рук Enet</a></li>
-								<li><a href="#?">Конвертер рук Suited Aces</a></li>
-							</ul>
-						</div>
+				<div class="col-12 col-sm-4 col-lg-3 footer__col border-class">
+					<div class="footer__list-wrap">
+						<h3 class="h3--main">Магазин</h3>
+						<ul class="footer__list">
+							<li><a href="#?">Датамайнинг</a></li>
+							<li><a href="#?">Smart HUD Pro</a></li>
+							<li><a href="#?">Smart HUD</a></li>
+							<li><a href="#?">Holdem Manager 2</a></li>
+							<li><a href="#?">PokerTracker 4</a></li>
+							<li><a href="#?">FlopZilla</a></li>
+							<li><a href="#?">CardRunners EV</a></li>
+							<li><a href="#?">TableScan Turbo</a></li>
+							<li><a href="#?">Note Caddy</a></li>
+							<li><a href="#?">PartyCaption</a></li>
+							<li><a href="#?">888 Caption</a></li>
+							<li><a href="#?">Конвертер рук Chico / Equity</a></li>
+							<li><a href="#?">Конвертер рук Enet / Peoples</a></li>
+							<li><a href="#?">Конвертер рук Enet</a></li>
+							<li><a href="#?">Конвертер рук Suited Aces</a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="col-12 col-lg-3 footer__col --border">
-					<div>
-						<div class="footer__contacts">
-							<h3 class="h3--main">Школа покера Smart Poker</h3>
-							<div class="footer__bottom-wrap">
-								<div class="footer__bottom-wrap-inner">
-									<div class="footer__btns">
-										<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
-										<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
-									</div>
-									<div class="footer__partners">
-										<h3 class="h3--main">Наши партнеры</h3>
-										<a href="#?">Pokerprodeals</a>
-									</div>
+				<div class="col-12 col-lg-3 footer__col border-class">
+					<div class="footer__contacts">
+						<h3 class="h3--main">Школа покера Smart Poker</h3>
+						<div class="footer__bottom-wrap">
+							<div class="footer__bottom-wrap-inner">
+								<div class="footer__btns">
+									<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+									<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
 								</div>
-								<div class="footer__social">
-									<h3 class="h3--main">Соц сети</h3>
-									<ul class="social-list">
-										<li>
-											<a href="#?"><i class="fa fa-vk" aria-hidden="true"></i></a>
-										</li>
-										<li>
-											<a href="#?"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-										</li>
-									</ul>
+								<div class="footer__partners">
+									<h3 class="h3--main">Наши партнеры</h3>
+									<a href="#?">Pokerprodeals</a>
 								</div>
+							</div>
+							<div class="footer__social">
+								<h3 class="h3--main">Соц сети</h3>
+								<ul class="social-list">
+									<li>
+										<a href="#?"><i class="fa fa-vk" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href="#?"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
