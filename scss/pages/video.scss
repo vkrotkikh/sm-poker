@@ -1,0 +1,331 @@
+// VIDEO BANNER
+.video-banner {
+	background: url(../../img/video-page/video-banner-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	padding: 70px 0 60px;
+	color: #fff;
+	h1 {
+		margin-bottom: 5px;
+		font-family: "Exo2-SemiBold";
+		letter-spacing: 2px;
+	}
+	p {
+		padding: 0 65px;
+		font-size: 16px;
+		letter-spacing: 0.8px;
+	}
+}
+
+@media screen and (max-width:1199px) {
+	.video-banner {
+		h1 {
+			font-size: 35px;
+		}
+	}
+}
+
+@media screen and (max-width:991px) {
+	.video-banner {
+		padding: 65px 0 50px;
+		h1 {
+			font-size: 30px;
+			letter-spacing: 1.5px;
+		}
+		p {
+			padding: 0;
+		}
+	}
+}
+
+@media screen and (max-width:500px) {
+	.video-banner {
+		background: url(../../img/video-page/video-banner-bg_mb.jpg);
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: cover;
+		padding: 105px 0 90px;
+		h1 {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+
+// SHUFFLE NAV LIST/VIDEO LIST
+.shuffle-nav-list {
+	padding: 45px 0 40px;
+	ul {
+		display: flex;
+		justify-content: center;
+		margin: 0 21px;
+	}
+	li {
+		display: inline-block;
+		position: relative;
+		&:before {
+			background-color: #9da8b9;
+			display: block;
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 3px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+	a {
+		display: block;
+		position: relative;
+		padding:5px 18px 15px;
+		font-size: 11px;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		color: #808ea6;
+		transition: all .15s;
+		&:hover {
+			text-shadow: 1px 0 0 #3672bb, 0px 0 0 #3672bb;
+			color: #3672bb;
+			text-decoration: none;
+			transition: all .15s;
+			&:before {
+				background-color: #3672bb;
+				display: block;
+				position: absolute;
+				content: '';
+				width: 100%;
+				height: 3px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				transition: all .15s;
+			}
+		}
+		&.active {
+			color: #3672bb;
+			text-shadow: 1px 0 0 #3672bb, 0px 0 0 #3672bb;
+			&:before {
+				background-color: #3672bb;
+				display: block;
+				position: absolute;
+				content: '';
+				width: 100%;
+				height: 3px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1199px) {
+	.shuffle-nav-list {
+		padding: 40px 0 10px;
+		ul {
+			justify-content: flex-start;
+			flex-wrap: wrap;
+		}
+		li {
+			margin-bottom: 20px;
+			padding-right: 25px;
+			&:before {
+				display: none;
+			}
+		}
+		a {
+			padding: 0;
+			&.active {
+				&:before {
+					display: none;
+				}
+			}
+			&:hover {
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:991px) {
+	.shuffle-nav-list {
+		padding: 25px 0 0;
+		ul {
+			margin: 0;
+		}
+		li {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+@media screen and (max-width:767px) {
+	.shuffle-nav-list {
+		background-color: #F1F5FA;
+		display: none;
+		padding: 0;
+		ul {
+			display: block;
+			position: relative;
+			padding: 50px 0;
+			&:before {
+				background-color: #fff;
+				display: block;
+				position: absolute;
+				content: '';
+				width: 1000px;
+				height: 10px;
+				left: 50%;
+				bottom: 0;
+				transform: translateX(-50%);
+			}
+		}
+		li {
+			display: block;
+			padding: 0;
+			width: 100%;
+			text-align: center;
+		}
+		a {
+			padding: 20px 0 15px;
+			font-size: 12px;
+			line-height: 1;
+			color: #808ea6;
+			border: 1px solid #808ea6;
+			border-radius: 25px;
+			&.active {
+				background-color: #3672bb;
+				color: #fff;
+				transition: all .15s;
+				border: 1px solid #3672bb;
+			}
+		}
+		&.collapse , &.show , &.collapsing{
+			display: inherit;
+		}
+		&.collapse{
+			display: none;
+			&.show{
+				display: block;
+				overflow: hidden;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:575px) {
+	.shuffle-nav-list {
+		a {
+			font-size: 10px;
+		}
+	}
+}
+
+
+//VIDEO SECTIONS
+.forum-banners-section.-vip {
+	background-color: #f4f6f9;
+	h3 {
+		color: $primary;
+	}
+	&:before {
+		display: block;
+	}
+}
+
+.forum-banners-section.-video {
+	padding: 50px 0;
+	width: 100%;
+	.container {
+		padding: 0 15px;
+	}
+}
+
+.forum-news-item.-video {
+	.forum-news-item-descr {
+		padding-right: 15px;
+		font-family: "Exo2-SemiBold";
+		font-size: 16px;
+		letter-spacing: 0.8px;
+		line-height: 19px;
+	}
+	.bottom-info {
+		.views-and-comments {
+			margin-right: 5px;
+			font-size: 13px;
+			letter-spacing: 0.65px;
+			span {
+				font-size: 14px;
+			}
+		}
+		.stars {
+			li {
+				i {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:1199px) {
+	.forum-news-item.-video {
+		.forum-news-item-descr {
+			padding: 0;
+			font-size: 14px;
+			letter-spacing: 0.7px;
+		}
+		.bottom-info {
+			.views-and-comments {
+				margin-right: 5px;
+				font-size: 11px;
+				letter-spacing: 0.65px;
+				span {
+					font-size: 12px;
+				}
+			}
+			.stars {
+				li {
+					i {
+						font-size: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:991px) {
+	.forum-banners-section.-video {
+		padding: 45px 0 55px;
+	}
+}
+
+@media screen and (max-width:575px) {
+	.forum-news-item.-video {
+		display: flex;
+		padding-bottom: 25px;
+		.video_item_img_wrap {
+			flex-basis: 44%;
+			.img-wrap {
+				margin: 5px 0 0;
+			}
+		}
+		.video_item_descr {
+			flex-basis: 56%;
+			padding-left: 10px;
+		}
+		.forum-news-item-descr {
+			margin: 0;
+			font-size: 12px;
+			a {
+				font-size: 12px;
+				letter-spacing: 0.6px;
+			}
+		}
+	}
+}

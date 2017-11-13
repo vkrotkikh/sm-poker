@@ -3,21 +3,22 @@
 	background: url(../img/group-edu/group-edu-banner-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-size: cover;
 	position: relative;
-	color: #fff;
 	padding-top: 85px;
 	font-size: 16px;
+	color: #fff;
 	h1 {
-		font-family: "Exo2-SemiBold";
-		text-transform: uppercase;
 		margin-bottom: 25px;
+		font-family: "Exo2-SemiBold";
 		letter-spacing: 2px;
 		line-height: 1.3;
+		text-transform: uppercase;
 	}
 	p {
+		margin-bottom: 55px;
 		padding: 0 30px;
 		letter-spacing: 0.8px;
-		margin-bottom: 55px;
 	}
 }
 
@@ -25,24 +26,24 @@
 	background: url(../img/course-bronze/course-bronze-banner-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+	background-size: cover;
 	h1 {
 		margin-bottom: 15px;
 	}
 	p {
-		padding: 0 20px;
 		margin-bottom: 70px;
+		padding: 0 20px;
 	}
 }
-
 
 .education-banner-advantages {
 	background: rgba(#000, .54);
 	padding: 55px 0;
 	h4 {
-		font-family: "Exo2-SemiBold";
-		text-transform: uppercase;
 		margin-bottom: 50px;
+		font-family: "Exo2-SemiBold";
 		letter-spacing: 1.25px;
+		text-transform: uppercase;
 	}
 }
 
@@ -59,19 +60,19 @@
 	position: relative;
 	min-width: 240px;
 	.img_wrap {
-		min-height: 70px;
 		display: flex;
-		align-items: flex-end;
 		justify-content: center;
+		align-items: flex-end;
 		margin-bottom: 15px;
+		min-height: 70px;
 	}
 	&:after {
+		background: $accent;
 		display: block;
 		position: absolute;
 		content: '';
 		width: 2px;
 		height: 34px;
-		background: $accent;
 		top: 40%;
 		right: -1px;
 		transform: translateY(-50%);
@@ -93,7 +94,6 @@
 }
 
 
-
 @media screen and (max-width:1199px) {
 	.education-banner.-bronze {
 		padding-top: 65px;
@@ -112,18 +112,19 @@
 	.education-banner {
 		padding-top: 65px;
 		h1 {
-			font-size: 30px;
 			margin-bottom: 10px;
+			font-size: 30px;
 		}
 		p {
-			padding: 0;
 			margin-bottom: 25px;
+			padding: 0;
 		}
 	}
 	.education-banner.-bronze {
 		background: url(../img/course-bronze/course-bronze-banner-bg_pl.jpg);
 		background-repeat: no-repeat;
 		background-position: center top;
+		background-size: cover;
 		padding-top: 35px;
 		p {
 			margin-bottom: 25px;
@@ -133,8 +134,8 @@
 		background: rgba(#000, .54);
 		padding: 35px 0;
 		h4 {
-			font-size: 20px;
 			margin-bottom: 35px;
+			font-size: 20px;
 		}
 	}
 	.education-banner-advantages.-bronze {
@@ -157,9 +158,9 @@
 			top: 33%;
 		}
 		p {
+			margin: 0;
 			font-size: 12px;
 			letter-spacing: 0.6px;
-			margin: 0;
 		}
 	}
 }
@@ -169,6 +170,7 @@
 		background: url(../img/course-bronze/course-bronze-banner-bg_pl.jpg);
 		background-repeat: no-repeat;
 		background-position: center top;
+		background-size: cover;
 		padding-top: 20px;
 		p {
 			margin-bottom: 15px;
@@ -185,22 +187,22 @@
 			margin: 0;
 		}
 	}
-
 }
 
 @media screen and (max-width:500px) {
 	.education-banner {
 		padding-top: 40px;
 		h1 {
+			margin-bottom: 15px;
 			font-size: 25px;
 			letter-spacing: 1.25px;
-			margin-bottom: 15px;
 		}
 	}
 	.education-banner.-bronze {
 		background: url(../img/course-bronze/course-bronze-banner-bg_mb.jpg);
 		background-repeat: no-repeat;
 		background-position: center top;
+		background-size: cover;
 		background-size: cover;
 		padding-top: 35px;
 		p {
@@ -210,9 +212,9 @@
 	.education-banner-advantages {
 		padding: 40px 0 35px;
 		h4 {
+			margin-bottom: 30px;
 			font-size: 17px;
 			letter-spacing: 0.85px;
-			margin-bottom: 30px;
 		}
 	}
 	.education-banner-advantages.-bronze {
@@ -220,8 +222,8 @@
 	}
 	.advantages-card {
 		.img_wrap {
-			max-height: 36px;
 			margin-bottom: 12px;
+			max-height: 36px;
 			img {
 				max-height: 36px;
 			}
@@ -231,15 +233,15 @@
 			top: 33%;
 		}
 		p {
+			margin: 0;
 			font-size: 13px;
 			letter-spacing: 0.65px;
-			margin: 0;
 		}
 	}
 	.advantages-card.-bronze {
 		p {
-			padding: 0 5px;
 			margin: 0;
+			padding: 0 5px;
 		}
 	}
 }
