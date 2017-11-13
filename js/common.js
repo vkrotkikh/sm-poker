@@ -68,6 +68,7 @@ $(document).ready(function() {
 
 		$('.filters-section-link .plus').addClass('open-filters');
 		$('.filters-section-link').css("background-color", "#fff");
+		$('.filters-section-link.-video').css("background-color", "#D4D8E1");
 		$('.filters-link').css("color", "#808ea6");
 	})
 
@@ -363,6 +364,29 @@ $(document).ready(function() {
 			$('.breadcrumbs-blog-wrap').toggleClass('breadcrumbs-blog-show');
 		})
 	});
+
+
+
+
+	// SHUFFLE VIDEO PAGE
+	if($('#shuffle-grid').length){
+		var Shuffle = window.shuffle;
+		var myShuffle = new Shuffle(document.getElementById('shuffle-grid'), {
+			itemSelector: '.shuffle-item',
+			sizer: '.shuffle-item',
+			speed: 400,
+			easing: 'ease',
+		});
+		myShuffle.update();
+		$('.shuffle-buttons-list a').on('click' , function(e){
+			e.preventDefault();
+			$('.shuffle-buttons-list a').removeClass('active');
+			$(this).addClass('active');
+			var catName = $(this).attr('data-group');
+			myShuffle.filter(catName, shuffle);
+			myShuffle.update();
+		});
+	}
 
 // COLLAPSE MENU WHEN RESIZE
 

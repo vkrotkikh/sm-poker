@@ -3,11 +3,12 @@
 	background: url(../img/group-edu/enroll-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	color: #fff;
+	background-size: cover;
 	padding-top: 70px;
+	color: #fff;
 	h2 {
-		text-transform: uppercase;
 		margin-bottom: 20px;
+		text-transform: uppercase;
 	}
 	&_top {
 		margin-bottom: 50px;
@@ -15,9 +16,9 @@
 	&_bottom {
 		background: rgba(#000, .54);
 		&_wrap {
-			padding: 50px 30px 45px;
 			display: flex;
 			justify-content: space-between;
+			padding: 50px 30px 45px;
 		}
 	}
 }
@@ -39,27 +40,27 @@
 	}
 }
 
-.--custom-select.-enroll {
-	max-width: 420px;
+.custom-select-user.-enroll {
 	margin: 0;
+	max-width: 420px;
 	.dropdown-toggle {
-		border: none;
-		border-radius: 25px;
 		background-color: rgba(#4cbb78, .22);
 		padding: 0;
+		border: none;
+		border-radius: 25px;
 		span {
-			color: $primary;
 			font-size: 22px;
+			color: $primary;
 			text-transform: uppercase;
 		}
 		&:after {
+			background: url(../img/group-edu/ico-caret_green.png);
 			display: block;
 			position: absolute;
 			content: '';
+			margin: 0;
 			width: 13px;
 			height: 7px;
-			background: url(../img/group-edu/ico-caret_green.png);
-			margin: 0;
 			right: 32px;
 			bottom: 50%;
 			transform: translateY(50%);
@@ -89,19 +90,20 @@
 }
 
 @media screen and (max-width:991px) {
-	section.enroll_courses {
+	.enroll_courses {
 		background: url(../img/group-edu/enroll-bg_pl.jpg);
 		background-repeat: no-repeat;
 		background-position: center center;
+		background-size: cover;
 		padding: 40px 0 0;
 		&_top {
 			margin-bottom: 30px;
 		}
 		&_bottom {
 			&_wrap {
-				padding: 30px 0 35px;
-				flex-wrap: wrap;
 				justify-content: center;
+				flex-wrap: wrap;
+				padding: 30px 0 35px;
 				.enroll_input:first-child {
 					margin-right: 30px;
 				}
@@ -115,17 +117,17 @@
 		}
 	}
 	.enroll_input {
-		min-width: calc(50% - 15px);
 		margin-bottom: 40px;
+		min-width: calc(50% - 15px);
 		&.btn--submit {
-			min-width: 220px;
 			margin: 0;
+			min-width: 220px;
 		}
 	}
 }
 
 @media screen and (max-width:500px) {
-	section.enroll_courses {
+	.enroll_courses {
 		background: url(../img/group-edu/enroll-bg_mb.jpg);
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -154,11 +156,11 @@
 		}
 	}
 	.enroll_input {
-		min-width: 100%;
 		margin-bottom: 35px;
+		min-width: 100%;
 		&.btn--submit {
-			min-width: 195px;
 			margin: 0;
+			min-width: 195px;
 		}
 	}
 }
