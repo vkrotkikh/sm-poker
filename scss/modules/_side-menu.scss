@@ -88,25 +88,6 @@
 				}
 			}
 		}
-		.header__hamburger-menu span:nth-child(1) {
-			-webkit-transform: rotate(45deg);
-			-ms-transform: rotate(45deg);
-			transform: rotate(45deg);
-			position: absolute;
-			left: 0;
-			top: 50%;
-		}
-		.header__hamburger-menu span:nth-child(2) {
-			display: none;
-		}
-		.header__hamburger-menu span:nth-child(3) {
-			-webkit-transform: rotate(-45deg);
-			-ms-transform: rotate(-45deg);
-			transform: rotate(-45deg);
-			position: absolute;
-			left: 0;
-			top: 50%;
-		}
 	}
 
 	.menu-content {
