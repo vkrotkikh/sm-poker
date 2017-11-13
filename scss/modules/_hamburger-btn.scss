@@ -21,10 +21,10 @@
 
 @media only screen and (max-width: 991px) {
 	.header__hamburger-menu, .header__search-button {
-		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
+		display: -webkit-flex;
 	}
 }
