@@ -1,15 +1,6 @@
 .news-img-section {
-	.img-wrap {
-		height: 0;
-		overflow: hidden;
-		padding-bottom: 36%;
-		position: relative;
-		display: block;
-		img {
-			height: 100%;
-			position: absolute;
-			width: 100%;
-		}
+	img {
+		width: 100%;
 	}
 }
 
@@ -312,6 +303,9 @@
 	margin-bottom: 65px;
 	position: relative;
 	padding-left: 85px;
+	.main-comment-contant {
+		padding-top: 5px;
+	}
 	.avatar-name-block {
 		display: -webkit-flex;
 		display: -moz-flex;

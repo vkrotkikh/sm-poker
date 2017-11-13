@@ -372,3 +372,11 @@ $(window).on('resize', function(){
 		$('#collapseMenu').collapse('hide');
 	}
 });
+
+(function($){
+	$(window).on("load",function(){
+		if ($('.side-video-list-wrap').length) {
+			$(".side-video-list-wrap").mCustomScrollbar();
+		}
+	});
+})(jQuery);
