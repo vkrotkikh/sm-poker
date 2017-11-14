@@ -8036,10 +8036,12 @@ input[type="submit"] {
   margin-left: 45px;
   white-space: nowrap; }
   .enter-links:before {
-    content: url(../img/login_icon.png);
+    content: '\e918';
     display: inline-block;
+    font-family: 'icomoon', sans-serif;
+    font-size: 18px;
     position: relative;
-    top: 5px;
+    top: 4px;
     margin-right: 10px; }
   .enter-links li {
     display: inline-block;
@@ -8073,6 +8075,19 @@ input[type="submit"] {
     border: none;
     background-color: transparent;
     cursor: pointer; }
+    .search button span {
+      font-size: 15px;
+      color: #D0D4DA;
+      position: relative;
+      top: 2px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .search button:hover span {
+      color: #00BC75;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
   .search input {
     border: none;
     background-color: #F4F6F9;
@@ -8149,7 +8164,10 @@ input[type="submit"] {
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-border-radius: 20px;
-          border-radius: 20px; }
+          border-radius: 20px;
+  color: #B7BCC6; }
+  .header__search-button:hover {
+    text-decoration: none; }
 
 @media only screen and (min-width: 991px) {
   #collapseSearch {
@@ -8509,8 +8527,8 @@ input[type="submit"] {
         #collapseMenu .header__mob-btns a:last-child {
           margin-bottom: 0; }
     #collapseMenu .header__mob-enter-links {
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 10px;
+      padding-bottom: 16px;
       text-align: center; }
       #collapseMenu .header__mob-enter-links .header__enter-links {
         margin-left: 0; }
@@ -9117,13 +9135,15 @@ input[type="submit"] {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
-    .basket .basket-wrap img {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto; }
+    .basket .basket-wrap span {
+      font-size: 48px;
+      color: #fff;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
     .basket .basket-wrap:hover {
       background-color: rgba(0, 115, 191, 0.9);
+      text-decoration: none;
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s; }
@@ -9192,7 +9212,7 @@ input[type="submit"] {
   .header__basket-mob {
     position: absolute;
     right: 65px; }
-    .header__basket-mob span {
+    .header__basket-mob .number-busket-mob {
       display: inline-block;
       width: 16px;
       height: 16px;
@@ -9205,28 +9225,43 @@ input[type="submit"] {
       line-height: 16px;
       position: absolute;
       top: 0;
-      left: -8px; } }
+      left: -10px; }
+    .header__basket-mob .icon-basket {
+      color: #878F9D;
+      font-size: 30px; } }
 
 .developer-link {
   color: #3672bb;
   font-size: 14px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
   .developer-link:after {
-    content: url(../img/developer_icon.png);
+    content: '\e900';
+    font-family: 'icomoon', sans-serif;
+    font-size: 14px;
+    color: #3672bb;
     display: inline-block;
     padding-left: 10px;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
     position: relative;
+    top: 1px;
     left: 0; }
   .developer-link:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #00BC75;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
     .developer-link:hover:after {
       left: 10px;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
-      transition: 0.5s; }
+      transition: 0.5s;
+      color: #00BC75; }
 
 @media only screen and (max-width: 575px) {
   .developer-link {
@@ -9251,7 +9286,9 @@ input[type="submit"] {
   outline: none !important; }
 
 .dropdown-toggle::after {
-  content: url(../img/program-review_dropdown_icon.png);
+  content: '\e917';
+  font-family: 'icomoon', sans-serif;
+  font-size: 8px;
   display: inline-block;
   position: relative;
   right: 20px;
@@ -12166,7 +12203,9 @@ input[type="submit"] {
       line-height: 48px;
       font-size: 10px;
       padding: 0px 15px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      -webkit-border-radius: 0;
+              border-radius: 0; }
       .program-review__main-content .program-review__buttons .btn span {
         position: relative;
         top: 2px; }

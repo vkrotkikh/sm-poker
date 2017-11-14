@@ -10,6 +10,21 @@
 		border: none;
 		background-color: transparent;
 		cursor: pointer;
+
+		span {
+			font-size: 15px;
+			color: #D0D4DA;
+			position: relative;
+			top: 2px;
+			@include tr(0.3s);
+		}
+
+		&:hover {
+			span {
+				color: $accent;
+				@include tr(0.3s);
+			}
+		}
 	}
 	input {
 		border: none;
@@ -37,6 +52,10 @@
 	align-items: center;
 	justify-content: center;
 	border-radius: 20px;
+	color: #B7BCC6;
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 @media only screen and (min-width: 991px) {
