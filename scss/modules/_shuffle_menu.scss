@@ -194,25 +194,7 @@
 			padding: 50px 0 40px;
 		}
 	}
-	.header__basket-mob.-shop {
-		display: block !important;
-		position: absolute;
-		right: 90px;
-		span {
-			background-color: $accent;
-			display: inline-block;
-			position: absolute;
-			width: 16px;
-			height: 16px;
-			top: 0;
-			left: -8px;
-			font-size: 8px;
-			line-height: 16px;
-			text-align: center;
-			color: #fff;
-			border-radius: 50%;
-		}
-	}
+
 }
 
 @media screen and (max-width:575px) {
@@ -222,8 +204,5 @@
 				font-size: 10px;
 			}
 		}
-	}
-	.header__basket-mob.-shop {
-		right: 65px;
 	}
 }
