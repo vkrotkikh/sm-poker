@@ -7,10 +7,12 @@
 	margin-left: 45px;
 	white-space: nowrap;
 	&:before {
-		content: url(../img/login_icon.png);
+		content: '\e918';
 		display: inline-block;
+		font-family: 'icomoon', sans-serif;
+		font-size: 18px;
 		position: relative;
-		top: 5px;
+		top: 4px;
 		margin-right: 10px;
 	}
 	li {

@@ -18,7 +18,9 @@
 }
 
 .dropdown-toggle::after {
-	content: url(../img/program-review_dropdown_icon.png);
+	content: '\e917';
+	font-family: 'icomoon', sans-serif;
+	font-size: 8px;
 	display: inline-block;
 	position: relative;
 	right: 20px;

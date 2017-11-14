@@ -23,11 +23,14 @@
 		justify-content: center;
 		align-items: center;
 		@include tr(.3s);
-		img {
-			@include img-res;
+		span {
+			font-size: 48px;
+			color: #fff;
+			@include tr(0.2s);
 		}
 		&:hover {
 			background-color: rgba(#0073BF, .9);
+			text-decoration: none;
 			@include tr(.3s);
 		}
 		.basket-img-wrap {
@@ -97,7 +100,7 @@
 	.header__basket-mob {
 		position: absolute;
 		right: 65px;
-		span {
+		.number-busket-mob {
 			display: inline-block;
 			width: 16px;
 			height: 16px;
@@ -109,7 +112,12 @@
 			line-height: 16px;
 			position: absolute;
 			top: 0;
-			left: -8px;
+			left: -10px;
+		}
+
+		.icon-basket {
+			color: #878F9D;
+			font-size: 30px;
 		}
 	}
 }
