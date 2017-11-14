@@ -43,7 +43,7 @@
 		}
 	}
 
-	.price {
+	.goods-price {
 		font-size: 25px;
 		letter-spacing: 1.25px;
 		color: #808ea6;
@@ -133,27 +133,33 @@
 }
 
 .payment-items-wrap {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-right: -10px;
+
+	& > [class*="col-"] {
+		padding-left: 10px;
+		padding-right: 10px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
 }
 
 .payment-item {
 	background-color: #F0F5FA;
 	display: inline-block;
 	padding: 8px;
-	padding-left: 15px;
+	padding-left: 10px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
 	align-items: center;
-	min-width: 300px;
+	justify-content: space-between;
+	min-width: 250px;
 
 	.logo-wrap {
 		max-width: 80px;
@@ -183,12 +189,233 @@
 		padding-bottom: 20px;
 		padding-left: 8px;
 		padding-right: 8px;
-		margin-left: 15px;
-		min-width: 185px;
+		margin-left: 10px;
 		text-align: center;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-basis: 0;
+		flex-grow: 1;
 
 		a {
 			color: $accent;
+		}
+	}
+}
+
+.payment-form-section {
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	.list-item-circle {
+		margin-bottom: 40px;
+	}
+}
+
+.payment-form-wrap {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	padding-left: 60px;
+	padding-right: 60px;
+	background-color: #F0F5FA;
+
+	input {
+		width: 100%;
+		margin-bottom: 25px;
+		&:hover, &:focus {
+			border-color: $accent;
+			cursor: pointer;
+		}
+	}
+
+	textarea {
+		width: 100%;
+		margin-bottom: 40px;
+		border: 2px solid #B0B5BB;
+		text-align: left;
+		padding-top: 15px;
+	}
+
+	input[type="submit"] {
+		width: auto;
+		padding-left: 55px;
+		padding-right: 55px;
+		margin-bottom: 0;
+	}
+}
+
+.payment-method {
+	height: 55px;
+	margin-bottom: 25px;
+	&:hover {
+		.dropdown-toggle::after {
+			@include arr(7, 7, $accent, b);
+		}
+	}
+	.btn {
+		border: none;
+		border-bottom: 2px solid #B0B5BB;
+		border-radius: 0;
+		height: 55px;
+		padding-left: 15px;
+		background-color: transparent;
+	}
+
+	&.bootstrap-select.btn-group .dropdown-toggle .filter-option {
+		text-align: left;
+		line-height: 1;
+		font-size: 15px;
+		color: #b0b4b9;
+	}
+
+	.dropdown-toggle::after {
+		content: '';
+		display: inline-block;
+		@include arr(7, 7, #B0B5BB, b);
+		top: 5px;
+	}
+
+	&.show {
+		.btn {
+			border-color: $accent;
+		}
+		&:hover {
+			.dropdown-toggle::after {
+				@include arr(7, 7, $accent, t);
+			}
+		}
+		.dropdown-toggle::after {
+			@include arr(7, 7, #B0B5BB, t);
+		}
+	}
+}
+
+.last-step-section {
+	.list-item-circle {
+		padding-bottom: 40px;
+	}
+	border-bottom: 2px solid #F0F5FA;
+	margin-bottom: 110px;
+}
+
+@media screen and (max-width: 1199px) {
+
+	.payment-item {
+		width: 100%;
+		.logo-wrap-container {
+			width: 100%;
+		}
+		.contact-block {
+			min-width: 215px;
+		}
+
+		.logo-wrap {
+			margin: 0 auto;
+		}
+	}
+
+}
+
+@media screen and (max-width: 991px) {
+	.payment-item {
+		.logo-wrap-container {
+			width: 32%;
+		}
+	}
+
+	.payment-form-wrap {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 50px;
+
+		input {
+			margin-bottom: 15px;
+		}
+
+		textarea {
+			margin-top: 35px;
+		}
+	}
+
+	.payment-method {
+		margin-bottom: 15px;
+		.btn {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.last-step-section {
+		margin-bottom: 100px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+
+	.goods--section {
+		.goods-item-wrap {
+			padding-right: 0;
+			align-items: flex-end;
+		}
+	}
+
+	.goods-item {
+		padding-top: 23px;
+		padding-bottom: 23px;
+
+		.goods-name, .goods-price {
+			font-size: 18px;
+			letter-spacing: 0.9px;
+		}
+
+		.developer-logo-wrap {
+			width: 85px;
+			height: 36px;
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+
+		.logo-name-block {
+			display: block;
+		}
+
+		.header__hamburger-menu {
+			top: 0;
+		}
+	}
+
+	.total-payment-section {
+		padding-top: 45px;
+		padding-bottom: 45px;
+
+		p > span {
+			font-size: 30px;
+		}
+	}
+
+	.payment-section {
+		padding-top: 50px;
+
+		.h1--big {
+			font-size: 22px;
+			letter-spacing: 1.1px;
+			margin-bottom: 30px;
+		}
+	}
+
+	.list-item-circle {
+		font-size: 18px;
+		letter-spacing: 0.9px;
+
+		span {
+			width: 45px;
+			height: 45px;
+
+			&:before {
+				width: 25px;
+				height: 25px;
+			}
 		}
 	}
 }
