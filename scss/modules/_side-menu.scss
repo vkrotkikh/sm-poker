@@ -5,7 +5,7 @@
 	z-index: 100;
 	transition: all .3s;
 	width: 220px;
-	.open {
+	.open-side-menu {
 		position: absolute;
 		right: -15px;
 		top: 50%;
@@ -145,7 +145,7 @@
 @media only screen and (max-width: 1650px) {
 	.side-menu-wrap {
 		left: -5px;
-		.open {
+		.open-side-menu {
 			right: auto;
 			left: -15px;
 		}

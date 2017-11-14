@@ -85,6 +85,10 @@ $(document).ready(function() {
 		size: 'integer'
 	});
 
+	$('.payment-method').selectpicker({
+		size: 'integer'
+	});
+
 	// ADD SLIDEDOWN ANIMATION TO BOOTSTRAP DROPDOWN WHEN EXPANDING.
 	$('.dropdown').on('show.bs.dropdown', function() {
 		$(this).find('.dropdown-menu').first().stop(true, true).slideDown('fast');
@@ -135,17 +139,17 @@ $(document).ready(function() {
 	})
 
 	// OPEN/CLOSE SIDE MENU
-	$('.open').click(function(e){
+	$('.open-side-menu').click(function(e){
 		$('.side-menu').toggleClass('opacity-0');
 		$('.side-menu').toggleClass('height-0');
-		$('.open').toggleClass('opacity-0');
+		$('.open-side-menu').toggleClass('opacity-0');
 		e.preventDefault();
 	});
 
 	$('.close').click(function(e){
 		$('.side-menu').toggleClass('opacity-0');
 		$('.side-menu').toggleClass('height-0');
-		$('.open').toggleClass('opacity-0');
+		$('.open-side-menu').toggleClass('opacity-0');
 		e.preventDefault();
 	});
 
