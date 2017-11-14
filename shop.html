@@ -61,7 +61,7 @@
 						</a>
 						<!-- SEARCH BUTTON END -->
 						<!-- BASKET -->
-						<a href="#?" class="header__basket-mob">
+						<a href="#?" class="header__basket-mob -shop">
 							<img src="img/basket_icon_mobile.png" alt="icon">
 							<span>1</span>
 						</a>
@@ -212,11 +212,83 @@
 		</section>
 		<!-- BANNER END -->
 
+		<!-- FILTER SECTION -->
+		<section class="filters-section-link -video d-md-none">
+			<div class="container">
+				<a class="filters-link" data-toggle="collapse" href="#collapseFilters" aria-expanded="false">
+					<span class="open-text">открыть фильтры</span>
+					<span class="close-text d-none">закрыть фильтры</span>
+				</a>
+				<a data-toggle="collapse" href="#collapseFilters" aria-expanded="false" class="plus"></a>
+			</div>
+		</section>
+		<!-- FILTER SECTION END -->
+
+		<!-- SHUFFLE NAV LIST -->
+		<section class="shuffle-nav-list shuffle-nav-list-shop basket" id="collapseFilters">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-10 col-md-9">
+						<ul class="shuffle-buttons-list">
+							<li class="shuffle-button-item"><a href="javascript:void(0);" class="active" data-group="all">все</a></li>
+							<li class="shuffle-button-item"><a href="javascript:void(0);" data-group="combines">Покерные комбайны и работа над игрой</a></li>
+							<li class="shuffle-button-item"><a href="javascript:void(0);" data-group="multitabling">Мультитейблинг</a></li>
+							<li class="shuffle-button-item"><a href="javascript:void(0);" data-group="convert">Конвертеры рук</a></li>
+							<li class="shuffle-button-item"><a href="javascript:void(0);" data-group="huds">HUDы и поп-апы</a></li>
+							<li class="shuffle-button-item"><a href="javascript:void(0);" data-group="layouts">Лейауты</a></li>
+						</ul>
+					</div>
+					<div class="col-xl-2 col-md-3 d-none d-md-block">
+						<a href="#?" class="basket-wrap">
+							<div class="basket-img-wrap">
+								<img src="img/basket_icon.png" alt="icon">
+								<div class="basket-number"><span>1</span></div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- SHUFFLE NAV LIST END -->
+		<div class="container">
+			<div class="shop_carrds_wrap">
+				<div id="shuffle-grid-shop" class="shuffle-grid row">
+					<div class="col-md-3 shuffle-item" data-groups='["combines"]'>
+						<div class="shop_card_item">
+							<div class="shop_card_item_top">
+								<div class="shop_card_item_img_wrap">
+									<img src="img/shop/hm2.png" alt="img">
+								</div>
+								<div class="shop_card_item_top_descr">
+									<ul class="stars">
+										<li><i class="fa fa-star active" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star active" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star active" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+										<li><i class="fa fa-star" aria-hidden="true"></i></li>
+									</ul>
+									<h6> Holdem Manager 2</h6>
+								</div>
+							</div>
+							<div class="shop_card_item_bottom">
+								<p>Для работы с покерной статистикой и выводом HUD`а на столы. Must have для любого про.</p>
+								<div class="shop_card_item_bottom_line">
+									<span class="shop_pprice">60$</span>
+									 <a href="#?" class="btn btn--save">Купить <span class="icon-"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 shuffle-item" data-groups='["multitabling"]'>2</div>
+				</div>
+			</div>
+		</div>
 	</main>
 	<!-- CONTENT END -->
 
 	<!-- FOOTER -->
-	<footer class="footer collapse" id="collapseFooter">
+	<footer class="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-4 col-lg-3 footer__col">

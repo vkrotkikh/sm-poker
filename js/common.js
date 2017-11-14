@@ -388,6 +388,26 @@ $(document).ready(function() {
 		});
 	}
 
+		// SHUFFLE SHOP PAGE
+	if($('#shuffle-grid-shop').length){
+		var Shuffle = window.shuffle;
+		var myShuffle = new Shuffle(document.getElementById('shuffle-grid-shop'), {
+			itemSelector: '.shuffle-item',
+			sizer: '.shuffle-item',
+			speed: 400,
+			easing: 'ease',
+		});
+		myShuffle.update();
+		$('.shuffle-buttons-list a').on('click' , function(e){
+			e.preventDefault();
+			$('.shuffle-buttons-list a').removeClass('active');
+			$(this).addClass('active');
+			var catName = $(this).attr('data-group');
+			myShuffle.filter(catName, shuffle);
+			myShuffle.update();
+		});
+	}
+
 // COLLAPSE MENU WHEN RESIZE
 
 $(window).on('resize', function(){

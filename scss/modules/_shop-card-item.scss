@@ -1,0 +1,64 @@
+.shop_carrds_wrap {
+	padding: 40px 0;
+	min-height: 1000px;
+
+}
+.shop_card_item {
+	border-radius: 5px;
+	margin-bottom: 20px;
+	background-color: #f4f6f9;
+	padding: 12px 12px 15px;
+}
+
+.shop_card_item_img_wrap {
+	display: flex;
+	align-items: center;
+	justify-content:  center;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 7px 16px rgba(0, 0, 0, 0.1);
+	height: 86px;
+	margin-bottom: 10px;
+	padding: 5px 0;
+	img {
+		max-width: 74%;
+		width: 100%;
+	}
+}
+
+.shop_card_item_top_descr {
+	.stars {
+		position: relative;
+		&:before {
+			display: block;
+			position: absolute;
+			content: '';
+			width: calc(100% + 24px);
+			height: 1px;
+			background: #fff;
+			left: -12px;
+			right: -12px;
+			bottom: 0;
+		}
+	}
+	h6 {
+		font-family: "MullerRegular";
+		color: #292f39;
+		letter-spacing: 0.83px;
+		margin-top: 14px;
+	}
+}
+
+.shop_card_item_bottom {
+	p {
+		font-size: 16px;
+		letter-spacing: 1.2px;
+		color: #565b65;
+	}
+}
+
+.shop_card_item_bottom_line {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
