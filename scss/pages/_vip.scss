@@ -1,0 +1,115 @@
+.title-block-section--vip {
+	background-image: url(../img/vip_title_bg.jpg);
+	padding-top: 90px;
+	padding-bottom: 55px;
+
+	.h1--big {
+		color: #FFFC00;
+		margin-bottom: 20px;
+	}
+}
+
+.vip-advantages-section {
+	padding-top: 85px;
+	padding-bottom: 85px;
+}
+
+.vip-advantages-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+
+	.vip-advantages-item {
+		width: 33.3333%;
+		&:nth-child(2n) {
+			background-color: #F4F6F9;
+		}
+	}
+}
+
+.vip-advantages-item {
+	background-color: #fff;
+	padding: 25px 40px 35px;
+
+	.logo-img {
+		width: 55px;
+		height: 45px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 25px;
+		img {
+			@include img-res;
+		}
+	}
+
+	.vip-advantages-item-text {
+		font-size: 14px;
+		letter-spacing: 0.7px;
+		line-height: 20px;
+		.vip-advantages-item-title {
+			font-family: "MullerBold";
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.vip-join-section {
+	background-image: url(../img/vip_join_bg.jpg);
+	@include rbg;
+	padding-top: 85px;
+	padding-bottom: 55px;
+
+	.h2--big {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	.h3--main {
+		font-family: "Exo2-SemiBold";
+		text-align: center;
+		color: #fff;
+		margin-bottom: 40px;
+	}
+
+}
+
+.necessary-item {
+	position: relative;
+	padding-left: 55px;
+	.icon-wrap {
+		width: 40px;
+		height: 40px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		img {
+			@include img-res;
+		}
+	}
+
+	.necessary-text {
+		color: #fff;
+		font-size: 16px;
+		letter-spacing: 0.8px;
+		line-height: 20px;
+		a {
+			color: #fffc04;
+			font-family: "MullerRegularItalic";
+		}
+	}
+}
