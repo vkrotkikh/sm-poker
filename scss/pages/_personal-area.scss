@@ -1,0 +1,631 @@
+.personal-area-wrap {
+	padding-top: 30px;
+	padding-bottom: 50px;
+
+	.side-banner {
+		margin-top: 20px;
+	}
+
+	.personal-area-rating {
+		margin-right: 20px;
+	}
+
+	.personal-area-editing {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+
+	.personal-area-top-line {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+}
+
+.side-banner {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	img {
+		@include img-res;
+	}
+}
+
+.personal_area_avatar {
+	width: 135px;
+	height: 135px;
+	margin-right: 20px;
+	img {
+		border-radius: 50%;
+		@include img-res;
+	}
+}
+
+.personal-area-name-nickname-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+
+.personal-area-name-nickname {
+	.h2--forum {
+		margin-bottom: 5px;
+		line-height: 1;
+		color: #292f39;
+	}
+	p {
+		font-size: 15px;
+		letter-spacing: 0.75px;
+	}
+}
+
+.personal-area-rating {
+	img {
+		width: 25px;
+		margin-right: 5px;
+	}
+	span {
+		font-family: "MullerBold";
+		color: $accent;
+		letter-spacing: 0.9px;
+		position: relative;
+		top: 2px;
+	}
+}
+
+.personal-area-row {
+	margin-left: -10px;
+	margin-right: -10px;
+
+	& > [class*="col-"] {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.personal-area-table-head {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	p {
+		font-family: "MullerMedium";
+		font-size: 13px;
+		letter-spacing: 0.65px;
+		color: #c0c3c8;
+		line-height: 15px;
+	}
+}
+
+.personal-area-table-body {
+	background-color: #F4F6F9;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-bottom: 40px;
+	p {
+		font-family: "MullerMedium";
+		font-size: 16px;
+		letter-spacing: 0.8px;
+		color: #292f39;
+		line-height: 18px;
+	}
+
+	.accent-cell {
+		color: $accent;
+	}
+}
+
+.personal-area-bottom-content {
+	.h3--main {
+		font-family: "Exo2-SemiBold";
+		color: $accent;
+		text-align: center;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		margin-bottom: 0;
+	}
+}
+
+.personal-area-topics-wrap, .personal-area-comments-wrap {
+	margin-bottom: 10px;
+}
+
+.personal-area-topic-item {
+	&:nth-child(2n) {
+		background-color: #fff;
+	}
+	padding: 24px 20px;
+	background-color: #F4F6F9;
+	border-radius: 5px;
+
+	.h3--acticle {
+		font-family: "MullerMedium";
+		display: inline-block;
+		&:hover {
+			color: $accent;
+			text-decoration: none;
+		}
+	}
+
+	.last-activity {
+		display: block;
+	}
+}
+
+.personal-area-icon-link {
+	font-size: 10px;
+	color: #808ea6;
+	font-family: "MullerBold";
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	@include tr(0.2s);
+	span {
+		margin-right: 5px;
+		position: relative;
+		top: 1px;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $accent;
+		@include tr(0.2s);
+	}
+}
+
+.personal-area-comment-item {
+	&:nth-child(2n) {
+		background-color: #fff;
+	}
+	padding: 17px 10px 11px 20px;
+	background-color: #F4F6F9;
+	border-radius: 5px;
+	position: relative;
+
+	.comment-with-arrow {
+		font-size: 10px;
+		padding-left: 10px;
+		padding-right: 20px;
+		margin-bottom: 12px;
+		max-width: 160px;
+	}
+
+	.personal-area-comment-text {
+		max-width: 315px;
+		font-size: 12px;
+		letter-spacing: 0.6px;
+		line-height: 13px;
+	}
+
+	.last-activity {
+		position: absolute;
+		top: 17px;
+		right: 10px;
+	}
+
+}
+
+.personal-area-icon-link--comment {
+	span {
+		font-size: 14px;
+		top: 3px;
+	}
+}
+
+.vip-status-section {
+	background-color: #EEF9F4;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+
+	.status-title {
+		font-family: "Exo2-SemiBold";
+		color: #292f39;
+		letter-spacing: 0.9px;
+		margin-bottom: 15px;
+		span {
+			text-transform: uppercase;
+			font-size: 25px;
+			letter-spacing: 1.25px;
+			color: $accent;
+		}
+	}
+
+	.status-description {
+		font-size: 16px;
+		letter-spacing: 0.8px;
+		color: #292f39;
+		span {
+			color: $accent;
+		}
+	}
+}
+
+.banners-images-wrap {
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	display: inline-block;
+
+	&:hover {
+		.top-link, .bottom-link {
+			transform: translateY(0);
+		}
+	}
+
+	img {
+		@include img-res;
+		margin: 0 auto;
+	}
+	.top-link {
+		position: absolute;
+		top: 0;
+		height: 50%;
+		width: 100%;
+		left: 0;
+		background-color: $accent;
+		font-family: "MullerBold";
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 0.6px;
+		color: #fff;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include tr(0.5s);
+		transform: translateY(-100%);
+		&:hover {
+			text-decoration: none;
+			background-color: lighten($accent, 4%);
+			@include tr(0.2s);
+		}
+		span {
+			margin-left: 7px;
+			position: relative;
+			bottom: 2px;
+			font-size: 13px;
+		}
+	}
+
+	.bottom-link {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		bottom: 0;
+		height: 50%;
+		width: 100%;
+		left: 0;
+		background-color: rgba(#FFFFFF, 0.91);
+		font-family: "MullerBold";
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 0.6px;
+		color: $accent;
+		@include tr(0.5s);
+		transform: translateY(100%);
+		&:hover {
+			text-decoration: none;
+			background-color: lighten(#fff, 2%);
+			@include tr(0.2s);
+		}
+		span {
+			margin-left: 5px;
+			font-size: 10px;
+			position: relative;
+			bottom: 2px;
+		}
+	}
+}
+
+.enter-vip-section--personal-area {
+	background-color: #F4F6F9;
+	background-image: none;
+
+	.h2--big {
+		color: #292f39;
+	}
+
+	form {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	input[type="text"] {
+		border-color: #B0B5BB;
+		color: #B0B5BB;
+		@include placeholder-color(#B0B5BB);
+		@include tr(0.3s);
+		&:focus, &:hover {
+			border-color: #127EC2;
+			@include tr(0.3s);
+		}
+	}
+
+	input[type="submit"] {
+		background-color: #127EC2;
+		color: #fff;
+		&:hover {
+			background-color: lighten(#127EC2, 7%);
+		}
+	}
+
+	.enter-vip-inputs {
+		margin-bottom: 30px;
+	}
+
+	.payment-method {
+		&:hover {
+			.dropdown-toggle::after {
+				@include arr(7, 7, #127EC2, b);
+			}
+		}
+		.btn {
+			&:hover {
+				border-color: #127EC2;
+			}
+		}
+		&.show {
+			.btn {
+				border-color: #127EC2;
+			}
+			&:hover {
+				.dropdown-toggle::after {
+					@include arr(7, 7, #127EC2, t);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.personal-area-wrap {
+		padding-top: 25px;
+		padding-bottom: 40px;
+
+		.personal-area-rating {
+			margin-right: 15px;
+		}
+
+		.personal-area-top-line {
+			margin-bottom: 15px;
+		}
+	}
+
+	.personal_area_avatar {
+		width: 80px;
+		height: 80px;
+		margin-right: 10px;
+	}
+
+	.personal-area-name-nickname {
+		.h2--forum {
+			font-size: 16px;
+			letter-spacing: 0.8px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+
+	.personal-area-rating {
+		img {
+			width: 20px;
+		}
+		span {
+			font-size: 14px;
+			letter-spacing: 0.7px;
+		}
+	}
+
+	.personal-area-table-head {
+		padding-left: 15px;
+		padding-right: 15px;
+		p {
+			font-size: 11px;
+			letter-spacing: 0.55px;
+		}
+	}
+
+	.personal-area-table-body {
+		margin-bottom: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+		p {
+			font-size: 13px;
+			letter-spacing: 0.65px;
+		}
+	}
+
+	.personal-area-bottom-content {
+		.h3--main {
+			font-size: 16px;
+			letter-spacing: 0.8px;
+		}
+	}
+
+	.personal-area-topic-item {
+		padding-left: 15px;
+		padding-right: 15px;
+		.h3--acticle {
+			font-size: 13px;
+			letter-spacing: 0.65px;
+		}
+	}
+
+	.personal-area-comment-item {
+		padding: 15px;
+		.last-activity {
+			top: 15px;
+			right: 15px;
+		}
+		.personal-area-comment-text {
+			font-size: 11px;
+			letter-spacing: 0.55px;
+			line-height: 13px;
+		}
+	}
+
+	.vip-status-section {
+		.status-description {
+			max-width: 595px;
+			margin: 0 auto;
+		}
+	}
+
+	.personal-area-wrap {
+		margin-left: -10px;
+		margin-right: -10px;
+
+		& > [class*="col-"] {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 991px) {
+
+	.personal-area-comment-item {
+		.top-line {
+			display: block;
+		}
+
+		.comment-with-arrow {
+			margin-bottom: 15px;
+		}
+
+		.last-activity {
+			position: static;
+		}
+		.personal-area-comment-text {
+			margin-bottom: 5px;
+		}
+	}
+
+	.personal-area-topics-wrap, .personal-area-comment-item {
+		.last-activity { 
+			.icon {
+				font-size: 12px;
+			}
+			.time {
+				font-size: 11px;
+			}
+		}
+	}
+
+	.vip-status-section {
+		.status-title {
+			span {
+				font-size: 22px;
+				letter-spacing: 1.1px;
+			}
+		}
+	}
+
+	.enter-vip-section--personal-area {
+		form {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 575px) {
+	.personal-area-wrap {
+		padding-top: 20px;
+
+		.personal-area-top-line {
+			display: block;
+			margin-bottom: 25px;
+		}
+
+		.personal-area-name-nickname-wrap {
+			margin-bottom: 15px;
+		}
+	}
+
+	.personal-area-rating {
+		img {
+			width: 25px;
+		}
+		span {
+			font-size: 18px;
+			letter-spacing: 0.9px;
+		}
+	}
+
+	.personal-area-table-head {
+		padding: 0;
+		p {
+			font-size: 13px;
+			letter-spacing: 0.65px;
+			padding-top: 12px;
+			padding-bottom: 13px;
+		}
+	}
+
+	.personal-area-table-body {
+		padding: 0;
+		margin-bottom: 0;
+		p {
+			font-size: 15px;
+			letter-spacing: 0.75px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-bottom: 2px solid #fff;
+		}
+	}
+
+	.personal-area-bottom-content {
+		margin-top: 20px;
+	}
+
+	.personal-area-bottom-content {
+		.h3--main {
+			font-size: 18px;
+			letter-spacing: 0.9px;
+		}
+	}
+
+	.personal-area-topic-item {
+		padding: 25px 15px;
+
+		.h3--acticle {
+			font-size: 16px;
+			line-height: 18px;
+			letter-spacing: 0.8px;
+		}
+	}
+	.personal-area-topics-wrap .last-activity .time,
+	.personal-area-comment-item .last-activity .time {
+		font-size: 10px;
+		letter-spacing: 0.5px;
+	}
+
+	.personal-area-comment-item {
+		.personal-area-comment-text {
+			font-size: 14px;
+			line-height: 18px;
+			letter-spacing: 0.7px;
+		}
+	}
+}

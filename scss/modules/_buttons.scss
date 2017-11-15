@@ -108,6 +108,34 @@
 		}
 	}
 
+	&--edit {
+		color: #fff;
+		border-radius: 2px;
+		line-height: 1;
+		font-size: 11px;
+		text-transform: uppercase;
+		letter-spacing: 0.55px;
+		padding-top: 7px;
+		padding-bottom: 6px;
+		padding-left: 11px;
+		padding-right: 11px;
+		@include tr(0.2s);
+		background-color: #A6B1C0;
+		span {
+			font-size: 10px;
+			margin-right: 3px;
+			position: relative;
+			top: 1px;
+		}
+
+		&:hover {
+			color: $accent;
+			background-color: lighten(#A6B1C0, 5%);
+			@include tr(0.2s);
+			color: #fff;
+		}
+	}
+
 	&--with-triangle {
 		&:after {
 			content: "";
@@ -161,6 +189,11 @@
 		&--accent {
 			font-size: 10px;
 		}
+
+		&--edit {
+			font-size: 9px;
+			letter-spacing: 0.45px;
+		}
 	}
 }
 
@@ -176,6 +209,11 @@
 	.btn {
 		&--accent {
 			font-size: 12px;
+		}
+
+		&--edit {
+			font-size: 11px;
+			letter-spacing: 0.55px;
 		}
 	}
 }

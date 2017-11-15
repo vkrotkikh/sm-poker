@@ -104,6 +104,12 @@
 	.h2--main {
 		font-size: 23px;
 	}
+
+	.h2--big {
+		font-size: 25px;
+		letter-spacing: 1.25px;
+	}
+
 	.h2-edu {
 		font-size: 23px;
 		letter-spacing: 1.15px;
@@ -130,6 +136,13 @@
 			justify-content: center;
 		}
 	}
+
+	.h2--big {
+		font-size: 20px;
+		letter-spacing: 1.15px;
+		line-height: 36px;
+	}
+
 	.h2-edu {
 		font-size: 25px;
 		letter-spacing: 1px;

@@ -170,6 +170,25 @@ $(document).ready(function() {
 			},
 			]
 		});
+
+		$('.banners-images-slider').slick({
+			slidesToShow: 2,
+			slidesToScroll: 2,
+			arrows: false,
+			dots: true,
+			infinite: false,
+			responsive: [
+			{
+				breakpoint: 575,
+				settings: {
+					arrows: false,
+					dots: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+			]
+		});
 	}
 
 	if($('#rooms-items_content').length){
