@@ -1,8 +1,17 @@
 .video_slider {
 	padding: 70px 0 90px;
 	background-color: #f4f6f9;
+	margin-bottom: 105px;
 	h2 {
 		margin-bottom: 50px;
+	}
+
+	.slick-arrow {
+		@include tr(0.3s);
+		&:hover {
+			color: $accent;
+			@include tr(0.3s);
+		}
 	}
 }
 
@@ -89,6 +98,13 @@
 			top: -110px;
 			span {
 				color: #fff;
+				@include tr(0.3s);
+			}
+			&:hover {
+				span {
+					color: $accent;
+					@include tr(0.3s);
+				}
 			}
 		}
 		.left-arrow {
@@ -119,6 +135,7 @@
 		background: none;
 		border: none;
 		padding-top: 165px;
+
 	}
 	.close_btn_wrap {
 		position: absolute;
@@ -128,6 +145,15 @@
 		background: rgba(#fff, .4);
 		border-radius: 50%;
 		cursor: pointer;
+		.close-btn:before, .close-btn:after {
+			@include tr(0.3s);
+		}
+		&:hover {
+			.close-btn:before, .close-btn:after {
+				background-color: $accent;
+				@include tr(0.3s);
+			}
+		}
 	}
 }
 
@@ -167,6 +193,7 @@
 @media screen and (max-width:991px) {
 	.video_slider {
 		padding: 50px 0 40px;
+		margin-bottom: 70px;
 		h2 {
 			margin-bottom: 40px;
 		}
