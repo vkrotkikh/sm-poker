@@ -256,6 +256,7 @@
 	a {
 		display: inline-block;
 		height: 100%;
+		max-width: 100%;
 		&:focus {
 			outline: none;
 		}
@@ -307,10 +308,14 @@
 
 		.necessary-item {
 			margin-bottom: 30px;
+			align-items: center;
 		}
 
 		.necessary-items-wrap {
 			margin-bottom: 25px;
+			max-width: 595px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 
@@ -325,6 +330,9 @@
 
 		.enter-vip-inputs {
 			margin-bottom: 25px;
+			max-width: 560px;
+			margin-left: -15px;
+			margin-right: -15px;
 		}
 	}
 
@@ -432,6 +440,7 @@
 
 		.necessary-item {
 			margin-bottom: 20px;
+			align-items: flex-start;
 		}
 	}
 

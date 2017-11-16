@@ -122,6 +122,14 @@
 	.accent-cell {
 		color: $accent;
 	}
+
+	.personal-area-table-head--mob {
+		font-family: "MullerMedium";
+		font-size: 13px;
+		letter-spacing: 0.65px;
+		color: #c0c3c8;
+		line-height: 15px;
+	}
 }
 
 .personal-area-bottom-content {
@@ -254,6 +262,7 @@
 	cursor: pointer;
 	overflow: hidden;
 	display: inline-block;
+	max-width: 100%;
 
 	&:hover {
 		.top-link, .bottom-link {
@@ -392,6 +401,43 @@
 			}
 		}
 	}
+}
+
+
+// NOT ACTIVE =======================================================
+
+.vip-status-section--not-active {
+	background-color: #F4F6F9;
+	.status-title {
+		span {
+			color: #a8b0be;
+		}
+	}
+}
+
+.vip-advantages-section--not-active {
+	padding-top: 45px;
+	padding-bottom: 50px;
+
+	.vip-advantages-item {
+		padding-top: 25px;
+		padding-bottom: 30px;
+		padding-left: 40px;
+		padding-right: 15px;
+
+		.vip-advantages-item-text {
+			font-size: 16px;
+			letter-spacing: 0.8px;
+			.vip-advantages-item-title {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+}
+
+.vip-join-section--not-active {
+	margin-bottom: 100px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -547,6 +593,64 @@
 		}
 	}
 
+	.vip-advantages-section--not-active {
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		.vip-advantages-wrap {
+			.vip-advantages-item {
+				width: 33.3333%;
+				padding-top: 15px;
+				padding-bottom: 35px;
+				padding-left: 20px;
+				padding-right: 10px;
+
+				.vip-advantages-item-text {
+					font-size: 14px;
+					letter-spacing: 0.7px;
+					line-height: 20px;
+				}
+			}
+			.vip-advantages-item:nth-child(2n), .vip-advantages-item:nth-child(3n) {
+				background-color: inherit;
+			}
+			.vip-advantages-item:nth-child(4n) {
+				background-color: inherit;
+			}
+
+			.vip-advantages-item:nth-child(2n) {
+				background-color: #F4F6F9;
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	.vip-advantages-section--not-active {
+		.vip-advantages-wrap {
+			.vip-advantages-item {
+				width: 50%;
+			}
+			.vip-advantages-item:nth-child(2n) {
+				&:after {
+					display: none;
+				}
+			}
+			.vip-advantages-item:nth-child(2n), .vip-advantages-item:nth-child(3n) {
+				background-color: #F4F6F9;
+			}
+			.vip-advantages-item:nth-child(4n) {
+				background-color: #fff;
+			}
+		}
+	}
+
+	.vip-join-section--not-active {
+		margin-bottom: 75px;
+	}
+
 }
 
 @media only screen and (max-width: 575px) {
@@ -586,12 +690,22 @@
 	.personal-area-table-body {
 		padding: 0;
 		margin-bottom: 0;
+		background-color: transparent;
 		p {
 			font-size: 15px;
 			letter-spacing: 0.75px;
 			padding-top: 10px;
 			padding-bottom: 10px;
 			border-bottom: 2px solid #fff;
+			flex-basis: 50%;
+			background-color: #F4F6F9;
+			text-align: center;
+			height: 100%;
+		}
+
+		.personal-area-table-head--mob {
+			background-color: transparent;
+			text-align: left;
 		}
 	}
 
@@ -626,6 +740,34 @@
 			font-size: 14px;
 			line-height: 18px;
 			letter-spacing: 0.7px;
+		}
+	}
+
+	.vip-advantages-section--not-active {
+		padding-top: 10px;
+		.vip-advantages-wrap {
+			.vip-advantages-item {
+				width: 100%;
+				padding-left: 0;
+				padding-right: 0;
+				.vip-advantages-item-text {
+					font-size: 16px;
+					letter-spacing: 0.8px;
+				}
+			}
+			.vip-advantages-item:nth-child(2n), .vip-advantages-item:nth-child(3n) {
+				background-color: #fff;
+			}
+			.vip-advantages-item:nth-child(4n) {
+				background-color: #fff;
+			}
+
+			.vip-advantages-item:nth-child(2n) {
+				background-color: #F4F6F9;
+				&:after {
+					display: inline-block;
+				}
+			}
 		}
 	}
 }

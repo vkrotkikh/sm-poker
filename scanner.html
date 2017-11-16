@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Название сайта - Главная</title>
+	<meta name="description" content="Краткое описание сайта">
+
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=1">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+
+	<!-- Фон верхней панели браузера -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<!-- подключение CSS -->
+	<link rel="stylesheet" href="libs/bootstrap-select/bootstrap-select.min.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/icomoon/style.css">
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<div class="header__top-line">
+				<div class="row">
+					<div class="col-12 col-lg-5 header__top-line-logo">
+						<!-- HAMBURGER MENU -->
+						<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseMenu" aria-expanded="false">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+						<!-- HAMBURGER MENU END -->
+						<a href="#?" class="header__logo-container">
+							<div class="header__logo-wrap">
+								<img src="img/logo.png" alt="logo">
+							</div>
+							<p>smart poker</p>
+						</a>
+						<!-- SEARCH BUTTON -->
+						<a class="header__search-button" data-toggle="collapse" href="#collapseSearch" aria-expanded="false">
+							<span class="icon-search"></span>
+						</a>
+						<!-- SEARCH BUTTON END -->
+					</div>
+					<div class="d-none d-lg-block col-7">
+						<div class="header__btns-container">
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+							<ul class="enter-links">
+								<li><a href="#?">Вход</a></li>
+								<li><a href="#?">Регистрация</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__menu-wrap">
+				<div class="row">
+					<!-- HEADER MENU -->
+					<div class="col-12 col-lg-8 collapse header__menu-container" id="collapseMenu">
+						<div class="header__mob-top-line border-class">
+							<p>Меню</p>
+							<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseMenu" aria-expanded="false">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+						<ul class="header__menu">
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#?" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Обучение покеру
+									<span class="dropdown_icon"></span>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#?">Пример 1</a>
+									<a class="dropdown-item" href="#?">Пример 2</a>
+									<a class="dropdown-item" href="#?">Пример 3</a>
+								</div>
+							</li>
+							<li><a href="#?">Видео</a></li>
+							<li><a href="#?">Vip</a></li>
+							<li><a href="#?">Статьи</a></li>
+							<li><a href="#?">Покер румы</a></li>
+							<li><a href="#?">Магазин</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="#?" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Форум
+									<span class="dropdown_icon"></span>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<a class="dropdown-item" href="#?">Пример 1</a>
+									<a class="dropdown-item" href="#?">Пример 2</a>
+									<a class="dropdown-item" href="#?">Пример 3</a>
+								</div>
+							</li>
+						</ul>
+						<div class="header__mob-btns border-class">
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+							<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+						</div>
+						<div class="header__mob-enter-links border-class">
+							<ul class="enter-links">
+								<li><a href="#?">Вход</a></li>
+								<li><a href="#?">Регистрация</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- HEADER MENU END -->
+					<!-- HEADER SEARCH -->
+					<div class="col-12 col-lg-4 col-xl-3 ml-auto collapse" id="collapseSearch">
+						<div class="header__mob-top-line border-class">
+							<a class="header__hamburger-menu" data-toggle="collapse" href="#collapseSearch" aria-expanded="false">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+						<div class="header__mob-form-wrap">
+							<form action="javascript:void(0);" class="search">
+								<button type="submit" for="search">
+									<span class="icon-search"></span>
+								</button>
+								<input id="search" type="text" placeholder="поиск">
+							</form>
+						</div>
+					</div>
+					<!-- HEADER SEARCH -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER END -->
+
+	<!-- CONTENT -->
+	<main class="main">
+
+		<!-- BREADCRUMBS -->
+		<section class="breadcrumbs breadcrumbs--bottom-border">
+			<div class="container">
+				<ul>
+					<li><a href="#?">Smart-Poker.ru</a></li>
+					<li>Видео</li>
+				</ul>
+			</div>
+		</section>
+		<!-- BREADCRUMBS END -->
+
+		<section class="scanner-title-section">
+			<div class="container">
+				<h1 class="h1--big">Заголовок</h1>
+
+				<!-- TAB NAV -->
+				<ul class="nav tab-nav-list" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="scanner-tab" data-toggle="tab" href="#scanner" role="tab" aria-controls="scanner" aria-selected="true">статистика румов</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="scanner-pro-tab" data-toggle="tab" href="#scanner-pro" role="tab" aria-controls="scanner-pro" aria-selected="false">сканер столов + статы игроков<span>PRO</span></a>
+					</li>
+				</ul>
+				<!-- TAB NAV END -->
+			</div>
+		</section>
+
+		<!-- TAB CONTENT -->
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="scanner" role="tabpanel" aria-labelledby="scanner-tab">
+				<div class="container">
+					1
+				</div>
+			</div>
+
+			<!-- SECONT TAB (SCANNER PRO) -->
+			<div class="tab-pane fade" id="scanner-pro" role="tabpanel" aria-labelledby="scanner-pro-tab">
+				<section class="scanner-title-block-section">
+					<div class="container">
+						<h2 class="h2--main">Сканер столов</h2>
+					</div>
+				</section>
+
+				<section class="scanner-pro-radio-section">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-sm-4 col-md-3 col-lg-2 scanner-pro-radio-wrap">
+								<div class="scanner-pro-radio-block">
+									<p>Room</p>
+									<form class="radio-group" action="#">
+										<div>
+											<input type="radio" id="pokerstars" name="scanner-pro-radio-group-1" checked>
+											<label for="pokerstars">pokerstars</label>
+										</div>
+										<div>
+											<input type="radio" id="irstars" name="scanner-pro-radio-group-1">
+											<label for="irstars">irstars</label>
+										</div>
+										<div>
+											<input type="radio" id="chico" name="scanner-pro-radio-group-1">
+											<label for="chico">chico</label>
+										</div>
+										<div>
+											<input type="radio" id="winning" name="scanner-pro-radio-group-1">
+											<label for="winning">winning</label>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-12 col-sm-8 col-md-4 scanner-pro-radio-wrap">
+								<div class="scanner-pro-radio-block">
+									<p>limits</p>
+									<form class="radio-group" action="#">
+										<div class="radio-wrap">
+											<input type="radio" id="nl10" name="scanner-pro-radio-group-2" checked>
+											<label for="nl10">nl10</label>
+										</div>
+
+										<div class="radio-wrap">
+											<input type="radio" id="nl16" name="scanner-pro-radio-group-2">
+											<label for="nl16">nl16</label>
+										</div>
+
+										<div class="radio-wrap">
+											<input type="radio" id="nl20" name="scanner-pro-radio-group-2">
+											<label for="nl20">nl20</label>
+										</div>
+
+										<div class="radio-wrap">
+											<input type="radio" id="nl25" name="scanner-pro-radio-group-2">
+											<label for="nl25">nl25</label>
+										</div>
+
+										<div class="radio-wrap">
+											<input type="radio" id="nl50" name="scanner-pro-radio-group-2">
+											<label for="nl50">nl50</label>
+										</div>
+
+										<div class="radio-wrap">
+											<input type="radio" id="nl30" name="scanner-pro-radio-group-2">
+											<label for="nl30">nl30</label>
+										</div>
+
+										<div class="radio-wrap">
+											<input type="radio" id="nl100" name="scanner-pro-radio-group-2">
+											<label for="nl100">nl100</label>
+										</div>
+
+										<div class="radio-wrap">
+											<input type="radio" id="nl200" name="scanner-pro-radio-group-2">
+											<label for="nl200">nl200</label>
+										</div>
+
+										<div class="radio-wrap">
+											<input type="radio" id="nl5" name="scanner-pro-radio-group-2">
+											<label for="nl5">nl5</label>
+										</div>
+
+										<div class="radio-wrap">
+											<input type="radio" id="nl400" name="scanner-pro-radio-group-2">
+											<label for="nl400">nl400</label>
+										</div>
+
+										<div class="radio-wrap">
+											<input type="radio" id="nl600" name="scanner-pro-radio-group-2">
+											<label for="nl600">nl600</label>
+										</div>
+
+									</form>
+								</div>
+							</div>
+							<div class="col-12 col-sm-4 col-md-2 col-lg-3 scanner-pro-radio-wrap">
+								<div class="scanner-pro-radio-block">
+									<p>Table Length</p>
+									<form class="radio-group" action="#">
+										<div class="radio-wrap">
+											<input type="radio" id="sh" name="scanner-pro-radio-group-3" checked>
+											<label for="sh">sh</label>
+										</div>
+
+										<div class="radio-wrap">
+											<input type="radio" id="fr" name="scanner-pro-radio-group-3">
+											<label for="fr">fr</label>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-12 col-sm-8 col-md-3 scanner-pro-radio-wrap">
+								<div class="scanner-pro-radio-block">
+									<p>Other filtrs</p>
+									<form class="radio-group" action="#">
+										<div>
+											<input type="radio" id="jackpot-tables" name="scanner-pro-radio-group-4" checked>
+											<label for="jackpot-tables">Jackpot  tables</label>
+										</div>
+										<div>
+											<input type="radio" id="video-tables" name="scanner-pro-radio-group-4">
+											<label for="video-tables">Video tables</label>
+										</div>
+										<div>
+											<input type="radio" id="shallow-tables" name="scanner-pro-radio-group-4">
+											<label for="shallow-tables">shallow tables</label>
+										</div>
+										<div>
+											<input type="radio" id="deep-tables" name="scanner-pro-radio-group-4">
+											<label for="deep-tables">Deep tables</label>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="scanner-pro-table-section">
+					<div class="container">
+						<div class="row scanner-pro-table-row">
+							<div class="col-12 col-lg-6">
+								<div class="table table-responsive">
+									<div class="table-wrap scanner-pro-table-left">
+										<!-- TABLE HEAD -->
+										<div class="row row-5-col no-gutters table__head">
+											<div class="col-one-of-5 d-flex"><div class="table__cell">Room</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">Blinds $</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">Table</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">Fishes</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">Waitlist</div></div>
+										</div>
+										<!-- TABLE HEAD END -->
+
+										<!-- TABLE BODY -->
+										<div class="row row-5-col no-gutters table__row">
+											<div class="col-one-of-5 d-flex">
+												<div class="table__cell">
+													<div class="table__img-wrap">
+														<img src="img/price_img.png" alt="logo">
+													</div>
+												</div>
+											</div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">0,25/0,50</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent-red">Awesome title</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent">30</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">0</div></div>
+										</div>
+										<div class="row row-5-col no-gutters table__row">
+											<div class="col-one-of-5 d-flex">
+												<div class="table__cell">
+													<div class="table__img-wrap">
+														<img src="img/price_img.png" alt="logo">
+													</div>
+												</div>
+											</div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">0,25/0,50</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent-red">Awesome title</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent">30</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">1</div></div>
+										</div>
+										<div class="row row-5-col no-gutters table__row">
+											<div class="col-one-of-5 d-flex">
+												<div class="table__cell">
+													<div class="table__img-wrap">
+														<img src="img/price_img.png" alt="logo">
+													</div>
+												</div>
+											</div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">0,25/0,50</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent-red">Awesome title</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent">30</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">1</div></div>
+										</div>
+										<div class="row row-5-col no-gutters table__row">
+											<div class="col-one-of-5 d-flex">
+												<div class="table__cell">
+													<div class="table__img-wrap">
+														<img src="img/price_img.png" alt="logo">
+													</div>
+												</div>
+											</div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">0,25/0,50</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent-red">Awesome title</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent">30</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">1</div></div>
+										</div>
+										<div class="row row-5-col no-gutters table__row">
+											<div class="col-one-of-5 d-flex">
+												<div class="table__cell">
+													<div class="table__img-wrap">
+														<img src="img/price_img.png" alt="logo">
+													</div>
+												</div>
+											</div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">0,25/0,50</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent-red">Awesome title</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent">30</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">1</div></div>
+										</div>
+										<div class="row row-5-col no-gutters table__row">
+											<div class="col-one-of-5 d-flex">
+												<div class="table__cell">
+													<div class="table__img-wrap">
+														<img src="img/price_img.png" alt="logo">
+													</div>
+												</div>
+											</div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">0,25/0,50</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent-red">Awesome title</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent">30</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">1</div></div>
+										</div>
+										<div class="row row-5-col no-gutters table__row">
+											<div class="col-one-of-5 d-flex">
+												<div class="table__cell">
+													<div class="table__img-wrap">
+														<img src="img/price_img.png" alt="logo">
+													</div>
+												</div>
+											</div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">0,25/0,50</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent-red">Awesome title</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent">30</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">1</div></div>
+										</div>
+										<div class="row row-5-col no-gutters table__row">
+											<div class="col-one-of-5 d-flex">
+												<div class="table__cell">
+													<div class="table__img-wrap">
+														<img src="img/price_img.png" alt="logo">
+													</div>
+												</div>
+											</div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">0,25/0,50</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent-red">Awesome title</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent">30</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">1</div></div>
+										</div>
+										<div class="row row-5-col no-gutters table__row">
+											<div class="col-one-of-5 d-flex">
+												<div class="table__cell">
+													<div class="table__img-wrap">
+														<img src="img/price_img.png" alt="logo">
+													</div>
+												</div>
+											</div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">0,25/0,50</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent-red">Awesome title</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell accent">30</div></div>
+											<div class="col-one-of-5 d-flex"><div class="table__cell">1</div></div>
+										</div>
+										<!-- TABLE BODY END -->
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-lg-6">
+								<div class="table table-responsive">
+									<div class="table-wrap">
+										<!-- TABLE HEAD -->
+										<div class="row no-gutters table__head">
+											<div class="col-12 d-flex"><div class="table__cell main-table-title">название стола</div></div>
+										</div>
+										<!-- TABLE HEAD END -->
+
+										<!-- TABLE BODY -->
+										<div class="row row-7-col no-gutters table__head table__after-head">
+											<div class="col-one-of-7 d-flex"><div class="table__cell">name player</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">hands</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">winrate</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">stack</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">vpip</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">pfr</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">3bet</div></div>
+										</div>
+										<div class="row row-7-col no-gutters table__row table__row--small">
+											<div class="col-one-of-7 d-flex"><div class="table__cell">20</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">30</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">-18,5</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">11</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">14</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">31</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">61</div></div>
+										</div>
+										<div class="row row-7-col no-gutters table__row table__row--small">
+											<div class="col-one-of-7 d-flex"><div class="table__cell">20</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">30</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">-18,5</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">11</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">14</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">31</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">61</div></div>
+										</div>
+										<div class="row row-7-col no-gutters table__row table__row--small">
+											<div class="col-one-of-7 d-flex"><div class="table__cell">20</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">30</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">-18,5</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">11</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">14</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">31</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">61</div></div>
+										</div>
+										<div class="row row-7-col no-gutters table__row table__row--small">
+											<div class="col-one-of-7 d-flex"><div class="table__cell">20</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">30</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">-18,5</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">11</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">14</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">31</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">61</div></div>
+										</div>
+										<div class="row row-7-col no-gutters table__row table__row--small">
+											<div class="col-one-of-7 d-flex"><div class="table__cell">20</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">30</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">-18,5</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">11</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">14</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">31</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">61</div></div>
+										</div>
+										<div class="row row-7-col no-gutters table__row table__row--small">
+											<div class="col-one-of-7 d-flex"><div class="table__cell">20</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">30</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">-18,5</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">11</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">14</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">31</div></div>
+											<div class="col-one-of-7 d-flex"><div class="table__cell">61</div></div>
+										</div>
+										<!-- TABLE BODY END -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="enter-vip-section enter-vip-section--personal-area enter-vip-section--scanner">
+					<div class="container">
+						<h2 class="h2--big">Статистика на игрока</h2>
+						<form action="#?">
+							<div class="row enter-vip-inputs justify-content-center">
+								<div class="col-12 col-sm-8 col-md-5 col-lg-4">
+									<input type="text" placeholder="Ник нейм">
+								</div>
+								<div class="col-12 col-sm-8 col-md-5 col-lg-4">
+									<select class="payment-method custom-select-user" title="Покеррум">
+										<option>Пример</option>
+										<option>Пример</option>
+										<option>Пример</option>
+										<option>Пример</option>
+									</select>
+								</div>
+							</div>
+							<div class="text-center">
+								<input class="btn btn--middle btn--primary" type="submit" value="поиск">
+							</div>
+						</form>
+					</div>
+				</section>
+
+				<section class="scanner-status-section">
+					<div class="container">
+						<div class="scanner-status-block">
+							<div class="row no-gutters">
+								<div class="col-12 col-lg-4">
+									<div class="personal-area-name-nickname-wrap">
+										<div class="personal_area_avatar">
+											<img src="img/personal_area_avatar.png" alt="photo">
+										</div>
+										<div class="personal-area-name-nickname">
+											<h2 class="h2--forum">Статус</h2>
+											<p>rabotayga</p>
+											<div class="img-wrap">
+												<img src="img/price_img.png" alt="logo">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12 col-lg-4">
+									<div class="status-miidle-content-wrap">
+										<div class="status-content-row">
+											<p class="status-miidle-content-left">
+												<span class="icon-wrap">
+													<img src="img/status_middle_content_icon_1.png" alt="icon">
+												</span>
+											$WON</p>
+											<p class="status-miidle-content-right">>9000$</p>
+										</div>
+										<div class="status-content-row">
+											<p class="status-miidle-content-left">
+												<span class="icon-wrap">
+													<img src="img/status_middle_content_icon_2.png" alt="icon">
+												</span>
+											HANDS</p>
+											<p class="status-miidle-content-right">25K</p>
+										</div>
+										<div class="status-content-row">
+											<p class="status-miidle-content-left">
+												<span class="icon-wrap">
+													<img src="img/status_middle_content_icon_3.png" alt="icon">
+												</span>
+											WINRATE</p>
+											<p class="status-miidle-content-right">6BB</p>
+										</div>
+										<div class="status-content-row">
+											<p class="status-miidle-content-left">
+												<span class="icon-wrap">
+													<img src="img/status_middle_content_icon_4.png" alt="icon">
+												</span>
+											RAKE</p>
+											<p class="status-miidle-content-right">>9000$</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12 col-lg-4">
+									<div class="status-miidle-content-wrap status-right-content-wrap">
+										<div class="status-content-row">
+											<p class="status-miidle-content-left">VPIP</p>
+											<p class="status-miidle-content-right">7%</p>
+											<p class="status-miidle-content-left">WTSD</p>
+										</div>
+										<div class="status-content-row">
+											<p class="status-miidle-content-left">PFR</p>
+											<p class="status-miidle-content-right">5%</p>
+											<p class="status-miidle-content-left">W$SD</p>
+										</div>
+										<div class="status-content-row">
+											<p class="status-miidle-content-left">3BET</p>
+											<p class="status-miidle-content-right">1%</p>
+											<p class="status-miidle-content-left">FOLD TO 3BET</p>
+										</div>
+										<div class="status-content-row">
+											<p class="status-miidle-content-left">cbet</p>
+											<p class="status-miidle-content-right">90%</p>
+											<p class="status-miidle-content-left">FOLD TO CBET</p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+			<!-- SECONT TAB (SCANNER PRO) END -->
+		</div>
+		<!-- TAB CONTENT END -->
+
+	</main>
+	<!-- CONTENT END -->
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-4 col-lg-3 footer__col">
+					<div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Обучение игре в покер</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Индивидуальное обучение</a></li>
+								<li><a href="#?">Групповой курс SMP Bronze</a></li>
+								<li><a href="#?">Групповой курс SMP Silver</a></li>
+								<li><a href="#?">Групповой курс SMP Gold</a></li>
+							</ul>
+						</div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Контент</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Видео уроки покера</a></li>
+								<li><a href="#?">Статьи о покере</a></li>
+								<li><a href="#?">Новости покера</a></li>
+							</ul>
+						</div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Форум</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Разбор раздач</a></li>
+								<li><a href="#?">Блоги</a></li>
+								<li><a href="#?">Обучение</a></li>
+								<li><a href="#?">Курилка</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3 footer__col border-class">
+					<div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Покеррумы</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Lotos Poker</a></li>
+								<li><a href="#?">888 Poker</a></li>
+								<li><a href="#?">Planetwin365</a></li>
+								<li><a href="#?">Red Star Poker</a></li>
+								<li><a href="#?">Coral Poker</a></li>
+								<li><a href="#?">PartyPoker</a></li>
+								<li><a href="#?">bwin</a></li>
+								<li><a href="#?">PokerKing</a></li>
+								<li><a href="#?">RedKings</a></li>
+								<li><a href="#?">TigerGaming</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-lg-3 footer__col border-class">
+					<div>
+						<div class="footer__list-wrap">
+							<h3 class="h3--main">Магазин</h3>
+							<ul class="footer__list">
+								<li><a href="#?">Датамайнинг</a></li>
+								<li><a href="#?">Smart HUD Pro</a></li>
+								<li><a href="#?">Smart HUD</a></li>
+								<li><a href="#?">Holdem Manager 2</a></li>
+								<li><a href="#?">PokerTracker 4</a></li>
+								<li><a href="#?">FlopZilla</a></li>
+								<li><a href="#?">CardRunners EV</a></li>
+								<li><a href="#?">TableScan Turbo</a></li>
+								<li><a href="#?">Note Caddy</a></li>
+								<li><a href="#?">PartyCaption</a></li>
+								<li><a href="#?">888 Caption</a></li>
+								<li><a href="#?">Конвертер рук Chico / Equity</a></li>
+								<li><a href="#?">Конвертер рук Enet / Peoples</a></li>
+								<li><a href="#?">Конвертер рук Enet</a></li>
+								<li><a href="#?">Конвертер рук Suited Aces</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-3 footer__col border-class">
+					<div>
+						<div class="footer__contacts">
+							<h3 class="h3--main">Школа покера Smart Poker</h3>
+							<div class="footer__bottom-wrap">
+								<div class="footer__bottom-wrap-inner">
+									<div class="footer__btns">
+										<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-skype fa-fw" aria-hidden="true"></i>Smart-Poker.Ru</a>
+										<a href="#?" class="btn btn--primary btn--small"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>contact@smart-poker.ru</a>
+									</div>
+									<div class="footer__partners">
+										<h3 class="h3--main">Наши партнеры</h3>
+										<a href="#?">Pokerprodeals</a>
+									</div>
+								</div>
+								<div class="footer__social">
+									<h3 class="h3--main">Соц сети</h3>
+									<ul class="social-list">
+										<li>
+											<a href="#?"><i class="fa fa-vk" aria-hidden="true"></i></a>
+										</li>
+										<li>
+											<a href="#?"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER END -->
+
+	<!-- подключение JavaScript -->
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/bootstrap4/popper.min.js"></script>
+	<script src="libs/bootstrap4/bootstrap.min.js"></script>
+	<script src="libs/bootstrap-select/bootstrap-select.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/jstick/jquery.JStick.min.js"></script>
+	<script src="libs/shuffle.js/shuffle.min.js"></script>
+
+	<script src="js/common.js"></script>
+</body>
+</html>
