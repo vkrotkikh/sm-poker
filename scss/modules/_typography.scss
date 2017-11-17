@@ -56,6 +56,12 @@
 		padding-bottom: 23px;
 		color: #5182c1;
 	}
+
+	&--small {
+		font-size: 23px;
+		letter-spacing: 1.15px;
+		color: #292f39;
+	}
 }
 
 .h3--acticle {
@@ -107,6 +113,11 @@
 
 	.h2--main {
 		font-size: 23px;
+	}
+
+	.h2--main--small {
+		font-size: 20px;
+		letter-spacing: 0.9px;
 	}
 
 	.h2--big {

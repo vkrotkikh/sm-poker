@@ -9,6 +9,9 @@
 
 	.views-and-comments {
 		span {
+			margin-right: 3px;
+		}
+		span {
 			font-size: 18px;
 		}
 
@@ -103,6 +106,7 @@
 		display: -o-flex;
 		display: flex;
 		align-items: center;
+		align-content: center;
 		justify-content: center;
 		flex-wrap: wrap;
 		height: 100%;
@@ -123,6 +127,13 @@
 		align-items: center;
 		height: 100%;
 		justify-content: flex-end;
+		.personal-area-rating-wrap {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+		}
 		.personal-area-rating {
 			margin-right: 15px;
 			img {
@@ -319,15 +330,103 @@
 				margin-left: 0px;
 			}
 
-			.personal-area-rating {
-				margin-right: 0;
-			}
 		}
 	}
 
 	.forum-message-wrap {
 		.forum-message-item {
 			margin-bottom: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.forum-message-head {
+		padding: 20px 15px;
+		.main-info-block {
+			padding-left: 65px;
+			.img-wrap {
+				max-width: 55px;
+				min-width: 55px;
+				height: 55px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			.top-line {
+				margin-bottom: 0px;
+				.avatar-name {
+					font-size: 13px;
+				}
+
+				.avatar-name-forum {
+					display: block;
+				}
+
+				.last-activity {
+					.time {
+						font-size: 10px;
+					}
+				}
+			}
+		}
+		.forum-message-btns-wrap {
+			padding-top: 15px;
+		}
+	}
+
+	.forum-message-number {
+		font-size: 15px;
+		letter-spacing: 0.75px;
+	}
+
+	.forum-message-text {
+		padding-bottom: 20px;
+		p {
+			font-size: 14px;
+			letter-spacing: 0.7px;
+		}
+	}
+
+	.forum-top-title--inside {
+		padding-top: 15px;
+		padding-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.forum-message-head {
+		position: relative;
+		margin-left: -15px;
+		margin-right: -15px;
+		.main-info-block {
+			margin-bottom: 15px;
+			}
+		.forum-message-btns-wrap {
+			padding-top: 0;
+			padding-bottom: 15px;
+			a {
+				margin: 3px;
+			}
+		}
+	}
+
+	.forum-message-text {
+		padding-left: 0;
+		padding-right: 0;
+		border: none;
+	}
+
+	.pagination-section--forum-inside {
+		padding-top: 20px;
+	}
+
+	.vip-video-section--forum-inside {
+		.h3--main {
+			font-size: 18px;
+			letter-spacing: 0.9px;
+			margin-bottom: 25px;
 		}
 	}
 }

@@ -102,10 +102,21 @@ input[type="submit"] {
 	transform: scale(0);
 }
 
+[type="radio"]:not(:checked) + label > img {
+	opacity: 0.28;
+}
+
 [type="radio"]:checked + label:after {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
+}
+
+.radio-group {
+	img {
+		max-width: 90px;
+		max-height: 18px;
+	}
 }
 
 @media only screen and (max-width: 575px) {

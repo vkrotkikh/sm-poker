@@ -1,5 +1,395 @@
 $(document).ready(function() {
 
+
+	// MAIN CHART =====================
+
+	function chartMainInit(){
+		var ctx = document.getElementById("main-chart").getContext('2d');
+
+		var dataRoom1 = {
+			label: "РУМ1",
+			data: [0, 1.5, 1.8, 2.5, 3.5, 3.6, 3.55, 3.4, 3.45, 3.7, 4],
+			backgroundColor: 'transparent',
+			borderColor: '#00BC75',
+			borderWidth: 2,
+			pointBorderColor: 'transparent',
+		};
+
+		var dataRoom2 = {
+			label: "РУМ2",
+			data: [0, 0.5, 1, 1.1, 1.7, 2, 2.5, 2.7, 3, 3.2, 3],
+			backgroundColor: 'transparent',
+			borderColor: '#e5563e',
+			borderWidth: 2,
+			pointBorderColor: 'transparent',
+		};
+
+		var myChart = new Chart(ctx, {
+		    type: 'line',
+		    data: {
+		        labels: ["", "12:00", "18:00", "24:00", "06:00", "06:00", "06:00", "06:00", "06:00", "06:00", "06:00"],
+		        datasets: [dataRoom1, dataRoom2]
+		    },
+		    options: {
+		    	layout: {
+		    	    padding: {
+		    	    	left: 0,
+		    	    },
+		    	},
+		        scales: {
+		        	xAxes: [{
+		        		gridLines: {
+		        			color: '#E1EBF5'
+		        		},
+		            	ticks: {
+		            	    fontColor: '#808ea6',
+		            	    fontFamily: 'MullerRegular',
+		            	    fontSize: 9
+		            	}
+		        	}],
+		            yAxes: [{
+		            	gridLines: {
+		            		color: '#E1EBF5'
+		            	},
+		                ticks: {
+		                    beginAtZero: true,
+		                    fontColor: '#808ea6',
+		                    fontFamily: 'MullerRegular',
+		                    fontSize: 9
+		                }
+		            }]
+		        },
+		        legend: {
+		            labels: {
+		                // This more specific font property overrides the global property
+		                fontColor: '#292f39',
+		                fontFamily: 'MullerRegular',
+		                fontSize: 12,
+		                boxWidth: 13
+		            }
+		        },
+		        tooltips: {
+		        	enabled: false
+		        },
+		        animation: {
+				    duration: 3000,
+				}
+		    }
+		});
+	}
+
+	$('#main-chart').waypoint({
+	    handler: function(dir) {
+	        if(dir == 'down'){
+	            chartMainInit();
+	            this.destroy()
+	        }
+	    },
+	    offset: '100%'
+	});
+
+	// MAIN CHART END =====================
+
+	// LEFT CHART =====================
+
+	function chartLeftInit(){
+		var ctx = document.getElementById("left-chart").getContext('2d');
+
+		var dataRoom1 = {
+			data: [0, 1.2, 1.8, 2.2, 4],
+			backgroundColor: 'transparent',
+			borderColor: '#00BC75',
+			borderWidth: 2,
+			pointBorderColor: 'transparent',
+		};
+
+		var dataRoom2 = {
+			data: [0, 0.5, 1, 1.3, 3.2],
+			backgroundColor: 'transparent',
+			borderColor: '#e5563e',
+			borderWidth: 2,
+			pointBorderColor: 'transparent',
+		};
+
+		var myChart = new Chart(ctx, {
+		    type: 'line',
+		    data: {
+		        labels: ["", "12:00", "18:00", "24:00", "06:00"],
+		        datasets: [dataRoom1, dataRoom2]
+		    },
+		    options: {
+		    	maintainAspectRatio: false,
+		    	layout: {
+		    	    padding: {
+		    	    	left: 0,
+		    	    },
+		    	},
+		        scales: {
+		        	xAxes: [{
+		        		gridLines: {
+		            		color: '#E1EBF5'
+		            	},
+		            	ticks: {
+		            	    fontColor: '#808ea6',
+		            	    fontFamily: 'MullerRegular',
+		            	    fontSize: 9
+		            	}
+		        	}],
+		            yAxes: [{
+		            	gridLines: {
+		            		color: '#E1EBF5'
+		            	},
+		                ticks: {
+		                    beginAtZero: true,
+		                    fontColor: '#808ea6',
+		                    fontFamily: 'MullerRegular',
+		                    fontSize: 9
+		                }
+		            }]
+		        },
+		        legend: {
+		        	display: false,
+		        },
+		        tooltips: {
+		        	enabled: false
+		        },
+		        animation: {
+			        duration: 3000,
+			    }
+		    }
+		});
+	}
+
+	$('#left-chart').waypoint({
+	    handler: function(dir) {
+	        if(dir == 'down'){
+	            chartLeftInit();
+	            this.destroy()
+	        }
+	    },
+	    offset: '100%'
+	});
+
+	// LEFT CHART END =====================
+
+	// RIGHT CHART =====================
+
+	function chartRigtInit(){
+		var ctx = document.getElementById("right-chart").getContext('2d');
+
+		var dataRoom3 = {
+			data: [0, 1.2, 1.8, 2.2, 4],
+			backgroundColor: 'transparent',
+			borderColor: '#00BC75',
+			borderWidth: 2,
+			pointBorderColor: 'transparent',
+		};
+
+		var dataRoom4 = {
+			data: [0, 0.5, 1, 1.3, 3.2],
+			backgroundColor: 'transparent',
+			borderColor: '#e5563e',
+			borderWidth: 2,
+			pointBorderColor: 'transparent',
+		};
+
+		var myChart = new Chart(ctx, {
+		    type: 'line',
+		    data: {
+		        labels: ["", "12:00", "18:00", "24:00", "06:00"],
+		        datasets: [dataRoom3, dataRoom4]
+		    },
+		    options: {
+		    	maintainAspectRatio: false,
+		    	layout: {
+		    	    padding: {
+		    	    	left: 0,
+		    	    },
+		    	},
+		        scales: {
+		        	xAxes: [{
+		        		gridLines: {
+		            		color: '#E1EBF5'
+		            	},
+		            	ticks: {
+		            	    fontColor: '#808ea6',
+		            	    fontFamily: 'MullerRegular',
+		            	    fontSize: 9
+		            	}
+		        	}],
+		            yAxes: [{
+		            	gridLines: {
+		            		color: '#E1EBF5'
+		            	},
+		                ticks: {
+		                    beginAtZero: true,
+		                    fontColor: '#808ea6',
+		                    fontFamily: 'MullerRegular',
+		                    fontSize: 9
+		                }
+		            }]
+		        },
+		        legend: {
+		        	display: false
+		        },
+		        tooltips: {
+		        	enabled: false
+		        },
+		        animation: {
+		        	duration: 3000,
+		        }
+		    }
+		});
+	}
+
+	$('#right-chart').waypoint({
+	    handler: function(dir) {
+	        if(dir == 'down'){
+	            chartRigtInit();
+	            this.destroy()
+	        }
+	    },
+	    offset: '100%'
+	});
+
+	// RIGHT CHART END =====================
+
+	// BAR LEFT CHART =====================
+
+	function barLeftInit(){
+		var ctx = document.getElementById("bar-left-chart");
+		var myChart = new Chart(ctx, {
+		    type: 'bar',
+		    data: {
+		        labels: ["12:00", "18:00", "24:00", "06:00"],
+		        datasets: [{
+		            label: '# of Votes',
+		            data: [3, 2, 3.5, 2.6, 4],
+		            backgroundColor: "#FF5539",
+		            borderColor: 'transparent',
+		        }],
+		    },
+		    options: {
+		    	maintainAspectRatio: false,
+		    	layout: {
+		    	    padding: {
+		    	    	left: 0,
+		    	    },
+		    	},
+		        scales: {
+		            yAxes: [{
+		            	gridLines: {
+		            		display: false
+		            	},
+		                ticks: {
+		                    beginAtZero:true,
+		                    fontColor: '#808ea6',
+		                    fontFamily: 'MullerRegular',
+		                    fontSize: 9
+		                }
+		            }],
+		            xAxes: [{
+		            	barPercentage: 0.5,
+		            	gridLines: {
+		            		display: false
+		            	},
+		            	ticks: {
+		            	    fontColor: '#808ea6',
+		            	    fontFamily: 'MullerRegular',
+		            	    fontSize: 9,
+		            	}
+		            }],
+		        },
+		        legend: {
+		            display: false,
+		        },
+		        animation: {
+		        	duration: 3000,
+		        }
+		    }
+		});
+	}
+
+	$('#bar-left-chart').waypoint({
+	    handler: function(dir) {
+	        if(dir == 'down'){
+	            barLeftInit();
+	            this.destroy()
+	        }
+	    },
+	    offset: '100%'
+	});
+
+	// BAR LEFT CHART END =====================
+
+	// BAR RIGHT CHART =====================
+
+	function barRigtInit(){
+		var ctx = document.getElementById("bar-right-chart");
+		var myChart = new Chart(ctx, {
+		    type: 'bar',
+		    data: {
+		        labels: ["12:00", "18:00", "24:00", "06:00"],
+		        datasets: [{
+		            label: '# of Votes',
+		            data: [3, 2, 3.5, 2.6, 4],
+		            backgroundColor: "#FF5539",
+		            borderColor: 'transparent',
+		        }],
+		    },
+		    options: {
+		    	maintainAspectRatio: false,
+		    	layout: {
+		    	    padding: {
+		    	    	left: 0,
+		    	    },
+		    	},
+		        scales: {
+		            yAxes: [{
+		            	gridLines: {
+		            		display: false
+		            	},
+		                ticks: {
+		                    beginAtZero:true,
+		                    fontColor: '#808ea6',
+		                    fontFamily: 'MullerRegular',
+		                    fontSize: 9
+		                }
+		            }],
+		            xAxes: [{
+		            	barPercentage: 0.5,
+		            	gridLines: {
+		            		display: false
+		            	},
+		            	ticks: {
+		            	    fontColor: '#808ea6',
+		            	    fontFamily: 'MullerRegular',
+		            	    fontSize: 9,
+		            	}
+		            }],
+		        },
+		        legend: {
+		            display: false,
+		        },
+		        animation: {
+		        	duration: 3000,
+		        }
+		    }
+		});
+	}
+
+	$('#bar-right-chart').waypoint({
+	    handler: function(dir) {
+	        if(dir == 'down'){
+	            barRigtInit();
+	            this.destroy()
+	        }
+	    },
+	    offset: '100%'
+	});
+
+	// BAR RIGHT CHART END =====================
+
 	// SLICK SLIDER FOR PROGRAM-REVIEW
 
 	$('.program-review__slider-main').slick({
@@ -191,7 +581,7 @@ $(document).ready(function() {
 		});
 	}
 
-	if($('#rooms-items_content').length){
+	if($('#rooms-items_content').length) {
 		var Shuffle = window.shuffle;
 		var myShuffle = new Shuffle(document.getElementById('rooms-items_content'), {
 			itemSelector: '.rooms-item-wrap',
